@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Way Better Romance</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
+					<value>
+						<li Class="BetterRomance.SexualityChances">
+							<asexualChance>10</asexualChance>
+							<bisexualChance>40</bisexualChance>
+							<gayChance>20</gayChance>
+							<straightChance>30</straightChance>
+							
+							<aceAroChance>10</aceAroChance>
+							<aceBiChance>40</aceBiChance>
+							<aceHomoChance>20</aceHomoChance>
+							<aceHeteroChance>30</aceHeteroChance>
+						</li>
+					</value>
+				</li>
+				<li Class ="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
+					<value>
+						<li Class="BetterRomance.CasualSexSettings">
+							<caresAboutCheating>True</caresAboutCheating>
+							<willDoHookup>True</willDoHookup>
+							<hookupTriggers>
+								<minOpinion>15</minOpinion>
+								<mustBeFertile>False</mustBeFertile>
+							</hookupTriggers>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
+					<value>
+						<li Class="BetterRomance.RegularSexSettings">
+							<minAgeForSex>16</minAgeForSex>
+							<maxAgeForSex>250</maxAgeForSex>
+							<maxAgeGap>100</maxAgeGap>
+							<declineAtAge>175</declineAtAge>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
+					<value>
+						<li Class="BetterRomance.RelationSettings">
+							<maxFemaleAgeToHaveChildren>200</maxFemaleAgeToHaveChildren>
+							<maxMaleAgeToHaveChildren>250</maxMaleAgeToHaveChildren>
+							<spousesAllowed>True</spousesAllowed>
+							<minFemaleAgeToHaveChildren>16</minFemaleAgeToHaveChildren>
+							<usualFemaleAgeToHaveChildren>75</usualFemaleAgeToHaveChildren>
+							<minMaleAgeToHaveChildren>16</minMaleAgeToHaveChildren>
+							<usualMaleAgeToHaveChildren>75</usualMaleAgeToHaveChildren>
+							<maxChildrenDesired>6</maxChildrenDesired>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

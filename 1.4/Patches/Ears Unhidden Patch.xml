@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Ears Unhidden Under Hats/Patches for Invisible Hats -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Hats Display Selection</li>
+			<li>[KV] Show Hair With Hats or Hide All Hats</li>
+			<li>Appearance clothes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/hiddenUnderApparelFor</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/hiddenUnderApparelFor</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
