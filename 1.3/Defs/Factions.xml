@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Player Faction -->
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>SerenPlayerBase</defName>
+		<label>Seren Colony</label>
+		<description>A base of serens, independent from other seren factions.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>SerenColonist</basicMemberKind>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Ultra</techLevel>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Panastrian</li>
+		</allowedCultures>
+		<colorSpectrum>
+			<li>(0.55, 0.4, 0.875)</li>
+		</colorSpectrum>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.3</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.7</commonality>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/SerenPlayer</factionIconPath>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+
+	<!-- Civil NPC Faction -->
+	<FactionDef ParentName="FactionBase">
+		<defName>SerenCivilBase</defName>
+		<label>seren civil colony</label>
+		<description>A splinter of seren who joined together as a collective society.
+
+After the failure of the Seren Uprising, a certain part of seren society blamed themselves for the death and destruction brought about by the fighting between Panastria and the Empire. They work to try to wash away their perceived sins and hopefully regain the trust of the Empire and those who had been caught in the crossfire of the conflict.</description>
+		<pawnSingular>seeker</pawnSingular>
+		<pawnsPlural>seekers</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>pure one</leaderTitle>
+		<factionIconPath>World/SerenCivil</factionIconPath>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Panastrian</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_Xenophobia</li>
+			
+			<!-- Vanilla Ideology Expanded -->
+			<li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_InsectoidSupremacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_MechanoidSupremacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_GodEmperor</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Gestalt</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+			
+			<!-- Alpha Memes -->
+			<li MayRequire="Sarg.AlphaMemes">AM_Madness</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Sadist</li>
+			<li MayRequire="sarg.alphaanimals">AA_BiologicalCorruptors</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+		</requiredMemes>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">5</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">7</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Animist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+			
+			<!--Vanilla Ideology Expanded -->
+			<VME_Structure_Serketist MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Serketist>
+			<VME_Structure_Esotericism MayRequire="VanillaExpanded.VMemesE">7</VME_Structure_Esotericism>
+			<VME_Structure_Bacchanalianism MayRequire="VanillaExpanded.VMemesE">3</VME_Structure_Bacchanalianism>
+			<VME_Structure_ChthonianCult MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_ChthonianCult>
+			<VME_Structure_Eschatologism MayRequire="VanillaExpanded.VMemesE">1</VME_Structure_Eschatologism>
+			<VME_Structure_Authoritarianism MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Authoritarianism>
+			<VME_Structure_CultOfPersonality MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_CultOfPersonality>
+			<VME_Structure_Pantheism MayRequire="VanillaExpanded.VMemesE">5</VME_Structure_Pantheism>
+			<VME_Structure_Omnism MayRequire="VanillaExpanded.VMemesE">3</VME_Structure_Omnism>
+			<VME_Structure_Agnosticism MayRequire="VanillaExpanded.VMemesE">3</VME_Structure_Agnosticism>
+			<VME_Structure_SecularSpirituality MayRequire="VanillaExpanded.VMemesE">7</VME_Structure_SecularSpirituality>
+			<VME_Structure_Shintaoism MayRequire="VanillaExpanded.VMemesE">1</VME_Structure_Shintaoism>
+			<VME_Structure_Corporate MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Corporate>
+			
+			<!-- Alpha Memes -->
+			<AM_Structure_Atheist MayRequire="Sarg.AlphaMemes">3</AM_Structure_Atheist>
+			<AM_Structure_Jewish MayRequire="Sarg.AlphaMemes">0</AM_Structure_Jewish>
+			<AM_Structure_Jainism MayRequire="Sarg.AlphaMemes">0</AM_Structure_Jainism>
+			<AM_Structure_Sikhism MayRequire="Sarg.AlphaMemes">0</AM_Structure_Sikhism>
+			<AM_Structure_Kemetism MayRequire="Sarg.AlphaMemes">1</AM_Structure_Kemetism>
+			<AM_Structure_SteampunkRevival MayRequire="Sarg.AlphaMemes">3</AM_Structure_SteampunkRevival>
+			<AM_Structure_Neolithic MayRequire="Sarg.AlphaMemes">3</AM_Structure_Neolithic>
+			<AM_Structure_Scavenger MayRequire="Sarg.AlphaMemes">5</AM_Structure_Scavenger>
+		</structureMemeWeights>
+		<colorSpectrum>
+			<li>(0.4, 0.825, 0.875)</li>
+		</colorSpectrum>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.2</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.7</commonality>
+			</li>
+		</backstoryFilters>
+		<geneticVariance>1</geneticVariance>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0.1,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- Basic Fight -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>15</SerenWanderer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+				</options>
+			</li>
+			<!-- Melee Fight -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+					<SerenCommander>5</SerenCommander>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>15</SerenWanderer>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenLightGunner>10</SerenLightGunner>
+					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenSniper>1</SerenSniper>
+					<SerenGrenadier>1</SerenGrenadier>
+					<SerenMeleeUltratech>5</SerenMeleeUltratech>
+					<SerenCommander>5</SerenCommander>
+					<SerenPureOne>1</SerenPureOne>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>15</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>10</SerenLightGunner>
+					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenGrenadier>1</SerenGrenadier>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>20</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenLightGunner>7</SerenLightGunner>
+					<SerenHeavyGunner>3</SerenHeavyGunner>
+					<SerenMeleeUltratech>3</SerenMeleeUltratech>
+					<SerenAstropath>3</SerenAstropath>
+					<SerenPureOne>1</SerenPureOne>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<SerenTrader>1</SerenTrader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SerenRefugee>3</SerenRefugee>
+					<SerenWanderer>10</SerenWanderer>
+					<SerenLightGunner>7</SerenLightGunner>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenHeavyGunner>3</SerenHeavyGunner>
+					<SerenAstropath>3</SerenAstropath>
+					<SerenMeleeUltratech>1</SerenMeleeUltratech>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenLightGunner>10</SerenLightGunner>
+					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenAstropath>5</SerenAstropath>
+					<SerenMeleeUltratech>3</SerenMeleeUltratech>
+					<SerenGrenadier>3</SerenGrenadier>
+					<SerenCommander>2</SerenCommander>
+					<SerenPureOne>1</SerenPureOne>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+	
+	<!-- Hostile Faction -->
+	<FactionDef ParentName="FactionBase">
+	<defName>SerenRoughBase</defName>
+		<label>seren harsh colony</label>
+		<description>A splinter of seren who joined together as a collective society.
+
+After the failure of the Seren Uprising, these seren believe that the Empire is the ultimate enemy to their existence. They will do anything to guarantee their survival, including crushing other seren who will not submit to their ideals. Their ultimate goal is to rise up once again to defeat the Empire, unite the seren, and return to Panastria.</description>
+		<pawnSingular>insurgent</pawnSingular>
+		<pawnsPlural>insurgents</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>stellaregis</leaderTitle>
+		<factionIconPath>World/SerenRough</factionIconPath>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Panastrian</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_Xenophilia</li>
+			
+			<!-- Vanilla Ideology Expanded -->
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_InsectoidSupremacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_MechanoidSupremacy</li>
+			
+			<!-- Alpha Memes -->
+			<li MayRequire="Sarg.AlphaMemes">AM_Madness</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+			<li MayRequire="sarg.alphaanimals">AA_BiologicalCorruptors</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Monastic</li>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Astrology</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">5</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">7</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+			
+			<!--Vanilla Ideology Expanded -->
+			<VME_Structure_Serketist MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Serketist>
+			<VME_Structure_Esotericism MayRequire="VanillaExpanded.VMemesE">5</VME_Structure_Esotericism>
+			<VME_Structure_Bacchanalianism MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Bacchanalianism>
+			<VME_Structure_ChthonianCult MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_ChthonianCult>
+			<VME_Structure_Eschatologism MayRequire="VanillaExpanded.VMemesE">1</VME_Structure_Eschatologism>
+			<VME_Structure_Authoritarianism MayRequire="VanillaExpanded.VMemesE">7</VME_Structure_Authoritarianism>
+			<VME_Structure_CultOfPersonality MayRequire="VanillaExpanded.VMemesE">7</VME_Structure_CultOfPersonality>
+			<VME_Structure_Pantheism MayRequire="VanillaExpanded.VMemesE">5</VME_Structure_Pantheism>
+			<VME_Structure_Omnism MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Omnism>
+			<VME_Structure_Agnosticism MayRequire="VanillaExpanded.VMemesE">3</VME_Structure_Agnosticism>
+			<VME_Structure_SecularSpirituality MayRequire="VanillaExpanded.VMemesE">7</VME_Structure_SecularSpirituality>
+			<VME_Structure_Shintaoism MayRequire="VanillaExpanded.VMemesE">1</VME_Structure_Shintaoism>
+			<VME_Structure_Corporate MayRequire="VanillaExpanded.VMemesE">0</VME_Structure_Corporate>
+			
+			<!-- Alpha Memes -->
+			<AM_Structure_Atheist MayRequire="Sarg.AlphaMemes">3</AM_Structure_Atheist>
+			<AM_Structure_Jewish MayRequire="Sarg.AlphaMemes">0</AM_Structure_Jewish>
+			<AM_Structure_Jainism MayRequire="Sarg.AlphaMemes">0</AM_Structure_Jainism>
+			<AM_Structure_Sikhism MayRequire="Sarg.AlphaMemes">0</AM_Structure_Sikhism>
+			<AM_Structure_Kemetism MayRequire="Sarg.AlphaMemes">1</AM_Structure_Kemetism>
+			<AM_Structure_SteampunkRevival MayRequire="Sarg.AlphaMemes">3</AM_Structure_SteampunkRevival>
+			<AM_Structure_Neolithic MayRequire="Sarg.AlphaMemes">0</AM_Structure_Neolithic>
+			<AM_Structure_Scavenger MayRequire="Sarg.AlphaMemes">5</AM_Structure_Scavenger>
+		</structureMemeWeights>
+		<colorSpectrum>
+			<li>(0.875, 0.4, 0.725)</li>
+		</colorSpectrum>
+		<techLevel>Ultra</techLevel>
+		<naturalEnemy>true</naturalEnemy>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.15</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.8</commonality>
+			</li>
+		</backstoryFilters>
+		<geneticVariance>1</geneticVariance>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0.1, 0.5)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0.1,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- Basic Fight -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>15</SerenWanderer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+				</options>
+			</li>
+			<!-- Melee Fight -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+					<SerenCommander>5</SerenCommander>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>15</SerenWanderer>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenLightGunner>10</SerenLightGunner>
+					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenSniper>1</SerenSniper>
+					<SerenGrenadier>1</SerenGrenadier>
+					<SerenMeleeUltratech>5</SerenMeleeUltratech>
+					<SerenCommander>5</SerenCommander>
+					<SerenStellaregis>1</SerenStellaregis>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>15</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>10</SerenLightGunner>
+					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenGrenadier>1</SerenGrenadier>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>20</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+					
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenLightGunner>7</SerenLightGunner>
+					<SerenHeavyGunner>3</SerenHeavyGunner>
+					<SerenMeleeUltratech>3</SerenMeleeUltratech>
+					<SerenAstropath>3</SerenAstropath>
+					<SerenStellaregis>1</SerenStellaregis>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<SerenTrader>1</SerenTrader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SerenRefugee>3</SerenRefugee>
+					<SerenWanderer>10</SerenWanderer>
+					<SerenLightGunner>7</SerenLightGunner>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenHeavyGunner>3</SerenHeavyGunner>
+					<SerenAstropath>3</SerenAstropath>
+					<SerenMeleeUltratech>1</SerenMeleeUltratech>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenLightGunner>10</SerenLightGunner>
+					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenAstropath>5</SerenAstropath>
+					<SerenMeleeUltratech>3</SerenMeleeUltratech>
+					<SerenGrenadier>3</SerenGrenadier>
+					<SerenCommander>2</SerenCommander>
+					<SerenStellaregis>2</SerenStellaregis>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>

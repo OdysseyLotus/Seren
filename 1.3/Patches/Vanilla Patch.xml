@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers//Town_Guard/..</xpath>
+		<value>
+			<SerenWanderer>3</SerenWanderer>
+			<SerenSimpleGunner>3</SerenSimpleGunner>
+			<SerenLightGunner>3</SerenLightGunner>
+			<SerenHeavyGunner>2</SerenHeavyGunner>
+			<SerenSniper>1.5</SerenSniper>
+			<SerenMeleeUltratech>1.5</SerenMeleeUltratech>
+			<SerenCommander>1</SerenCommander>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers//Tribal_Archer/..</xpath>
+		<value>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers//Mercenary_Gunner/..</xpath>
+		<value>
+			<SerenWanderer>3</SerenWanderer>
+			<SerenSimpleGunner>3</SerenSimpleGunner>
+			<SerenLightGunner>3</SerenLightGunner>
+			<SerenHeavyGunner>2</SerenHeavyGunner>
+			<SerenSniper>1.5</SerenSniper>
+			<SerenMeleeUltratech>1.5</SerenMeleeUltratech>
+			<SerenCommander>1</SerenCommander>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+		<value>
+			<SerenSniper>1.5</SerenSniper>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/options</xpath>
+		<value>
+			<SerenWanderer>2.5</SerenWanderer>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/FactionDef[defName = "Empire"]/pawnGroupMakers//Empire_Fighter_Trooper/..</xpath>
+		<value>
+			<SerenHeavyGunner>3</SerenHeavyGunner>
+			<SerenSniper>2</SerenSniper>
+			<SerenCommander>1</SerenCommander>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[NL] Chibi Face Female only</li>
+			<li>[NL] Chibi Face Male only</li>
+			<li>【TW】重绘脸型和伤口 Retexture~Face~Scar~</li>
+			<li>Ameiro 12 anime faces</li>
+			<li>Ameiro 12 anime faces WEEB version</li>
+			<li>Buster's Personal Face Pack</li>
+			<li>Eren's Face Replace</li>
+			<li>gloomy_face</li>
+			<li>Gloomy Face mk2</li>
+			<li>HD Faces(Nonvanilla)</li>
+			<li>HD Faces(Nonvanilla-Earless)</li>
+			<li>IMOZOU Face </li>
+			<li>Klimhazzard Simplistic Faces</li>
+			<li>Malang Face </li>
+			<li>[L]MangaFace</li>
+			<li>Xeva FB Pack</li>
+			<li>Yuudai1998's Chibi Face</li>
+			<li>Yuudai1998's Chibi Face V.2</li>
+			<li>Yuudai1998's Chibi Face (Remade)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/aliencrowntypes</xpath>
+					<value>
+						<aliencrowntypes>
+							<li>Average_Normal</li>
+							<li>Average_Pointy</li>
+							<li>Average_Wide</li>
+							<li>Narrow_Normal</li>
+							<li>Narrow_Pointy</li>
+							<li>Narrow_Wide</li>
+						</aliencrowntypes>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/path</xpath>
+					<value><path>Things/Seren/Ears/FacialAnimations/LeftEar</path></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/path</xpath>
+					<value><path>Things/Seren/Ears/FacialAnimations/RightEar</path></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/graphicPaths/li/headMasks</xpath>
+					<value><headMasks>Things/Seren/Masks/Heads/FaceRetextures/Mask</headMasks></value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/graphicPaths/li/head</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

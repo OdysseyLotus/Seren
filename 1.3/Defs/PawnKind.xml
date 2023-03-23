@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="SerenModel" Abstract="True">
+		<label>seren model</label>
+		<race>Seren</race>
+		<nameMaker>NamerSerenMale</nameMaker>
+		<nameMakerFemale>NamerSerenFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.3</backstoryCryptosleepCommonality>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>8~20</initialResistanceRange>
+		<combatPower>45</combatPower>
+		<invNutrition>1.5</invNutrition>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>100~1000</apparelMoney>
+		<techHediffsMoney>100~1500</techHediffsMoney>
+		<weaponMoney>100~1000</weaponMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SerenRoughModel" ParentName="SerenModel" Abstract="True">
+		<label>seren rough model</label>
+		<defaultFactionType>SerenRoughBase</defaultFactionType>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+		<maxGenerationAge>250</maxGenerationAge>
+		<combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>50~100</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.2</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.7</commonality>
+			</li>
+		</backstoryFiltersOverride>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>12~25</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SerenCivilModel" ParentName="SerenModel"  Abstract="True">
+		<label>seren civil model</label>
+		<defaultFactionType>SerenCivilBase</defaultFactionType>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+		<maxGenerationAge>250</maxGenerationAge>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>50~100</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.2</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.7</commonality>
+			</li>
+		</backstoryFiltersOverride>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>5~15</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SerenPlayerModel" ParentName="BasePlayerPawnKind">
+		<defName>SerenColonist</defName>
+		<label>seren colonist</label>
+		<defaultFactionType>SerenPlayerBase</defaultFactionType>
+		<race>Seren</race>
+		<nameMaker>NamerSerenMale</nameMaker>
+		<nameMakerFemale>NamerSerenFemale</nameMakerFemale>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>150</min>
+			<max>225</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>
+			<min>500</min>
+			<max>1000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>8~20</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenPsycasterModel">
+		<defName>SerenAstropath</defName>
+		<label>seren astropath</label>
+		<defaultFactionType>SerenCivilBase</defaultFactionType>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>SerenPriestBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<combatPower>150</combatPower>
+		<canBeSapper>false</canBeSapper>
+		<weaponTags MayRequire="Ludeon.RimWorld.Royalty" Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<apparelRequired MayRequire="Ludeon.RimWorld.Royalty">
+			<li>Apparel_PsyfocusHelmet</li>
+		</apparelRequired>
+		<techHediffsMoney>4000</techHediffsMoney>
+		<!--<apparelColor>(22,14,48)</apparelColor>-->
+		<techHediffsMaxAmount>3</techHediffsMaxAmount>
+		<initialWillRange>6~7</initialWillRange>
+		<initialResistanceRange>27~42</initialResistanceRange>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>50~100</countRange>
+				</li>
+				<li>
+					<thingDef>Gold</thingDef>
+					<countRange>5~15</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Protector>1~2|1~3</VPE_Protector>
+					<VPE_Archon>1~2|1~3</VPE_Archon>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+		<missingParts>
+			<li>
+				<bodyPart>Eye</bodyPart>
+			</li>
+			<li>
+				<bodyPart>Eye</bodyPart>
+			</li>
+		</missingParts>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenCivilModel">
+		<defName>SerenRefugee</defName>
+		<label>seren refugee</label>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<apparelMoney>150~350</apparelMoney>
+		<weaponMoney>150~350</weaponMoney>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>50~100</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenCivilModel">
+		<defName>SerenSlave</defName>
+		<label>seren slave</label>
+		<combatPower>25</combatPower>
+		<defaultFactionType>Pirate</defaultFactionType>
+		<isFighter>false</isFighter>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.3~0.7</gearHealthRange>
+		<weaponTags>
+			<li>MeleeBlunt</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>50~100</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<weaponMoney>150~350</weaponMoney>
+		<apparelMoney>150~350</apparelMoney>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<techHediffsChance>0</techHediffsChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<invNutrition>1.2</invNutrition>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>5~12</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenCivilModel">
+		<defName>SerenWanderer</defName>
+		<label>seren wanderer</label>
+		<apparelMoney>250~450</apparelMoney>
+		<combatPower>35</combatPower>
+		<gearHealthRange>0.8~2.3</gearHealthRange>
+		<apparelRequired>
+			<li>Apparel_Duster</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+			<li>NeolithicMeleeDecent</li>
+		</weaponTags>
+		<weaponMoney>200~400</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenCivilModel">
+		<defName>SerenTrader</defName>
+		<label>seren trader</label>
+		<trader>true</trader>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.8~2.3</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<weaponMoney>200~400</weaponMoney>
+		<apparelMoney>600~900</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>12~20</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenGrenadier</defName>
+		<label>seren grenadier</label>
+		<combatPower>70</combatPower>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelMoney>400~700</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>250~500</weaponMoney>
+		<weaponTags>
+			<li>GrenadeEMP</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenSimpleGunner</defName>
+		<label>seren simple gunner</label>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<combatPower>45</combatPower>
+		<apparelMoney>150~400</apparelMoney>
+		<weaponMoney>150~400</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenLightGunner</defName>
+		<label>seren light gunner</label>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<weaponTags>
+			<li>GunLight</li>
+		</weaponTags>
+		<combatPower>65</combatPower>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelMoney>450~750</apparelMoney>
+		<weaponMoney>450~750</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenGunner</defName>
+		<label>seren gunner</label>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<combatPower>90</combatPower>
+		<apparelMoney>500~1000</apparelMoney>
+		<weaponMoney>500~1000</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenHeavyGunner</defName>
+		<label>seren heavy gunner</label>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<combatPower>130</combatPower>
+		<apparelMoney>1250~2000</apparelMoney>
+		<weaponMoney>1250~2000</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenSniper</defName>
+		<label>seren sniper</label>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<combatPower>150</combatPower>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelMoney>800~2000</apparelMoney>
+		<weaponMoney>800~2000</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenMeleeUltratech</defName>
+		<label>seren combatant</label>
+		<weaponTags>
+			<li>UltratechMelee</li>
+		</weaponTags>
+		<combatPower>140</combatPower>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelMoney>1500~5000</apparelMoney>
+		<weaponMoney>1500~5000</weaponMoney>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenCommander</defName>
+		<label>seren commander</label>
+		<combatPower>200</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags>
+			<li>UltratechMelee</li>
+			<li>SpacerGun</li>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<weaponMoney>5000~10000</weaponMoney>
+		<apparelMoney>5000~10000</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>2500~10000</techHediffsMoney>
+		<invNutrition>2.2</invNutrition>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>30~45</initialResistanceRange>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel">
+		<defName>SerenStellaregis</defName>
+		<label>stellaregis</label>
+		<labelPlural>stellaregii</labelPlural>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Royal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>UltratechMelee</li>
+		</weaponTags>
+		<apparelMoney>2000~5000</apparelMoney>
+		<weaponMoney>2000~5000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>30~45</initialResistanceRange>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenCivilModel">
+		<defName>SerenPureOne</defName>
+		<label>pure one</label>
+		<labelPlural>pure ones</labelPlural>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>false</canBeSapper>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Royal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>EltexStaff</li>
+		</weaponTags>
+		<apparelMoney>2000~3000</apparelMoney>
+		<weaponMoney>2000~3000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>30~45</initialResistanceRange>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+	
+	<!-- =========================================================== Tribal Stuff =========================================================== -->
+	<PawnKindDef Name="SerenTribalModel" ParentName="SerenModel" Abstract="True">
+		<label>seren tribal model</label>
+		<defaultFactionType>TribeCivil</defaultFactionType>
+		<nameMaker>NamerSerenTribalMale</nameMaker>
+		<nameMakerFemale>NamerSerenTribalFemale</nameMakerFemale>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.3</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>0.6</commonality>
+			</li>
+		</backstoryFilters>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>1.5</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<itemQuality>Normal</itemQuality>
+		<maxGenerationAge>250</maxGenerationAge>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Jade</thingDef>
+					<countRange>5~10</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineHerbal</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SerenPlayerTribalModel" ParentName="BasePlayerPawnKind">
+		<defName>SerenTribalPlayer</defName>
+		<label>seren tribesperson</label>
+		<nameMaker>NamerSerenTribalMale</nameMaker>
+		<nameMakerFemale>NamerSerenTribalFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<maxGenerationAge>200</maxGenerationAge>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>SerenBackstory</li>
+				</categories>
+				<commonality>0.3</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>0.6</commonality>
+			</li>
+		</backstoryFilters>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>150~250</apparelMoney>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>8~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SerenTribalModel">
+		<defName>SerenTribalPoor</defName>
+		<label>seren penitent</label>
+		<combatPower>40</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>90~150</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.05</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SerenTribalModel">
+		<defName>SerenLightArcher</defName>
+		<label>seren light archer</label>
+		<combatPower>48</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>12~22</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SerenTribalModel">
+		<defName>SerenRangedDecent</defName>
+		<label>seren ranger</label>
+		<combatPower>60</combatPower>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>150~300</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<weaponMoney>100~100</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SerenTribalModel">
+		<defName>SerenHeavyArcher</defName>
+		<label>seren heavy archer</label>
+		<combatPower>75</combatPower>
+		<apparelMoney>250~600</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<weaponMoney>150~350</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+
+  <PawnKindDef ParentName="SerenTribalModel">
+		<defName>SerenFighter</defName>
+		<label>seren fighter</label>
+		<combatPower>50</combatPower>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~300</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<weaponMoney>150~150</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeDecent</li>
+		</weaponTags>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenTribalModel">
+		<defName>SerenBerserker</defName>
+		<label>seren berserker</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~550</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<weaponMoney>300~300</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
+	
+	
+	<!-- =========================================================== Compatibility =========================================================== -->
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
+		<defName>SerenMedievalPlayer</defName>
+		<race>Seren</race>
+		<label>subject</label>
+		<defaultFactionType>VFEM_PlayerKingdom</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>MedievalBasic</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>12~17</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+		<defName>SerenSettlersPlayer</defName>
+		<race>Seren</race>
+		<label>bandit</label>
+		<defaultFactionType>VFES_PlayerSettlement</defaultFactionType>
+		<backstoryCategories>
+			<li>Outlander</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>Outlander</li>
+		</apparelTags>
+		<gearHealthRange>0.2~0.6</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>100~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.06</techHediffsChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Vikings">
+		<defName>SerenVikingPlayer</defName>
+		<race>Seren</race>
+		<label>member</label>
+		<defaultFactionType>VFEV_PlayerClan</defaultFactionType>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <apparelTags>
+            <li>Apparel_Viking</li>
+            <li>Neolithic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>250~750</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.02</techHediffsChance>
+        <initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Pirates">
+		<defName>SerenPiratePlayer</defName>
+		<race>Seren</race>
+		<label>pirate</label>
+		<defaultFactionType>VFEP_PlayerPirate</defaultFactionType>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelMoney>400~1000</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Classical">
+		<defName>SerenClassicalPlayer</defName>
+		<race>Seren</race>
+		<label>member</label>
+		<defaultFactionType>VFEC_NewEmpire</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Classical</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="Trickity.Samurai.Faction">
+		<defName>SerenRoninPlayer</defName>
+		<race>Seren</race>
+		<label>member</label>
+		<defaultFactionType>TSF_PlayerRonin</defaultFactionType>
+		<backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+		<apparelTags>
+            <li>Apparel_SamuraiBasic</li>
+        </apparelTags>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>250~600</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.02</techHediffsChance>
+        <initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="Heis.Edo.Themed.Expansion">
+		<defName>SerenEdoPlayer</defName>
+		<race>Seren</race>
+		<label>member</label>
+		<defaultFactionType>HS_PlayerEdoClan</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>HSApparel_EdoClanBase</li>
+		</apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>500~1200</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.02</techHediffsChance>
+        <initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SerenRoughModel" Name="SerenPsycasterModel" Abstract="True">
+		<label>seren psycaster model</label>
+		<combatPower>275</combatPower>
+		<canBeSapper>false</canBeSapper>
+		<weaponMoney>10000</weaponMoney>
+		<apparelMoney>10000</apparelMoney>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>RoyalTier2</requiredTag>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+			</li>
+		</specificApparelRequirements>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<techHediffsMoney>1000~4000</techHediffsMoney>
+		<apparelColor>(89,12,114)</apparelColor>
+		<techHediffsMaxAmount>3</techHediffsMaxAmount>
+		<initialWillRange>6~7</initialWillRange>
+		<initialResistanceRange>27~42</initialResistanceRange>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<!-- Archotechist -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenArchotechistPsycaster</defName>
+		<label>seren archotechist</label>
+		<apparelRequired>
+			<li>Apparel_PsyfocusHelmet</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Archotechist>1~4|1~6</VPE_Archotechist>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+
+	<!-- Conflagrator -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenConflagratorPsycaster</defName>
+		<label>seren conflagrator</label>
+		<apparelRequired>
+			<li>Apparel_PsyfocusHelmet</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>24~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Conflagrator>1~4|1~6</VPE_Conflagrator>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<!-- Frostshaper -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenFrostshaperPsycaster</defName>
+		<label>seren frostshaper</label>
+		<apparelRequired>
+			<li>VPE_Apparel_EltexMask</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>24~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Frostshaper>1~4|1~6</VPE_Frostshaper>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<!-- Protector -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenProtectorPsycaster</defName>
+		<label>seren protector</label>
+		<apparelRequired>
+			<li>Apparel_PsyfocusHelmet</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Protector>1~4|1~6</VPE_Protector>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<!-- Staticlord -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenStaticlordPsycaster</defName>
+		<label>seren staticlord</label>
+		<apparelRequired>
+			<li>VPE_Apparel_EltexMask</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>24~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Staticlord>1~4|1~6</VPE_Staticlord>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<!-- Warlord Melee -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenWarlordMPsycaster</defName>
+		<label>seren warlord</label>
+		<apparelRequired>
+			<li>Apparel_PsyfocusHelmet</li>
+			<li>VPE_Apparel_EltexCape</li>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>Bladelink</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>11~16</range>
+			</li>
+		</skills>
+		<minGenerationAge>35</minGenerationAge>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>19~30</initialResistanceRange>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Warlord>1~4|1~6</VPE_Warlord>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<!-- Warlord Ranged -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenWarlordRPsycaster</defName>
+		<label>seren warlord</label>
+		<apparelRequired>
+			<li>Apparel_PsyfocusHelmet</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~16</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<minGenerationAge>35</minGenerationAge>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Warlord>1~4|1~6</VPE_Warlord>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<!-- Wildspeaker -->
+	<PawnKindDef ParentName="SerenPsycasterModel" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>SerenWildspeakPsycaster</defName>
+		<label>seren wildspeaker</label>
+		<apparelRequired>
+			<li>VPE_Apparel_EltexMask</li>
+			<li>VPE_Apparel_EltexCape</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>EltexStaff</li>
+		</weaponTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>24~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Wildspeaker>1~4|1~6</VPE_Wildspeaker>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

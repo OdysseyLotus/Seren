@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Seren Names -->
+	<RulePackDef>
+		<defName>NamerSerenFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[SerenNameFemale] [SerenNameLast]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SerenNameFemale->NameBanks/Seren_First_Female</li>
+				<li>SerenNameLast->NameBanks/Seren_Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerSerenMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[SerenNameMale] [SerenNameLast]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SerenNameMale->NameBanks/Seren_First_Male</li>
+				<li>SerenNameLast->NameBanks/Seren_Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerSerenTribalMale</defName>
+		<include>
+			<li>NamerSerenMale</li>
+			<li>NamerPersonCorunan</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerSerenTribalFemale</defName>
+		<include>
+			<li>NamerSerenFemale</li>
+			<li>NamerPersonCorunan</li>
+		</include>
+	</RulePackDef>
+	
+	
+	<!-- Cultural Names -->
+	
+	<!-- Ideology Namer -->
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>NamerIdeoPanastrian</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective(p=2)->Spacer</li>
+				<li>globalAdjective(p=2)->Star</li>
+				<li>globalAdjective(p=2)->Stellar</li>
+				<li>globalAdjective(p=2)->Interstellar</li>
+				<li>globalAdjective(p=2)->Nocturne</li>
+				<li>globalAdjective(p=2)->Diurnus</li>
+				<li>globalAdjective(p=2)->Solar</li>
+
+				<li>globalHyphenPrefix(p=2)->astro</li>
+				<li>globalHyphenPrefix(p=2)->stella</li>
+				<li>globalHyphenPrefix(p=2)->cosmo</li>
+				<li>globalHyphenPrefix(p=2)->caelo</li>
+				<li>globalHyphenPrefix(p=2)->sol</li>
+				<li>globalHyphenPrefix(p=2)->noct</li>
+				<li>globalHyphenPrefix(p=2)->nox</li>
+				<li>globalHyphenPrefix(p=2)->diurna</li>
+				<li>globalHyphenPrefix(p=2)->dia</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<!-- Deity Namer -->
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>NamerSerenDeity</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[SerenNameDeity]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SerenNameDeity->NameBanks/Seren_Deity</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	<!-- Deity Type Namer -->
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>DeityTypeMakerPanastrian</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<!-- Leader Title Namer -->
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>LeaderTitleMaker_Panastrian</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->premier</li>
+				<li>cultureLeaderAdjective->supreme</li>
+				<li>cultureLeaderAdjective->grand</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->fortunate</li>
+				<li>cultureLeaderAdjective->blessed</li>
+
+				<li>cultureLeaderNoun->chancellor</li>
+				<li>cultureLeaderNoun->soothsayer</li>
+				<li>cultureLeaderNoun->prophet</li>
+				<li>cultureLeaderNoun->guide</li>
+				<li>cultureLeaderNoun->stellaregis</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<!-- Festival Namer -->
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>NamerFestivalPanastrian</defName>
+		<include>
+			<li>NamerFestivalGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BabiesAndChildren.AlienChildDef>
+		<defName>Seren</defName>
+		<babyGraphic>Things/Seren/Children/Seren_Baby</babyGraphic>
+		<toddlerGraphic>Things/Seren/Children/Seren_Toddler</toddlerGraphic>
+	</BabiesAndChildren.AlienChildDef>
+	
+</Defs>
