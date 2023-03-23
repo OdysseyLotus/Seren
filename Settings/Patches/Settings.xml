@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!--
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Just the aliens:</label>
+		<operations>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ScenarioDef[defName="SerenRelocated"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ScenarioDef[defName="SerenPrisonCrash"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/FactionDef[defName="SerenPlayerBase"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/FactionDef[defName="SerenCivilBase"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/FactionDef[defName="SerenRoughBase"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[@Name="SerenModel"]/defaultFactionType</xpath>
+				<value>
+					<defaultFactionType>OutlanderCivil</defaultFactionType>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenGrenadier"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenSimpleGunner"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenLightGunner"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenHeavyGunner"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenSniper"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenMeleeUltratech"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenCommander"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenStellaregis"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenPureOne"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenLightArcher"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenRangedDecent"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenHeavyArcher"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SerenFighter"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="SerenRoughModel"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="SerenCivilModel"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="SerenTribalModel"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>100% Female, 0% Male</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/maleGenderProbability</xpath>
+				<value>
+					<maleGenderProbability>0</maleGenderProbability>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>75% Female, 25% Male</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/maleGenderProbability</xpath>
+				<value>
+					<maleGenderProbability>0.25</maleGenderProbability>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>50% Female, 50% Male (Default)</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/maleGenderProbability</xpath>
+				<value>
+					<maleGenderProbability>0.5</maleGenderProbability>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>25% Female, 75% Male</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/maleGenderProbability</xpath>
+				<value>
+					<maleGenderProbability>0.75</maleGenderProbability>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>0% Female, 100% Male</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/maleGenderProbability</xpath>
+				<value>
+					<maleGenderProbability>1</maleGenderProbability>
+				</value>
+			</li>
+		</operations>
+	</Operation> -->
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>SerenOL</modId>
+		<key>RemoveSerenFactions</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>/Defs/FactionDef[defName="SerenPlayerBase"]</xpath>
+			</Operation>
+			<Operation Class="PatchOperationRemove">
+				<xpath>/Defs/FactionDef[defName="SerenCivilBase"]</xpath>
+			</Operation>
+			<Operation Class="PatchOperationRemove">
+				<xpath>/Defs/FactionDef[defName="SerenRoughBase"]</xpath>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[@Name="SerenRoughModel"]/defaultFactionType</xpath>
+				<value>
+					<defaultFactionType>OutlanderRough</defaultFactionType>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[@Name="SerenCivilModel"]/defaultFactionType</xpath>
+				<value>
+					<defaultFactionType>OutlanderCivil</defaultFactionType>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="SerenColonist"]/defaultFactionType</xpath>
+				<value>
+					<defaultFactionType>OutlanderCivil</defaultFactionType>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>SerenOL</modId>
+		<key>RemoveSerenScenarios</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>/Defs/ScenarioDef[defName="SerenRelocated"]</xpath>
+			</Operation>
+			<Operation Class="PatchOperationRemove">
+				<xpath>/Defs/ScenarioDef[defName="SerenPrisonCrash"]</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>SerenOL</modId>
+		<key>MaleSerenProbSlider</key>
+		<defaultValue>0.5</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/maleGenderProbability</xpath>
+				<value>
+					<maleGenderProbability>{MaleSerenProbSlider}</maleGenderProbability>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	
+</Patch>

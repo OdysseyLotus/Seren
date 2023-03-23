@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.3]Idhale Race</li>
+			<li>[1.3]Nearmare Race</li>
+			<li>[1.3]Neclose Race</li>
+			<li>[1.3]Nexaga Race</li>
+			<li>[1.3]Qualeela Race</li>
+			<li>[1.3]Saclean Race</li>
+			<li>[1.3]Silkiera Race</li>
+			<li>[1.3]Solark Race</li>
+			<li>[1.3]Xenoorca Race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+			
+				<!-- Female -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleOnSkinAya">
+							<defName>GAPPE_SerenFemaleOnSkinAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleMiddleAya">
+							<defName>GAPPE_SerenFemaleMiddleAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleShellAya">
+							<defName>GAPPE_SerenFemaleShellAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleOverheadAya">
+							<defName>GAPPE_SerenFemaleOverheadAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleEyeCoverAya">
+							<defName>GAPPE_SerenFemaleEyeCoverAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+					</value>
+				</li>
+				
+				<!-- Male -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleOnSkinAya">
+							<defName>GAPPE_SerenMaleOnSkinAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleMiddleAya">
+							<defName>GAPPE_SerenMaleMiddleAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleShellAya">
+							<defName>GAPPE_SerenMaleShellAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleOverheadAya">
+							<defName>GAPPE_SerenMaleOverheadAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleEyeCoverAya">
+							<defName>GAPPE_SerenMaleEyeCoverAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+					</value>
+				</li>
+				
+				<!-- Thin -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinOnSkinAya">
+							<defName>GAPPE_SerenThinOnSkinAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinMiddleAya">
+							<defName>GAPPE_SerenThinMiddleAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinShellAya">
+							<defName>GAPPE_SerenThinShellAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinOverheadAya">
+							<defName>GAPPE_SerenThinOverheadAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinEyeCoverAya">
+							<defName>GAPPE_SerenThinEyeCoverAya</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

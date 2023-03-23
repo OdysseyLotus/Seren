@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>SerenSettings</defName> <!--Can be anything unique with no periods-->
+		<modId>SerenOL</modId> <!--MUST be the same as the one entered earlier-->    
+		<label>Seren, from Stardust</label> <!-- This is what displays as your mod's name-->    
+		<settings> <!--This is where you define what settings are in the settings menu-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveSerenFactions</key>
+				<label>Remove Seren factions</label>
+				<highlight>true</highlight>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveSerenScenarios</key>
+				<label>Remove Seren scenarios</label>
+				<highlight>true</highlight>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>MaleSerenProbSlider</key>
+				<label>Male Seren: {MaleSerenProbSlider}. The chance for a male Seren to spawn, from 0 (0%) to 1 (100%). </label>
+				<min>0.00</min>
+				<max>1.00</max>
+				<decimals>2</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.ResetSettings"/>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>

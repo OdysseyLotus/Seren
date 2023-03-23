@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Skin Colors -->
+	<GeneDef Name="GeneSkinColorMelaninSeren" ParentName="GeneSkinColorOverride" Abstract="True">
+		<exclusionTags>
+			<li>SerenSkinColor</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<!-- Blue -->
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Teal</defName>
+		<label>teal skin</label>
+		<labelShortAdj>teal</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
+		<skinColorBase>(64, 112, 128)</skinColorBase>
+		<displayOrderInCategory>10001</displayOrderInCategory>
+		<selectionWeight>0.8</selectionWeight>
+		<!--<minMelanin>0.1</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>blue</symbol></li>
+				<li><symbol>teal</symbol></li>
+				<li><symbol>sea</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Cobalt</defName>
+		<label>cobalt skin</label>
+		<labelShortAdj>cobalt</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
+		<skinColorBase>(64, 88, 128)</skinColorBase>
+		<displayOrderInCategory>10002</displayOrderInCategory>
+		<selectionWeight>0.9</selectionWeight>
+		<!--<minMelanin>0.2</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>blue</symbol></li>
+				<li><symbol>cobalt</symbol></li>
+				<li><symbol>sea</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Indigo</defName>
+		<label>indigo skin</label>
+		<labelShortAdj>indigo</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
+		<skinColorBase>(64, 64, 128)</skinColorBase>
+		<displayOrderInCategory>10003</displayOrderInCategory>
+		<selectionWeight>0.9</selectionWeight>
+		<!--<minMelanin>0.3</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>blue</symbol></li>
+				<li><symbol>indigo</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<!-- Purple -->
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Royal</defName>
+		<label>royal-purple skin</label>
+		<labelShortAdj>royal-purple</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
+		<skinColorBase>(80, 64, 128)</skinColorBase>
+		<displayOrderInCategory>10004</displayOrderInCategory>
+		<selectionWeight>0.9</selectionWeight>
+		<!--<minMelanin>0.4</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>purple</symbol></li>
+				<li><symbol>royal</symbol></li>
+				<li><symbol>grape</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Violet</defName>
+		<label>violet skin</label>
+		<labelShortAdj>violet</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
+		<skinColorBase>(96, 64, 128)</skinColorBase>
+		<displayOrderInCategory>10005</displayOrderInCategory>
+		<selectionWeight>0.9</selectionWeight>
+		<!--<minMelanin>0.5</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>purple</symbol></li>
+				<li><symbol>violet</symbol></li>
+				<li><symbol>grape</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Plum</defName>
+		<label>plum skin</label>
+		<labelShortAdj>plum</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
+		<skinColorBase>(112, 64, 128)</skinColorBase>
+		<displayOrderInCategory>10006</displayOrderInCategory>
+		<selectionWeight>0.8</selectionWeight>
+		<!--<minMelanin>0.6</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>purple</symbol></li>
+				<li><symbol>plum</symbol></li>
+				<li><symbol>grape</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<!-- Pink -->
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Orchid</defName>
+		<label>orchid-pink skin</label>
+		<labelShortAdj>orchid</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
+		<skinColorBase>(128, 64, 128)</skinColorBase>
+		<displayOrderInCategory>10007</displayOrderInCategory>
+		<selectionWeight>0.7</selectionWeight>
+		<!--<minMelanin>0.7</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pink</symbol></li>
+				<li><symbol>orchid</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Majenta</defName>
+		<label>majenta skin</label>
+		<labelShortAdj>majenta</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
+		<skinColorBase>(128, 64, 112)</skinColorBase>
+		<displayOrderInCategory>10008</displayOrderInCategory>
+		<selectionWeight>0.7</selectionWeight>
+		<!--<minMelanin>0.8</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pink</symbol></li>
+				<li><symbol>majenta</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Rouge</defName>
+		<label>rouge skin</label>
+		<labelShortAdj>rouge</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
+		<skinColorBase>(128, 64, 96)</skinColorBase>
+		<displayOrderInCategory>10009</displayOrderInCategory>
+		<selectionWeight>0.6</selectionWeight>
+		<!--<minMelanin>0.9</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pink</symbol></li>
+				<li><symbol>rouge</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<!-- Rare -->
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Albino</defName>
+		<label>albino skin</label>
+		<labelShortAdj>albino</labelShortAdj>
+		<description>Carriers of this gene lack any pigmentation in their skin.</description>
+		<skinColorBase>(240, 240, 240)</skinColorBase>
+		<displayOrderInCategory>10010</displayOrderInCategory>
+		<selectionWeight>0.05</selectionWeight>
+		<!--<minMelanin>0</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>white</symbol></li>
+				<li><symbol>albino</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Twilight</defName>
+		<label>twilight-blue skin</label>
+		<labelShortAdj>twilight-blue</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of blue.</description>
+		<skinColorBase>(32, 48, 64)</skinColorBase>
+		<displayOrderInCategory>10010</displayOrderInCategory>
+		<selectionWeight>0.1</selectionWeight>
+		<!--<minMelanin>0.35</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>blue</symbol></li>
+				<li><symbol>twilight</symbol></li>
+				<li><symbol>dark</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Nebula</defName>
+		<label>nebula-purple skin</label>
+		<labelShortAdj>nebula-purple</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of purple.</description>
+		<skinColorBase>(48, 32, 64)</skinColorBase>
+		<displayOrderInCategory>10010</displayOrderInCategory>
+		<selectionWeight>0.1</selectionWeight>
+		<!--minMelanin>0.65</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>purple</symbol></li>
+				<li><symbol>nebula</symbol></li>
+				<li><symbol>dark</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSkinColorMelaninSeren">
+		<defName>LotusSkin_Planetary</defName>
+		<label>planetary-pink skin</label>
+		<labelShortAdj>planetary-pink</labelShortAdj>
+		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of pink.</description>
+		<skinColorBase>(64, 32, 48)</skinColorBase>
+		<displayOrderInCategory>10010</displayOrderInCategory>
+		<selectionWeight>0.1</selectionWeight>
+		<!--<minMelanin>0.95</minMelanin>-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pink</symbol></li>
+				<li><symbol>planetary</symbol></li>
+				<li><symbol>dark</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+
+	<!-- Hair Colors -->
+	<GeneDef Name="GeneSerenHairColorBase" ParentName="GeneHairColorBase" Abstract="True">
+		<canGenerateInGeneSet>true</canGenerateInGeneSet>
+		<exclusionTags>
+			<li>HairColor</li>
+			<li>SerenHairColor</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<!-- Light Blues -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Sky</defName>
+		<label>sky-blue hair</label>
+		<hairColorOverride>(128, 176, 192)</hairColorOverride>
+		<selectionWeight>0.08</selectionWeight>
+		<displayOrderInCategory>10011</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Powder</defName>
+		<label>powder-blue hair</label>
+		<hairColorOverride>(128, 160, 192)</hairColorOverride>
+		<selectionWeight>0.09</selectionWeight>
+		<displayOrderInCategory>10012</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Periwinkle</defName>
+		<label>periwinkle hair</label>
+		<hairColorOverride>(128, 144, 192)</hairColorOverride>
+		<selectionWeight>0.09</selectionWeight>
+		<displayOrderInCategory>10013</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Dark Blues -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Aegean</defName>
+		<label>sea-blue hair</label>
+		<hairColorOverride>(32, 64, 80)</hairColorOverride>
+		<selectionWeight>0.03</selectionWeight>
+		<displayOrderInCategory>10014</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Navy</defName>
+		<label>navy-blue hair</label>
+		<hairColorOverride>(32, 48, 80)</hairColorOverride>
+		<selectionWeight>0.03</selectionWeight>
+		<displayOrderInCategory>10015</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Lapis</defName>
+		<label>lapis hair</label>
+		<hairColorOverride>(32, 32, 80)</hairColorOverride>
+		<selectionWeight>0.03</selectionWeight>
+		<displayOrderInCategory>10016</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Light Purples -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Lilac</defName>
+		<label>lilac hair</label>
+		<hairColorOverride>(144, 128, 192)</hairColorOverride>
+		<selectionWeight>0.09</selectionWeight>
+		<displayOrderInCategory>10017</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Lavender</defName>
+		<label>lavender hair</label>
+		<hairColorOverride>(160, 128, 192)</hairColorOverride>
+		<selectionWeight>0.08</selectionWeight>
+		<displayOrderInCategory>10018</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Mauve</defName>
+		<label>mauve hair</label>
+		<hairColorOverride>(176, 128, 192)</hairColorOverride>
+		<selectionWeight>0.08</selectionWeight>
+		<displayOrderInCategory>10019</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Dark Purples -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Indigo</defName>
+		<label>indigo hair</label>
+		<hairColorOverride>(48, 32, 80)</hairColorOverride>
+		<selectionWeight>0.025</selectionWeight>
+		<displayOrderInCategory>10020</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Eggplant</defName>
+		<label>eggplant-purple hair</label>
+		<hairColorOverride>(64, 32, 80)</hairColorOverride>
+		<selectionWeight>0.025</selectionWeight>
+		<displayOrderInCategory>10021</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Plum</defName>
+		<label>plum hair</label>
+		<hairColorOverride>(80, 32, 80)</hairColorOverride>
+		<selectionWeight>0.025</selectionWeight>
+		<displayOrderInCategory>10022</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Light Pinks -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Wisteria</defName>
+		<label>wisteria hair</label>
+		<hairColorOverride>(192, 128, 192)</hairColorOverride>
+		<selectionWeight>0.07</selectionWeight>
+		<displayOrderInCategory>10023</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Blush</defName>
+		<label>blush hair</label>
+		<hairColorOverride>(192, 128, 176)</hairColorOverride>
+		<selectionWeight>0.07</selectionWeight>
+		<displayOrderInCategory>10024</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Rose</defName>
+		<label>rosy hair</label>
+		<hairColorOverride>(192, 128, 160)</hairColorOverride>
+		<selectionWeight>0.06</selectionWeight>
+		<displayOrderInCategory>10025</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Dark Pinks -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Berry</defName>
+		<label>berry-colored hair</label>
+		<hairColorOverride>(80, 32, 64)</hairColorOverride>
+		<selectionWeight>0.02</selectionWeight>
+		<displayOrderInCategory>10026</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Wine</defName>
+		<label>wine-colored hair</label>
+		<hairColorOverride>(80, 32, 48)</hairColorOverride>
+		<selectionWeight>0.02</selectionWeight>
+		<displayOrderInCategory>10027</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Amaranth</defName>
+		<label>amaranth hair</label>
+		<hairColorOverride>(96, 32, 48)</hairColorOverride>
+		<selectionWeight>0.02</selectionWeight>
+		<displayOrderInCategory>10028</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Albino -->
+	<GeneDef ParentName="GeneSerenHairColorBase">
+		<defName>LotusHair_Albino</defName>
+		<label>albino hair</label>
+		<hairColorOverride>(240, 240, 240)</hairColorOverride>
+		<selectionWeight>0.005</selectionWeight>
+		<displayOrderInCategory>10029</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- Eyes -->
+	<GeneDef ParentName="GeneEyeColor">
+		<defName>LotusEyes_Seren</defName>
+		<label>seren eyes</label>
+		<labelShortAdj>seren eyes</labelShortAdj>
+		<description>Carriers of this gene have seren eyes, with long eyelashes and white, star-shaped pupils.</description>
+		<iconPath>UI/Icons/Genes/Gene_WhiteEyes</iconPath>
+		<displayOrderInCategory>10031</displayOrderInCategory>
+		<graphicData>
+			<color>(255, 255, 255)</color>
+			<visibleNorth>false</visibleNorth>
+			<drawOnEyes>true</drawOnEyes>
+			<layer>PostTattoo</layer>
+			<drawScale>0.24</drawScale>
+			<graphicPath>Things/Seren/HeadAttachments/Eyes/Male/SerenEyes_Male</graphicPath>
+			<graphicPathFemale>Things/Seren/HeadAttachments/Eyes/Female/SerenEyes_Female</graphicPathFemale>
+		</graphicData>
+	</GeneDef>
+	
+	<!-- Addons -->
+	<GeneDef Name="GeneEarsBase">
+		<defName>Ears_Seren</defName>
+		<label>seren ears</label>
+		<description>Carriers of this gene have seren-like ears.</description>
+		<iconPath>UI/Icons/Genes/Gene_EarSeren</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Ears/SerenEars</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>point</symbol></li>
+				<li><symbol>sharp</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>ear</symbol></li>
+				<li><symbol>point</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef Name="GeneSerenSensorBase" ParentName="GeneHeadboneBase" Abstract="True">
+		<graphicData>
+			<color>(255, 255, 255)</color>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+		<exclusionTags>
+			<li>SerenSensors</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Back</defName>
+		<label>back-facing seren sensors</label>
+		<description>Carriers of this gene have sensors that grow towards the back of the head, similar to an impala's horns.</description>
+		<iconPath>UI/Icons/Genes/Gene_BackSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Back/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>back</symbol></li>
+				<li><symbol>backward</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Branched</defName>
+		<label>branched seren sensors</label>
+		<description>Carriers of this gene have branching sensors, similar to a deer's antlers.</description>
+		<iconPath>UI/Icons/Genes/Gene_BranchedSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Branched/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>branched</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Curled</defName>
+		<label>curled seren sensors</label>
+		<description>Carriers of this gene have curled sensors, similar to a ram's horns.</description>
+		<iconPath>UI/Icons/Genes/Gene_CurledSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Curled/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>curled</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Curved</defName>
+		<label>curved seren sensors</label>
+		<description>Carriers of this gene have sensors that grow upwards and curve towards the center.</description>
+		<iconPath>UI/Icons/Genes/Gene_CurvedSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Curved/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>curved</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Double</defName>
+		<label>doubled seren sensors</label>
+		<description>Carriers of this gene have four small sensors.</description>
+		<iconPath>UI/Icons/Genes/Gene_DoubleSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Double/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>doubled</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Drop</defName>
+		<label>drop-shaped seren sensors</label>
+		<description>Carriers of this gene have short, wide sensors shaped like water drops.</description>
+		<iconPath>UI/Icons/Genes/Gene_DropSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Drop/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>tear-drop</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Spike</defName>
+		<label>spike seren sensors</label>
+		<description>Carriers of this gene have straight sensors that end in a sharp point.</description>
+		<iconPath>UI/Icons/Genes/Gene_SpikeSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Spike/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>spike</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Tall</defName>
+		<label>tall seren sensors</label>
+		<description>Carriers of this gene have tall sensors that curve slightly in the middle.</description>
+		<iconPath>UI/Icons/Genes/Gene_TallSensors</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Horns/Genes/Tall/SerenSensors</graphicPath>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>tall</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef Name="GeneSerenMarkingsBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<graphicData>
+			<color>(255, 255, 255)</color>
+			<visibleNorth>false</visibleNorth>
+			<layer>PostSkin</layer>
+			<useSkinShader>false</useSkinShader>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>bright</symbol></li>
+				<li><symbol>white</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>star</symbol></li>
+				<li><symbol>mark</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<exclusionTags>
+			<li>SerenMarkings</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Big</defName>
+		<label>big star marking</label>
+		<description>Carriers of this gene have one large star marking on their forehead.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingBig</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Big</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Brows</defName>
+		<label>brow markings</label>
+		<description>Carriers of this gene have a pair of star marking above their eyes.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingBrows</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Brows</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Cheeks</defName>
+		<label>cheek markings</label>
+		<description>Carriers of this gene have a pair of star markings on their cheeks.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingCheeks</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Cheeks</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Freckles</defName>
+		<label>freckle markings</label>
+		<description>Carriers of this gene have many small markings on their cheeks, resembling freckles.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingFreckles</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Freckles</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Small</defName>
+		<label>small star markings</label>
+		<description>Carriers of this gene have one small star marking on their forehead.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingSmall</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Small</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Target</defName>
+		<label>target-like markings</label>
+		<description>Carriers of this gene have two star markings on their forehead, with one positioned inside the other.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingTarget</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Target</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Tristar</defName>
+		<label>tristar markings</label>
+		<description>Carriers of this gene have three star markings: two smaller ones above the eyes and one larger one on the forehead.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingTristar</iconPath>
+		<graphicData>
+			<graphicPath>Things/Seren/Markings/Genes/Tristar</graphicPath>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>SerenDarkVision</defName>
+		<label>dark vision</label>
+		<description>Carriers of this gene see well in low light and are unaffected by mood penalties related to darkness. They have a reflective layer behind the retina that amplifies their ability to see in the dark.</description>
+		<iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
+		<ignoreDarkness>true</ignoreDarkness>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<biostatMet>0</biostatMet>
+		<symbolPack>
+		  <prefixSymbols>
+			<li><symbol>dark</symbol></li>
+			<li><symbol>night</symbol></li>
+			<li><symbol>dim</symbol></li>
+			<li><symbol>gloom</symbol></li>
+			<li><symbol>murk</symbol></li>
+			<li><symbol>deep</symbol></li>
+			<li><symbol>umbra</symbol></li>
+		  </prefixSymbols>
+		  <suffixSymbols>
+			<li><symbol>shadow</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>SerenElongatedFingers</defName>
+		<label>elongated fingers</label>
+		<description>Long, delicate fingers improve the carrier's manipulation capacity. This aids with many tasks, especially crafting and construction.</description>
+		<iconPath>UI/Icons/Genes/Gene_ElongatedFingers</iconPath>
+		<displayOrderInCategory>320</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<capMods>
+		  <li>
+			<capacity>Manipulation</capacity>
+			<postFactor>1.1</postFactor>
+		  </li>
+		</capMods>
+		<symbolPack>
+		  <prefixSymbols>
+			<li><symbol>long</symbol></li>
+			<li><symbol>elon</symbol></li>
+			<li><symbol>pencil</symbol></li>
+		  </prefixSymbols>
+		  <suffixSymbols>
+			<li><symbol>finger</symbol></li>
+			<li><symbol>dactyl</symbol></li>
+			<li><symbol>digit</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+</Defs>

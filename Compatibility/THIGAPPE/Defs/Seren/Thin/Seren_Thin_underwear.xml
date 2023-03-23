@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinUnderwearTop" MayRequire="Malistaticy.UnderWhere">
+		<defName>GAPPE_SerenThinUnderwearTop</defName>
+		<RaceName>Seren</RaceName>
+	</ApparelPaperPattern.ApparelPaperPatternDef>
+
+	<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinUnderwear" MayRequire="Malistaticy.UnderWhere">
+		<defName>GAPPE_SerenThinUnderwear</defName>
+		<RaceName>Seren</RaceName>
+	</ApparelPaperPattern.ApparelPaperPatternDef>
+
+	<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinLongJohns" MayRequire="Malistaticy.UnderWhere">
+		<defName>GAPPE_SerenThinLongJohns</defName>
+		<RaceName>Seren</RaceName>
+	</ApparelPaperPattern.ApparelPaperPatternDef>
+	
+</Defs>

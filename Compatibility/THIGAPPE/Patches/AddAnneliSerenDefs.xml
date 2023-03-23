@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Annelitrice 2.0</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<!-- Female -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleOnSkinAnneli">
+							<defName>GAPPE_SerenFemaleOnSkinAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleAnneli_OnSkinAnneli">
+							<defName>GAPPE_SerenFemaleAnneli_OnSkinAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleMiddleAnneli">
+							<defName>GAPPE_SerenFemaleMiddleAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleAnneli_MiddleAnneli">
+							<defName>GAPPE_SerenFemaleAnneli_MiddleAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleShellAnneli">
+							<defName>GAPPE_SerenFemaleShellAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleAnneli_ShellAnneli">
+							<defName>GAPPE_SerenFemaleAnneli_ShellAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleAnneli_UpperShell_ArmorAnneli">
+							<defName>GAPPE_FemaleAnneli_UpperShell_ArmorAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleAnneli_UpperShell_TacticalAnneli">
+							<defName>GAPPE_SerenFemaleAnneli_UpperShell_TacticalAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleOverheadAnneli">
+							<defName>GAPPE_SerenFemaleOverheadAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleEyeCoverAnneli">
+							<defName>GAPPE_SerenFemaleEyeCoverAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_FemaleAnneli_BagAnneli">
+							<defName>GAPPE_SerenFemaleAnneli_BagAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+					</value>
+				</li>
+				
+				<!-- Male -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleOnSkinAnneli">
+							<defName>GAPPE_SerenMaleOnSkinAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleAnneli_OnSkinAnneli">
+							<defName>GAPPE_SerenMaleAnneli_OnSkinAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleMiddleAnneli">
+							<defName>GAPPE_SerenMaleMiddleAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleAnneli_MiddleAnneli">
+							<defName>GAPPE_SerenMaleAnneli_MiddleAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleShellAnneli">
+							<defName>GAPPE_SerenMaleShellAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleAnneli_ShellAnneli">
+							<defName>GAPPE_SerenMaleAnneli_ShellAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleAnneli_UpperShell_ArmorAnneli">
+							<defName>GAPPE_MaleAnneli_UpperShell_ArmorAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleAnneli_UpperShell_TacticalAnneli">
+							<defName>GAPPE_SerenMaleAnneli_UpperShell_TacticalAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleOverheadAnneli">
+							<defName>GAPPE_SerenMaleOverheadAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleEyeCoverAnneli">
+							<defName>GAPPE_SerenMaleEyeCoverAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_MaleAnneli_BagAnneli">
+							<defName>GAPPE_SerenMaleAnneli_BagAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+					</value>
+				</li>
+				
+				<!-- Thin -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinOnSkinAnneli">
+							<defName>GAPPE_SerenThinOnSkinAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinAnneli_OnSkinAnneli">
+							<defName>GAPPE_SerenThinAnneli_OnSkinAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinMiddleAnneli">
+							<defName>GAPPE_SerenThinMiddleAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinAnneli_MiddleAnneli">
+							<defName>GAPPE_SerenThinAnneli_MiddleAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinShellAnneli">
+							<defName>GAPPE_SerenThinShellAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinAnneli_ShellAnneli">
+							<defName>GAPPE_SerenThinAnneli_ShellAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinAnneli_UpperShell_ArmorAnneli">
+							<defName>GAPPE_ThinAnneli_UpperShell_ArmorAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinAnneli_UpperShell_TacticalAnneli">
+							<defName>GAPPE_SerenThinAnneli_UpperShell_TacticalAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinOverheadAnneli">
+							<defName>GAPPE_SerenThinOverheadAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinEyeCoverAnneli">
+							<defName>GAPPE_SerenThinEyeCoverAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+						
+						<ApparelPaperPattern.ApparelPaperPatternDef ParentName="HUMAN_ThinAnneli_BagAnneli">
+							<defName>GAPPE_SerenThinAnneli_BagAnneli</defName>
+							<RaceName>Seren</RaceName>
+						</ApparelPaperPattern.ApparelPaperPatternDef>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>

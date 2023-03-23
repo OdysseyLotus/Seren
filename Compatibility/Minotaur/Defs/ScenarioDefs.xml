@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>SerenMinoCoop</defName>
+		<label>Seren-Minotaur Cooperation</label>
+		<description>After the failed Seren Uprising, the Empire has been scattering the seren throughout the galaxy through forced removal and relocation. You were among a group of four who were chosen for this desolate rim-world, but two of you were separated upon descent. After wandering aimlessly for a few days, the two seren were joined by two minotaurs, who were fascinated by their sensors. A little bit more confident in their survival chances, you settle down with your bovine friends and try to make the best of a bad situation.</description>
+		<scenario>
+			<summary>Two lost seren join two minotaurs.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>SerenPlayerBase</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Starting Pawns -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<overrideKinds>
+						<li>
+							<xenotype>Seren_Base</xenotype>
+							<pawnKind>SerenColonist</pawnKind>
+						</li>
+						<li>
+							<xenotype>RBM_Minotaur</xenotype>
+							<pawnKind>RBME_PlayerMinotaurOutlanderPawn</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>Seren_Base</xenotype>
+							<count>2</count>
+							<description>lost seren</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<xenotype>RBM_Minotaur</xenotype>
+							<count>2</count>
+							<description>minotaur wanderers</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				
+				<!-- Pawn Arrive Method -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				
+				<!-- Starting Items -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>350</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RBME_EpsilonAxe</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_BoltActionRifle</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Revolver</thingDef>
+					<count>1</count>
+				</li>
+				
+				<!-- Scattered Items Near Start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>250</count>
+				</li>
+				
+				<!-- Scattered Items Throughout Map -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>500</count>
+				</li>
+				
+				<!-- Starting Message -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>After the failed Seren Uprising, the Empire has been scattering the seren throughout the galaxy through forced removal and relocation. You were among a group of four who were chosen for relocation to this desolate rim-world, but the two of you were separated upon descent. After wandering aimlessly for a few days, you notice that you are being followed by two large humanoids. You and your compatriot fearfully prepare for combat, but the two humanoids managed to get to you before you could get a shot off. Your compatriot signals that they resemble the earth creature called a "cow", but you've never seen one before.\n\nThe cow-like humanoid places their massive hand on your shoulder and simply says, "Same horns," and nods to their fellow cow-person. They walk past you as you try to comprehend what just happened and pick up your heavy supplies without struggle. They motion for you and your compatriot to follow. Confused, but happy you don't have to lug around your supplies anymore, you both shrug and follow your new cow-like friends.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				
+			</parts>
+		</scenario>
+	</ScenarioDef>
+	
+	<ScenarioDef>
+		<defName>BabySerenwithMinos</defName>
+		<label>Orphaned Seren</label>
+		<description>Your party split from your home village after a dispute. As you venture out, you hear frail wails from the bushes. Your party discovers a tiny seren baby, tightly swaddled but clearly in distress. You can't find any trace of the baby's parents, so you decide to take in the child and protect it.\n\nYou start with few supplies and an infant that can't take care of itself. Seren take longer than humans to mature into adolescence and adulthood, so it will take longer for them to be able to help around.</description>
+		<scenario>
+			<summary>Three minotaurs stumble upon a seren infant. Difficult.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RBME_MinotaurPlayerOutlander</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Starting Pawns -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<overrideKinds>
+						<li>
+							<xenotype>Seren_Base</xenotype>
+							<pawnKind>SerenColonistBaby</pawnKind>
+						</li>
+						<li>
+							<xenotype>RBM_Minotaur</xenotype>
+							<pawnKind>RBME_PlayerMinotaurTribalPawn</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>Seren_Base</xenotype>
+							<count>1</count>
+							<description>seren infant</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Baby</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<xenotype>RBM_Minotaur</xenotype>
+							<count>3</count>
+							<description>minotaur travellers</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				
+				<!-- Pawn Arrive Method -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				
+				<!-- Starting Items -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>120</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RBME_EpsilonAxe</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RBME_Pelekys</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RBME_EpsilonAxe</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				
+				<!-- Scattered Items Near Start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>50</count>
+				</li>
+				
+				<!-- Scattered Items Throughout Map -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>150</count>
+				</li>
+				
+				<!-- Starting Message -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Your party split from your village after a dispute over who drank a well-aged bottle of wine. While petty looking back on it, your party is too stubborn to be subjected to incorrect accusations. As you venture out, you all start getting splitting headaches before hearing some frail wails from the bushes. Your party discovers a tiny seren baby, tightly swaddled but clearly in distress.\n\nYou quickly crush some fruit nearby to feed the infant, and the headaches ease as it calms down and falls asleep. Where are the baby's parents? You have no idea, but you can't just leave it out to die, so you and your party decide to set up camp here and take care of it until its parents come back... if they ever do.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

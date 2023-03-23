@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName = "SerenCivilBase"]/pawnGroupMakers</xpath>
+				<value>
+					<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+						<kindDef>Combat</kindDef>
+						<commonality>10</commonality>
+						<options>
+							<SerenHeavyGunner>5</SerenHeavyGunner>
+							<SerenSniper>3.5</SerenSniper>
+							<SerenCommander>2</SerenCommander>
+							<SerenMeleeUltratech>4</SerenMeleeUltratech>
+							<SerenConflagratorPsycaster>0.2</SerenConflagratorPsycaster>
+							<SerenArchotechistPsycaster>0.2</SerenArchotechistPsycaster>
+							<SerenWarlordRPsycaster>0.2</SerenWarlordRPsycaster>
+							<SerenWarlordMPsycaster>0.2</SerenWarlordMPsycaster>
+						</options>
+					</li>
+					<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+						<kindDef>Combat</kindDef>
+						<commonality>100</commonality>
+						<options>
+							<SerenHeavyGunner>5</SerenHeavyGunner>
+							<SerenSniper>3.5</SerenSniper>
+							<SerenCommander>2</SerenCommander>
+							<SerenMeleeUltratech>4</SerenMeleeUltratech>
+							<SerenWarlordRPsycaster>0.2</SerenWarlordRPsycaster>
+							<SerenWarlordMPsycaster>0.2</SerenWarlordMPsycaster>
+							<SerenProtectorPsycaster>0.4</SerenProtectorPsycaster>
+						</options>
+					</li>
+					<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+						<kindDef>Combat</kindDef>
+						<commonality>50</commonality>
+						<options>
+							<SerenHeavyGunner>5</SerenHeavyGunner>
+							<SerenSniper>3.5</SerenSniper>
+							<SerenCommander>2</SerenCommander>
+							<SerenMeleeUltratech>4</SerenMeleeUltratech>
+							<SerenArchotechistPsycaster>0.1</SerenArchotechistPsycaster>
+						</options>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName = "SerenRoughBase"]/pawnGroupMakers</xpath>
+				<value>
+					<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+						<kindDef>Combat</kindDef>
+						<commonality>10</commonality>
+						<options>
+							<SerenHeavyGunner>5</SerenHeavyGunner>
+							<SerenSniper>3.5</SerenSniper>
+							<SerenCommander>2</SerenCommander>
+							<SerenMeleeUltratech>4</SerenMeleeUltratech>
+							<SerenConflagratorPsycaster>0.2</SerenConflagratorPsycaster>
+							<SerenArchotechistPsycaster>0.2</SerenArchotechistPsycaster>
+							<SerenWarlordRPsycaster>0.2</SerenWarlordRPsycaster>
+							<SerenWarlordMPsycaster>0.2</SerenWarlordMPsycaster>
+						</options>
+					</li>
+					<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+						<kindDef>Combat</kindDef>
+						<commonality>100</commonality>
+						<options>
+							<SerenHeavyGunner>5</SerenHeavyGunner>
+							<SerenSniper>3.5</SerenSniper>
+							<SerenCommander>2</SerenCommander>
+							<SerenMeleeUltratech>4</SerenMeleeUltratech>
+							<SerenWarlordRPsycaster>0.2</SerenWarlordRPsycaster>
+							<SerenWarlordMPsycaster>0.2</SerenWarlordMPsycaster>
+							<SerenProtectorPsycaster>0.4</SerenProtectorPsycaster>
+						</options>
+					</li>
+					<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+						<kindDef>Combat</kindDef>
+						<commonality>50</commonality>
+						<options>
+							<SerenHeavyGunner>5</SerenHeavyGunner>
+							<SerenSniper>3.5</SerenSniper>
+							<SerenCommander>2</SerenCommander>
+							<SerenMeleeUltratech>4</SerenMeleeUltratech>
+							<SerenArchotechistPsycaster>0.1</SerenArchotechistPsycaster>
+						</options>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
