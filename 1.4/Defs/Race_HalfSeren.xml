@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="Human">
 		<defName>HalfSeren</defName>
 		<label>half-seren</label>
-		<description>An alien species native to an Earth-like planet named Panastria. Their original creation myth says that they are made of stardust and fell onto Panastria, but their is no concrete evidence of this. After a failed uprising against the Empire, most are being relocated from their homeworld or imprisoned until further notice.</description>
+		<description></description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.5</maleGenderProbability>
@@ -25,32 +25,32 @@
 				<lovinIntervalHoursFromAge>
 					<points>
 						<li>(16, 3)</li>
-						<li>(70, 3)</li>
-						<li>(100, 4)</li>
-						<li>(120, 6)</li>
-						<li>(170, 8)</li>
-						<li>(220, 16)</li>
-						<li>(275, 48)</li>
+						<li>(45, 3)</li>
+						<li>(65, 4)</li>
+						<li>(80, 6)</li>
+						<li>(110, 8)</li>
+						<li>(145, 16)</li>
+						<li>(180, 48)</li>
 					</points>
 				</lovinIntervalHoursFromAge>
 				<reproduction>
 					<maleFertilityAgeFactor>
 						<points>
 							<li>(14, 0)</li>
-							<li>(35, 1)</li>
-							<li>(175, 1)</li>
-							<li>(275, 0)</li>
+							<li>(22, 1)</li>
+							<li>(115, 1)</li>
+							<li>(180, 0)</li>
 						</points>
 					</maleFertilityAgeFactor>
 					<femaleFertilityAgeFactor>
 						<points>
 							<li>(14, 0)</li>
-							<li>(35, 1)</li>
-							<li>(175, 1)</li>
-							<li>(200, 0.5)</li>
-							<li>(215, 0.1)</li>
-							<li>(230, 0.02)</li>
-							<li>(250, 0)</li>
+							<li>(22, 1)</li>
+							<li>(115, 1)</li>
+							<li>(130, 0.5)</li>
+							<li>(140, 0.1)</li>
+							<li>(150, 0.02)</li>
+							<li>(160, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
 				</reproduction>
@@ -430,7 +430,7 @@
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
 				<xenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Seren_Base</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HalfSerenXeno</li>
 				</xenotypeList>
 				<whiteGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
@@ -614,14 +614,6 @@
 					<minAge>26</minAge>
 				</li>
 			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
-			<specialShadowData>
-				<volume>(0.3, 0.8, 0.4)</volume>
-				<offset>(0,0,-0.3)</offset>
-			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
@@ -632,28 +624,23 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
 					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
 					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(14,0)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(19.5,0)</li>
-					<li>(20,0)</li>
-					<li>(20.001,122)</li>
-					<li>(25,100)</li>
-					<li>(35,130)</li>
-					<li>(50,175)</li>
-					<li>(100,75)</li>
-					<li>(200,20)</li>
-					<li>(225,10)</li>
-					<li>(250,3)</li>
-					<li>(275,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.5,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(15.001,130)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(15.5,0)</li>
+					<li>(16,0)</li>
+					<li>(16.001,122)</li>
+					<li>(22,100)</li>
+					<li>(30,175)</li>
+					<li>(65,75)</li>
+					<li>(130,20)</li>
+					<li>(145,10)</li>
+					<li>(160,3)</li>
+					<li>(180,0)</li>
 				</points>
 			</ageGenerationCurve>
-			<hediffGiverSets>
-				<li>OrganicStandard</li>
-				<li>Human</li>
-			</hediffGiverSets>
 		</race>
 	</AlienRace.ThingDef_AlienRace>
-	
+	<!--
 	<AlienRace.RaceSettings>
 		<defName>Seren_Settings</defName>
 		<pawnKindSettings>
@@ -915,6 +902,6 @@
 				</wounds>
 			</li>
 		</hediffWounds>
-	</FleshTypeDef>
+	</FleshTypeDef>-->
 
 </Defs>
