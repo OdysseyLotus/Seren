@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Seren</defName>
+		<label>seren</label>
+		<description>An alien species native to an Earth-like planet named Panastria. Their original creation myth says that they are made of stardust and fell onto Panastria, but their is no concrete evidence of this. After a failed uprising against the Empire, most are being relocated from their homeworld or imprisoned until further notice.</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.5</maleGenderProbability>
+				<immuneToAge>false</immuneToAge>
+				<disallowedTraits>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Technophobe</defName>
+					</li>
+				</disallowedTraits>
+				<chemicalSettings>
+					<li>
+						<chemical>Serenity</chemical>
+						<ingestible>false</ingestible>
+					</li>
+				</chemicalSettings>
+				<maxDamageForSocialfight>8</maxDamageForSocialfight>
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<notXenophobistTowards>
+					<li MayRequire="Seioch.Naki.HAR">Naki_Race</li>
+				</notXenophobistTowards>
+				<minAgeForAdulthood>20</minAgeForAdulthood>
+				<humanRecipeImport>true</humanRecipeImport>
+				<growthAges>
+					<li>7</li>
+					<li>13</li>
+					<li>20</li>
+				</growthAges>
+				<lovinIntervalHoursFromAge>
+					<points>
+						<li>(16, 3)</li>
+						<li>(70, 3)</li>
+						<li>(100, 4)</li>
+						<li>(120, 6)</li>
+						<li>(170, 8)</li>
+						<li>(220, 16)</li>
+						<li>(275, 48)</li>
+					</points>
+				</lovinIntervalHoursFromAge>
+				<reproduction>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(35, 1)</li>
+							<li>(175, 1)</li>
+							<li>(275, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(35, 1)</li>
+							<li>(175, 1)</li>
+							<li>(200, 0.5)</li>
+							<li>(215, 0.1)</li>
+							<li>(230, 0.02)</li>
+							<li>(250, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+					<hybridSpecific>
+						<li>
+							<partnerRace>Human</partnerRace>
+							<childKindDef>HalfSerenChild</childKindDef>
+						</li>
+					</hybridSpecific>
+				</reproduction>
+				<alienPartGenerator>
+					<bodyTypes>
+						<li>Female</li>
+						<li>Male</li>
+						<li>Thin</li>
+						<li>Hulk</li>
+						<li>Fat</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					</bodyTypes>
+					<headTypes>
+						<li>Male_AverageNormal</li>
+						<li>Male_AveragePointy</li>
+						<li>Male_AverageWide</li>
+						<li>Male_NarrowNormal</li>
+						<li>Male_NarrowPointy</li>
+						<li>Male_NarrowWide</li>
+						<li>Female_AverageNormal</li>
+						<li>Female_AveragePointy</li>
+						<li>Female_AverageWide</li>
+						<li>Female_NarrowNormal</li>
+						<li>Female_NarrowPointy</li>
+						<li>Female_NarrowWide</li>
+					</headTypes>
+					<customDrawSize>(0.95, 0.95)</customDrawSize>
+					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.95, 0.95)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1, 1)</customPortraitHeadDrawSize>
+					<getsGreyAt>235</getsGreyAt>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Blues -->
+									<li>
+										<!-- #407080 -->
+										<weight>8</weight>
+										<only>RGB(64, 112, 128)</only>
+									</li>
+									<li>
+										<!-- #405880 -->
+										<weight>10</weight>
+										<only>RGB(64, 88, 128)</only>
+									</li>
+									<li>
+										<!-- #404080 -->
+										<weight>10</weight>
+										<only>RGB(64, 64, 128)</only>
+									</li>
+									<!-- Purples -->
+									<li>
+										<!-- #504080 -->
+										<weight>10</weight>
+										<only>RGB(80, 64, 128)</only>
+									</li>
+									<li>
+										<!-- #604080 -->
+										<weight>10</weight>
+										<only>RGB(96, 64, 128)</only>
+									</li>
+									<li>
+										<!-- #704080 -->
+										<weight>8</weight>
+										<only>RGB(112, 64, 128)</only>
+									</li>
+									<!-- Pinks -->
+									<li>
+										<!-- #804080 -->
+										<weight>7</weight>
+										<only>RGB(128, 64, 128)</only>
+									</li>
+									<li>
+										<!-- #804070 -->
+										<weight>7</weight>
+										<only>RGB(128, 64, 112)</only>
+									</li>
+									<li>
+										<!-- #804060 -->
+										<weight>6</weight>
+										<only>RGB(128, 64, 96)</only>
+									</li>
+									<!-- Albino, kinda, Rare -->
+									<li>
+										<!-- #f0f0f0 -->
+										<weight>1</weight>
+										<only>RGB(240, 240, 240)</only>
+									</li>
+									<!-- Darker Colors??? Rare -->
+									<li>
+										<!-- #102030 -->
+										<weight>2</weight>
+										<only>RGB(32, 48, 64)</only>
+									</li>
+									<li>
+										<!-- #302040 -->
+										<weight>2</weight>
+										<only>RGB(48, 32, 64)</only>
+									</li>
+									<li>
+										<!-- #402030 -->
+										<weight>1</weight>
+										<only>RGB(64, 32, 48)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<!-- #ffffff, white -->
+										<weight>5</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+									<li>
+										<!-- #fffedb, light yellow -->
+										<weight>5</weight>
+										<only>RGB(255, 254, 219)</only>
+									</li>
+									<li>
+										<!-- #dbf6ff, light blue -->
+										<weight>5</weight>
+										<only>RGB(219, 246, 255)</only>
+									</li>
+									<li>
+										<!-- #d6e6ff, light blue -->
+										<weight>5</weight>
+										<only>RGB(219, 233, 255)</only>
+									</li>
+									<li>
+										<!-- #d4dcff, light blue -->
+										<weight>5</weight>
+										<only>RGB(219, 226, 255)</only>
+									</li>
+									<li>
+										<!-- #e5dbff, light indigo -->
+										<weight>5</weight>
+										<only>RGB(229, 219, 255)</only>
+									</li>
+									<li>
+										<!-- #e9dbff, light purple -->
+										<weight>5</weight>
+										<only>RGB(233, 219, 255)</only>
+									</li>
+									<li>
+										<!-- #f1dbff, light purple -->
+										<weight>5</weight>
+										<only>RGB(241, 219, 255)</only>
+									</li>
+									<li>
+										<!-- #f8dbff, light pink -->
+										<weight>5</weight>
+										<only>RGB(248, 219, 255)</only>
+									</li>
+									<li>
+										<!-- #ffd9fb, light pink -->
+										<weight>5</weight>
+										<only>RGB(255, 217, 251)</only>
+									</li>
+									<li>
+										<!-- #ffdbf1, light pink -->
+										<weight>5</weight>
+										<only>RGB(255, 219, 241)</only>
+									</li>
+									<li>
+										<!-- #ffdbe6, light pink -->
+										<weight>5</weight>
+										<only>RGB(255, 219, 230)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Light Blues -->
+									<li>
+										<!-- #80b0c0 -->
+										<weight>8</weight>
+										<only>RGB(128, 176, 192)</only>
+									</li>
+									<li>
+										<!-- #80a0c0 -->
+										<weight>10</weight>
+										<only>RGB(128, 160, 192)</only>
+									</li>
+									<li>
+										<!-- #8090c0 -->
+										<weight>10</weight>
+										<only>RGB(128, 144, 192)</only>
+									</li>
+									<!-- Dark Blues -->
+									<li>
+										<!-- #204050 -->
+										<weight>5</weight>
+										<only>RGB(32, 64, 80)</only>
+									</li>
+									<li>
+										<!-- #203050 -->
+										<weight>5</weight>
+										<only>RGB(32, 48, 80)</only>
+									</li>
+									<li>
+										<!-- #202050 -->
+										<weight>5</weight>
+										<only>RGB(32, 32, 80)</only>
+									</li>
+									<!-- Light Purples -->
+									<li>
+										<!-- #9080c0 -->
+										<weight>10</weight>
+										<only>RGB(144, 128, 192)</only>
+									</li>
+									<li>
+										<!-- #a080c0 -->
+										<weight>10</weight>
+										<only>RGB(160, 128, 192)</only>
+									</li>
+									<li>
+										<!-- #b080c0 -->
+										<weight>8</weight>
+										<only>RGB(176, 128, 192)</only>
+									</li>
+									<!-- Dark Purples -->
+									<li>
+										<!-- #302050 -->
+										<weight>5</weight>
+										<only>RGB(48, 32, 80)</only>
+									</li>
+									<li>
+										<!-- #402050 -->
+										<weight>5</weight>
+										<only>RGB(64, 32, 80)</only>
+									</li>
+									<li>
+										<!-- #502050 -->
+										<weight>4</weight>
+										<only>RGB(80, 32, 80)</only>
+									</li>
+									<!-- Light Pinks -->
+									<li>
+										<!-- #c080c0 -->
+										<weight>7</weight>
+										<only>RGB(192, 128, 192)</only>
+									</li>
+									<li>
+										<!-- #c080b0 -->
+										<weight>7</weight>
+										<only>RGB(192, 128, 176)</only>
+									</li>
+									<li>
+										<!-- #c080a0 -->
+										<weight>6</weight>
+										<only>RGB(192, 128, 160)</only>
+									</li>
+									<!-- Dark Pinks -->
+									<li>
+										<!-- #502040 -->
+										<weight>4</weight>
+										<only>RGB(80, 32, 64)</only>
+									</li>
+									<li>
+										<!-- #502030 -->
+										<weight>3</weight>
+										<only>RGB(80, 32, 48)</only>
+									</li>
+									<li>
+										<!-- #501020 -->
+										<weight>2</weight>
+										<only>RGB(96, 32, 48)</only>
+									</li>
+									<!-- Albino -->
+									<li>
+										<!-- #f0f0f0 -->
+										<weight>1</weight>
+										<only>RGB(240, 240, 240)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<li>
+							<!-- Left Ear (Average) -->
+							<drawSize>1</drawSize>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
+							<path>Things/Seren/Ears/Average/LeftEar</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<alignWithHead>true</alignWithHead>
+							<drawnInBed>true</drawnInBed>
+							<colorChannel>skin</colorChannel>
+							<drawnDesiccated>false</drawnDesiccated>
+							<inFrontOfBody>true</inFrontOfBody>
+							<ageGraphics>
+								<HumanlikeBaby>Things/Seren/Ears/Average/Baby/LeftEar</HumanlikeBaby>
+								<HumanlikeToddler MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/LeftEar</HumanlikeToddler>
+								<HumanlikeChild>Things/Seren/Ears/Average/Child/LeftEar</HumanlikeChild>
+								<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Average/Child/LeftEar</HumanlikePreTeenager>
+							</ageGraphics>
+							<hediffGraphics>
+								<Cut>
+									<path>Things/Seren/Ears/Average/Cut/LeftEar</path>
+									<hediffGraphics>
+										<Gunshot>
+											<path>Things/Seren/Ears/Average/CG/LeftEar</path>
+											<hediffGraphics>
+												<Frostbite>
+													<path>Things/Seren/Ears/Average/CG/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Average/CG/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Average/CG/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Average/CG/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Average/Cut/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Average/Cut/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Average/Cut/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Average/Cut/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Cut>
+								<Gunshot>
+									<path>Things/Seren/Ears/Average/Gunshot/LeftEar</path>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Average/CG/LeftEar</path>
+											<hediffGraphics>
+												<Frostbite>
+													<path>Things/Seren/Ears/Average/CG/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Average/CG/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Average/CG/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Average/CG/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Frostbite>
+											<path>Things/Seren/Ears/Average/Gunshot/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Average/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Average/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Average/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Gunshot>
+								<Frostbite>
+									<path>Things/Seren/Ears/Average/Frostbite/Moderate/LeftEar</path>
+									<severity>
+										<a0.8>Things/Seren/Ears/Average/Frostbite/Severe/LeftEar</a0.8>
+										<a0.5>Things/Seren/Ears/Average/Frostbite/Moderate/LeftEar</a0.5>
+										<a0.2>Things/Seren/Ears/Average/Frostbite/Minor/LeftEar</a0.2>
+									</severity>
+								</Frostbite>
+							</hediffGraphics>
+							<headtypeGraphics>
+								<Male_NarrowNormal>
+									<path>Things/Seren/Ears/Narrow/LeftEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/LeftEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/LeftEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/LeftEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Male_NarrowNormal>
+								<Male_NarrowPointy>
+									<path>Things/Seren/Ears/Narrow/LeftEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/LeftEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/LeftEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/LeftEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Male_NarrowPointy>
+								<Male_NarrowWide>
+									<path>Things/Seren/Ears/Narrow/LeftEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/LeftEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/LeftEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/LeftEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Male_NarrowWide>
+								<Female_NarrowNormal>
+									<path>Things/Seren/Ears/Narrow/LeftEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/LeftEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/LeftEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/LeftEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Female_NarrowNormal>
+								<Female_NarrowPointy>
+									<path>Things/Seren/Ears/Narrow/LeftEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/LeftEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/LeftEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/LeftEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Female_NarrowPointy>
+								<Female_NarrowWide>
+									<path>Things/Seren/Ears/Narrow/LeftEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/LeftEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/LeftEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/LeftEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/LeftEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/LeftEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/LeftEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/LeftEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/LeftEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/LeftEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/LeftEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/LeftEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/LeftEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/LeftEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/LeftEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/LeftEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/LeftEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Female_NarrowWide>
+							</headtypeGraphics>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+						<li>
+							<!-- Right Ear -->
+							<drawSize>1</drawSize>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
+							<path>Things/Seren/Ears/Average/RightEar</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<alignWithHead>true</alignWithHead>
+							<drawnInBed>true</drawnInBed>
+							<colorChannel>skin</colorChannel>
+							<drawnDesiccated>false</drawnDesiccated>
+							<inFrontOfBody>true</inFrontOfBody>
+							<ageGraphics>
+								<HumanlikeBaby>Things/Seren/Ears/Average/Baby/RightEar</HumanlikeBaby>
+								<HumanlikeToddler MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/RightEar</HumanlikeToddler>
+								<HumanlikeChild>Things/Seren/Ears/Average/Child/RightEar</HumanlikeChild>
+								<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Average/Child/RightEar</HumanlikePreTeenager>
+							</ageGraphics>
+							<hediffGraphics>
+								<Cut>
+									<path>Things/Seren/Ears/Average/Cut/RightEar</path>
+									<hediffGraphics>
+										<Gunshot>
+											<path>Things/Seren/Ears/Average/CG/RightEar</path>
+											<hediffGraphics>
+												<Frostbite>
+													<path>Things/Seren/Ears/Average/CG/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Average/CG/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Average/CG/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Average/CG/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Average/Cut/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Average/Cut/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Average/Cut/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Average/Cut/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Cut>
+								<Gunshot>
+									<path>Things/Seren/Ears/Average/Gunshot/RightEar</path>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Average/CG/RightEar</path>
+											<hediffGraphics>
+												<Frostbite>
+													<path>Things/Seren/Ears/Average/CG/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Average/CG/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Average/CG/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Average/CG/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Frostbite>
+											<path>Things/Seren/Ears/Average/Gunshot/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Average/Gunshot/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Average/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Average/Gunshot/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Gunshot>
+								<Frostbite>
+									<path>Things/Seren/Ears/Average/Frostbite/Moderate/RightEar</path>
+									<severity>
+										<a0.8>Things/Seren/Ears/Average/Frostbite/Severe/RightEar</a0.8>
+										<a0.5>Things/Seren/Ears/Average/Frostbite/Moderate/RightEar</a0.5>
+										<a0.2>Things/Seren/Ears/Average/Frostbite/Minor/RightEar</a0.2>
+									</severity>
+								</Frostbite>
+							</hediffGraphics>
+							<headtypeGraphics>
+								<Male_NarrowNormal>
+									<path>Things/Seren/Ears/Narrow/RightEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/RightEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/RightEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/RightEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/RightEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Male_NarrowNormal>
+								<Male_NarrowPointy>
+									<path>Things/Seren/Ears/Narrow/RightEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/RightEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/RightEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/RightEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/RightEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Male_NarrowPointy>
+								<Male_NarrowWide>
+									<path>Things/Seren/Ears/Narrow/RightEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/RightEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/RightEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/RightEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/RightEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Male_NarrowWide>
+								<Female_NarrowNormal>
+									<path>Things/Seren/Ears/Narrow/RightEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/RightEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/RightEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/RightEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/RightEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Female_NarrowNormal>
+								<Female_NarrowPointy>
+									<path>Things/Seren/Ears/Narrow/RightEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/RightEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/RightEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/RightEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/RightEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Female_NarrowPointy>
+								<Female_NarrowWide>
+									<path>Things/Seren/Ears/Narrow/RightEar</path>
+									<ageGraphics>
+										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
+										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
+										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
+									</ageGraphics>
+									<hediffGraphics>
+										<Cut>
+											<path>Things/Seren/Ears/Narrow/Cut/RightEar</path>
+											<hediffGraphics>
+												<Gunshot>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Gunshot>
+												<Frostbite>
+													<path>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</path>
+													<severity>
+														<a0.8>Things/Seren/Ears/Narrow/Cut/Frostbite/Severe/RightEar</a0.8>
+														<a0.5>Things/Seren/Ears/Narrow/Cut/Frostbite/Moderate/RightEar</a0.5>
+														<a0.2>Things/Seren/Ears/Narrow/Cut/Frostbite/Minor/RightEar</a0.2>
+													</severity>
+												</Frostbite>
+											</hediffGraphics>
+										</Cut>
+										<Gunshot>
+											<path>Things/Seren/Ears/Narrow/Gunshot/RightEar</path>
+											<hediffGraphics>
+												<Cut>
+													<path>Things/Seren/Ears/Narrow/CG/RightEar</path>
+													<hediffGraphics>
+														<Frostbite>
+															<path>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</path>
+															<severity>
+																<a0.8>Things/Seren/Ears/Narrow/CG/Frostbite/Severe/RightEar</a0.8>
+																<a0.5>Things/Seren/Ears/Narrow/CG/Frostbite/Moderate/RightEar</a0.5>
+																<a0.2>Things/Seren/Ears/Narrow/CG/Frostbite/Minor/RightEar</a0.2>
+															</severity>
+														</Frostbite>
+													</hediffGraphics>
+												</Cut>
+											<Frostbite>
+												<path>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</path>
+												<severity>
+													<a0.8>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Severe/RightEar</a0.8>
+													<a0.5>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Moderate/RightEar</a0.5>
+													<a0.2>Things/Seren/Ears/Narrow/Gunshot/Frostbite/Minor/RightEar</a0.2>
+												</severity>
+											</Frostbite>
+											</hediffGraphics>
+										</Gunshot>
+										<Frostbite>
+											<path>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</path>
+											<severity>
+												<a0.8>Things/Seren/Ears/Narrow/Frostbite/Severe/RightEar</a0.8>
+												<a0.5>Things/Seren/Ears/Narrow/Frostbite/Moderate/RightEar</a0.5>
+												<a0.2>Things/Seren/Ears/Narrow/Frostbite/Minor/RightEar</a0.2>
+											</severity>
+										</Frostbite>
+									</hediffGraphics>
+								</Female_NarrowWide>
+							</headtypeGraphics>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+						<li>
+							<!-- Left Sensor -->
+							<drawSize>1</drawSize>
+							<path>Things/Seren/Horns/SerenHornLeft</path>
+							<bodyPart>SerenSensor</bodyPart>
+							<bodyPartLabel>left sensor</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<ageGraphics>
+								<HumanlikeBaby>Things/Seren/Horns/Baby/SerenHornLeft</HumanlikeBaby>
+								<HumanlikeChild>Things/Seren/Horns/Child/SerenHornLeft</HumanlikeChild>
+								<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Horns/Child/SerenHornLeft</HumanlikePreTeenager>
+							</ageGraphics>
+						</li>
+						<li>
+							<!-- Right Sensor -->
+							<drawSize>1</drawSize>
+							<path>Things/Seren/Horns/SerenHornRight</path>
+							<bodyPart>SerenSensor</bodyPart>
+							<bodyPartLabel>right sensor</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<ageGraphics>
+								<HumanlikeBaby>Things/Seren/Horns/Baby/SerenHornRight</HumanlikeBaby>
+								<HumanlikeChild>Things/Seren/Horns/Child/SerenHornRight</HumanlikeChild>
+								<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Horns/Child/SerenHornRight</HumanlikePreTeenager>
+							</ageGraphics>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Seren/Heads/</head>
+				<headMasks>Things/Seren/Masks/Head/Mask</headMasks>
+				<bodyMasks>Things/Seren/Masks/Body/Mask</bodyMasks>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+				</cannotReceiveThoughts>
+				<butcherThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Seren</li>
+						</raceList>
+						<thought>ButcheredSeren</thought>
+						<knowThought>KnowButcheredSeren</knowThought>
+					</li>
+				</butcherThoughtSpecific>
+				<ateThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Seren</li>
+						</raceList>
+						<thought>SerenCannibalism</thought>
+						<ingredientThought>SerenCannibalism</ingredientThought>
+					</li>
+				</ateThoughtSpecific>
+			</thoughtSettings>
+			<raceRestriction>
+				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
+				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
+				<xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Seren_Base</li>
+				</xenotypeList>
+				<whiteGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</li>
+				</whiteGeneList>
+				<whiteGeneTags>
+					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSkinColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">SerenHairColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSensors</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">SerenMarkings</li>
+				</whiteGeneTags>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_BushyOnly</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_Always</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Deaf</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Dull</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+				</blackEndoCategories>
+			</raceRestriction>
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+			</compatibility>
+		</alienRace>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>5.5</MoveSpeed>
+			<PsychicSensitivity>1.5</PsychicSensitivity>
+			<Mass>55</Mass>
+			<LeatherAmount>50</LeatherAmount>
+			<MeatAmount>100</MeatAmount>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<AimingDelayFactor>0.8</AimingDelayFactor>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+			<InjuryHealingFactor>1.1</InjuryHealingFactor>
+			<PlantWorkSpeed>0.8</PlantWorkSpeed>
+			<PlantHarvestYield>1.05</PlantHarvestYield>
+			<AnimalGatherSpeed>0.8</AnimalGatherSpeed>
+			<AnimalGatherYield>1.05</AnimalGatherYield>
+			<TameAnimalChance>0.8</TameAnimalChance>
+			<TrainAnimalChance>0.8</TrainAnimalChance>
+			<BondAnimalChanceFactor>0.8</BondAnimalChanceFactor>
+			<MiningSpeed>0.8</MiningSpeed>
+			<MiningYield>1.05</MiningYield>
+			<ConstructionSpeed>0.8</ConstructionSpeed>
+			<ConstructSuccessChance>1.05</ConstructSuccessChance>
+			<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+			<CookSpeed>1.1</CookSpeed>
+			<FoodPoisonChance>0.9</FoodPoisonChance>
+			<DrugSynthesisSpeed>1.1</DrugSynthesisSpeed>
+			<DrugCookingSpeed>1.1</DrugCookingSpeed>
+			<MedicalTendSpeed>1.2</MedicalTendSpeed>
+			<MedicalTendQuality>1.1</MedicalTendQuality>
+			<MedicalOperationSpeed>1.2</MedicalOperationSpeed>
+			<MedicalSurgerySuccessChance>1.05</MedicalSurgerySuccessChance>
+			<CarryingCapacity>60</CarryingCapacity>
+			<MeleeDodgeChance>1.1</MeleeDodgeChance>
+			<NegotiationAbility>1.2</NegotiationAbility>
+			<TradePriceImprovement>1.2</TradePriceImprovement>
+			<SocialImpact>1.1</SocialImpact>
+			<PainShockThreshold>0.7</PainShockThreshold>
+			<MentalBreakThreshold>0.4</MentalBreakThreshold>
+			<RoyalFavorValue>3</RoyalFavorValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.1</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<hasGenders>true</hasGenders>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>275</lifeExpectancy>
+			<bloodDef>Filth_SerenBlood</bloodDef>
+			<leatherDef>SerenLeather</leatherDef>
+			<fleshType>Seren</fleshType>
+			<nameCategory>HumanStandard</nameCategory>
+			<body>Seren_Body</body>
+			<baseBodySize>0.95</baseBodySize>
+			<baseHealthScale>0.85</baseHealthScale>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<foodType>OmnivoreHuman</foodType>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.3)</li>
+					<li>(2.01, 0.1)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li MayRequire="cyanobot.toddlers">
+					<def>HumanlikeToddler</def>
+					<minAge>1</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>20</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>35</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(19.5,0)</li>
+					<li>(20,0)</li>
+					<li>(20.001,122)</li>
+					<li>(25,100)</li>
+					<li>(35,130)</li>
+					<li>(50,175)</li>
+					<li>(100,75)</li>
+					<li>(200,20)</li>
+					<li>(225,10)</li>
+					<li>(250,3)</li>
+					<li>(275,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<AlienRace.RaceSettings>
+		<defName>Seren_Settings</defName>
+		<pawnKindSettings>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenColonist</li>
+							</kindDefs>
+							<chance>10</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenColonist</li>
+							</kindDefs>
+							<chance>100</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>SerenPlayerBase</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenTribalPlayer</li>
+							</kindDefs>
+							<chance>5</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerTribe</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenMedievalPlayer</li>
+							</kindDefs>
+							<chance>5</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>VFEM_PlayerKingdom</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenSettlersPlayer</li>
+							</kindDefs>
+							<chance>5</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>VFES_PlayerSettlement</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="OskarPotocki.VFE.Vikings">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenVikingPlayer</li>
+							</kindDefs>
+							<chance>5</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>VFEV_PlayerClan</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="OskarPotocki.VFE.Pirates">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenPiratePlayer</li>
+							</kindDefs>
+							<chance>10</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>VFEP_PlayerPirate</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="OskarPotocki.VFE.Classical">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenClassicalPlayer</li>
+							</kindDefs>
+							<chance>5</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>VFEC_NewEmpire</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="Trickity.Samurai.Faction">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenRoninPlayer</li>
+							</kindDefs>
+							<chance>10</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>TSF_PlayerRonin</li>
+					</factionDefs>
+				</li>
+				<li MayRequire="Heis.Edo.Themed.Expansion">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenEdoPlayer</li>
+							</kindDefs>
+							<chance>10</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>TSF_PlayerRonin</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>SerenRefugee</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienrefugeekinds>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>SerenSlave</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienslavekinds>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenWanderer</li>
+							</kindDefs>
+							<chance>10.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>SerenCivilBase</li> 
+						<li>OutlanderCivil</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+	
+	<FleshTypeDef>
+		<defName>Seren</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Damage_HitFlesh</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Things/Seren/Wounds/WoundFleshA</texture>
+			</li>
+			<li>
+				<texture>Things/Seren/Wounds/WoundFleshB</texture>
+			</li>
+			<li>
+				<texture>Things/Seren/Wounds/WoundFleshC</texture>
+			</li>
+		</genericWounds>
+		<bandagedWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedC</texture>
+			</li>
+		</bandagedWounds>
+		<hediffWounds>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<hediff>Scarification</hediff>
+				<wounds>
+					<li>
+						<texture>Things/Pawn/Wounds/ScarificationA</texture>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<displayOverApparel>false</displayOverApparel>
+						<displayPermanent>false</displayPermanent>
+						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+					</li>
+					<li>
+						<texture>Things/Pawn/Wounds/ScarificationB</texture>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<displayOverApparel>false</displayOverApparel>
+						<displayPermanent>false</displayPermanent>
+						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+					</li>
+					<li>
+						<texture>Things/Pawn/Wounds/ScarificationC</texture>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<displayOverApparel>false</displayOverApparel>
+						<displayPermanent>false</displayPermanent>
+						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+					</li>
+				</wounds>
+			</li>
+			<li>
+				<hediff>MissingBodyPart</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<missingBodyPartFresh>false</missingBodyPartFresh>
+						<scale>0.7</scale>
+						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+					</li>
+					<li>
+						<textureSouth>Things/Seren/Wounds/MissingEye_Fresh</textureSouth>
+						<textureNorth>Things/Seren/Wounds/MissingEye_Fresh</textureNorth>
+						<textureEast>Things/Seren/Wounds/MissingEye_Fresh</textureEast>
+						<textureWest>Things/Seren/Wounds/MissingEye_Fresh</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<missingBodyPartFresh>true</missingBodyPartFresh>
+						<scale>0.7</scale>
+						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+					</li>
+				</wounds>
+			</li>
+		</hediffWounds>
+	</FleshTypeDef>
+
+</Defs>
