@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="Human">
+	<AlienRace.ThingDef_AlienRace ParentName="SerenHAR">
 		<defName>HalfSeren</defName>
 		<label>half-seren</label>
-		<description></description>
+		<description>A hybrid species from a seren and a human. They have traits from both species, having a long lifespan, high psychic sensitivity, and perform better at psychical tasks than regular seren.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.5</maleGenderProbability>
@@ -15,6 +15,10 @@
 						<ingestible>false</ingestible>
 					</li>
 				</chemicalSettings>
+				<notXenophobistTowards>
+					<li>Seren</li>
+					<li>Human</li>
+				</notXenophobistTowards>
 				<minAgeForAdulthood>18</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<growthAges>
@@ -24,13 +28,12 @@
 				</growthAges>
 				<lovinIntervalHoursFromAge>
 					<points>
-						<li>(16, 3)</li>
-						<li>(45, 3)</li>
-						<li>(65, 4)</li>
+						<li>(16, 2)</li>
+						<li>(45, 2)</li>
 						<li>(80, 6)</li>
 						<li>(110, 8)</li>
-						<li>(145, 16)</li>
-						<li>(180, 48)</li>
+						<li>(145, 14)</li>
+						<li>(180, 42)</li>
 					</points>
 				</lovinIntervalHoursFromAge>
 				<reproduction>
@@ -55,29 +58,6 @@
 					</femaleFertilityAgeFactor>
 				</reproduction>
 				<alienPartGenerator>
-					<bodyTypes>
-						<li>Female</li>
-						<li>Male</li>
-						<li>Thin</li>
-						<li>Hulk</li>
-						<li>Fat</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
-					</bodyTypes>
-					<headTypes>
-						<li>Male_AverageNormal</li>
-						<li>Male_AveragePointy</li>
-						<li>Male_AverageWide</li>
-						<li>Male_NarrowNormal</li>
-						<li>Male_NarrowPointy</li>
-						<li>Male_NarrowWide</li>
-						<li>Female_AverageNormal</li>
-						<li>Female_AveragePointy</li>
-						<li>Female_AverageWide</li>
-						<li>Female_NarrowNormal</li>
-						<li>Female_NarrowPointy</li>
-						<li>Female_NarrowWide</li>
-					</headTypes>
 					<customDrawSize>(1, 1)</customDrawSize>
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
@@ -90,73 +70,73 @@
 								<options>
 									<!-- Blues -->
 									<li>
-										<!-- #407080 -->
+										<!-- #99a18d -->
 										<weight>8</weight>
-										<only>RGB(64, 112, 128)</only>
+										<only>RGB(155, 160, 140)</only>
 									</li>
 									<li>
-										<!-- #405880 -->
+										<!-- #4e4d4e -->
 										<weight>10</weight>
-										<only>RGB(64, 88, 128)</only>
+										<only>RGB(80, 80, 80)</only>
 									</li>
 									<li>
-										<!-- #404080 -->
+										<!-- #99898d -->
 										<weight>10</weight>
-										<only>RGB(64, 64, 128)</only>
+										<only>RGB(155, 140, 140)</only>
 									</li>
 									<!-- Purples -->
 									<li>
-										<!-- #504080 -->
+										<!-- #856c63 -->
 										<weight>10</weight>
-										<only>RGB(80, 64, 128)</only>
+										<only>RGB(135, 110, 100)</only>
 									</li>
 									<li>
-										<!-- #604080 -->
+										<!-- #5e414e -->
 										<weight>10</weight>
-										<only>RGB(96, 64, 128)</only>
+										<only>RGB(95, 65, 80)</only>
 									</li>
 									<li>
-										<!-- #704080 -->
+										<!-- #a28187 -->
 										<weight>8</weight>
-										<only>RGB(112, 64, 128)</only>
+										<only>RGB(160, 130, 135)</only>
 									</li>
 									<!-- Pinks -->
 									<li>
-										<!-- #804080 -->
+										<!-- #956c5e -->
 										<weight>7</weight>
-										<only>RGB(128, 64, 128)</only>
+										<only>RGB(150, 110, 95)</only>
 									</li>
 									<li>
-										<!-- #804070 -->
+										<!-- #6e4146 -->
 										<weight>7</weight>
-										<only>RGB(128, 64, 112)</only>
+										<only>RGB(110, 65, 70)</only>
 									</li>
 									<li>
-										<!-- #804060 -->
+										<!-- #b2817f -->
 										<weight>6</weight>
-										<only>RGB(128, 64, 96)</only>
+										<only>RGB(180, 130, 130)</only>
 									</li>
 									<!-- Albino, kinda, Rare -->
 									<li>
-										<!-- #f0f0f0 -->
+										<!-- #ead9bf -->
 										<weight>1</weight>
-										<only>RGB(240, 240, 240)</only>
+										<only>RGB(235, 220, 190)</only>
 									</li>
 									<!-- Darker Colors??? Rare -->
 									<li>
-										<!-- #102030 -->
+										<!-- #363126 -->
 										<weight>2</weight>
-										<only>RGB(32, 48, 64)</only>
+										<only>RGB(55, 80, 40)</only>
 									</li>
 									<li>
-										<!-- #302040 -->
+										<!-- #46312e -->
 										<weight>2</weight>
-										<only>RGB(48, 32, 64)</only>
+										<only>RGB(70, 50, 45)</only>
 									</li>
 									<li>
-										<!-- #402030 -->
+										<!-- #4e3126 -->
 										<weight>1</weight>
-										<only>RGB(64, 32, 48)</only>
+										<only>RGB(80, 50, 40)</only>
 									</li>
 								</options>
 							</first>
@@ -224,115 +204,6 @@
 									</li>
 								</options>
 							</second>
-						</li>
-						<li>
-							<name>hair</name>
-							<first Class="ColorGenerator_Options">
-								<options>
-									<!-- Light Blues -->
-									<li>
-										<!-- #80b0c0 -->
-										<weight>8</weight>
-										<only>RGB(128, 176, 192)</only>
-									</li>
-									<li>
-										<!-- #80a0c0 -->
-										<weight>10</weight>
-										<only>RGB(128, 160, 192)</only>
-									</li>
-									<li>
-										<!-- #8090c0 -->
-										<weight>10</weight>
-										<only>RGB(128, 144, 192)</only>
-									</li>
-									<!-- Dark Blues -->
-									<li>
-										<!-- #204050 -->
-										<weight>5</weight>
-										<only>RGB(32, 64, 80)</only>
-									</li>
-									<li>
-										<!-- #203050 -->
-										<weight>5</weight>
-										<only>RGB(32, 48, 80)</only>
-									</li>
-									<li>
-										<!-- #202050 -->
-										<weight>5</weight>
-										<only>RGB(32, 32, 80)</only>
-									</li>
-									<!-- Light Purples -->
-									<li>
-										<!-- #9080c0 -->
-										<weight>10</weight>
-										<only>RGB(144, 128, 192)</only>
-									</li>
-									<li>
-										<!-- #a080c0 -->
-										<weight>10</weight>
-										<only>RGB(160, 128, 192)</only>
-									</li>
-									<li>
-										<!-- #b080c0 -->
-										<weight>8</weight>
-										<only>RGB(176, 128, 192)</only>
-									</li>
-									<!-- Dark Purples -->
-									<li>
-										<!-- #302050 -->
-										<weight>5</weight>
-										<only>RGB(48, 32, 80)</only>
-									</li>
-									<li>
-										<!-- #402050 -->
-										<weight>5</weight>
-										<only>RGB(64, 32, 80)</only>
-									</li>
-									<li>
-										<!-- #502050 -->
-										<weight>4</weight>
-										<only>RGB(80, 32, 80)</only>
-									</li>
-									<!-- Light Pinks -->
-									<li>
-										<!-- #c080c0 -->
-										<weight>7</weight>
-										<only>RGB(192, 128, 192)</only>
-									</li>
-									<li>
-										<!-- #c080b0 -->
-										<weight>7</weight>
-										<only>RGB(192, 128, 176)</only>
-									</li>
-									<li>
-										<!-- #c080a0 -->
-										<weight>6</weight>
-										<only>RGB(192, 128, 160)</only>
-									</li>
-									<!-- Dark Pinks -->
-									<li>
-										<!-- #502040 -->
-										<weight>4</weight>
-										<only>RGB(80, 32, 64)</only>
-									</li>
-									<li>
-										<!-- #502030 -->
-										<weight>3</weight>
-										<only>RGB(80, 32, 48)</only>
-									</li>
-									<li>
-										<!-- #501020 -->
-										<weight>2</weight>
-										<only>RGB(96, 32, 48)</only>
-									</li>
-									<!-- Albino -->
-									<li>
-										<!-- #f0f0f0 -->
-										<weight>1</weight>
-										<only>RGB(240, 240, 240)</only>
-									</li>
-								</options>
-							</first>
 						</li>
 					</colorChannels>
 					<bodyAddons>
@@ -410,9 +281,10 @@
 						<raceList>
 							<li>Seren</li>
 							<li>Human</li>
+							<li>HalfSeren</li>
 						</raceList>
-						<thought>HalfButcheredSeren</thought>
-						<knowThought>HalfKnowButcheredSeren</knowThought>
+						<thought>ButcheredHalfSeren</thought>
+						<knowThought>KnowButcheredHalfSeren</knowThought>
 					</li>
 				</butcherThoughtSpecific>
 				<ateThoughtSpecific>
@@ -420,6 +292,7 @@
 						<raceList>
 							<li>Seren</li>
 							<li>Human</li>
+							<li>HalfSeren</li>
 						</raceList>
 						<thought>HalfSerenCannibalism</thought>
 						<ingredientThought>HalfSerenCannibalism</ingredientThought>
@@ -430,7 +303,7 @@
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
 				<xenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HalfSerenXeno</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Seren</li>
 				</xenotypeList>
 				<whiteGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
@@ -502,7 +375,7 @@
 			<MentalBreakThreshold>0.35</MentalBreakThreshold>
 			<RoyalFavorValue>3</RoyalFavorValue>
 		</statBases>
-		<tools>
+		<tools Inherit-="false">
 			<li>
 				<label>left fist</label>
 				<capacities>
@@ -588,7 +461,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeStageAges>
+			<lifeStageAges Inherit="false">
 				<li>
 					<def>HumanlikeBaby</def>
 					<minAge>0</minAge>

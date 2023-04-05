@@ -339,6 +339,35 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]/alienRace/generalSettings/alienPartGenerator/headTypes</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]/alienRace/graphicPaths/headMasks</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]/alienRace/graphicPaths/head</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]/alienRace/generalSettings/lovinIntervalHoursFromAge</xpath>
+				<value>
+					<lovinIntervalHoursFromAge>
+						<points>
+							<li>(16, 1.5)</li>
+							<li>(45, 1.5)</li>
+							<li>(80, 4)</li>
+							<li>(110, 8)</li>
+							<li>(145, 12)</li>
+							<li>(180, 36)</li>
+						</points>
+					</lovinIntervalHoursFromAge>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	<!--
 	<Operation Class="PatchOperationSequence">
 		<operations>

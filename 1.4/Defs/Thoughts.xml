@@ -55,5 +55,61 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	
+	<ThoughtDef>
+		<defName>HalfSerenCannibalism</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>cannibalism</label>
+				<description>I ate the meat of one of my people, not a good feeling.</description>
+				<baseMoodEffect>-25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>ButcheredHalfSeren</defName>
+		<durationDays>6</durationDays>
+		<stackLimit>4</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>I butchered seren</label>
+				<description>I butchered one of my people, we do what we have to, even if it feels wrong.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>KnowButcheredHalfSeren</defName>
+		<durationDays>6</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>we butchered seren</label>
+				<description>We butchered another one my people, we do what we have to, even if it feels wrong.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>

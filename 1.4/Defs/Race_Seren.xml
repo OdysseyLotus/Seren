@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="SerenHAR">
 		<defName>Seren</defName>
 		<label>seren</label>
 		<description>An alien species native to an Earth-like planet named Panastria. Their original creation myth says that they are made of stardust and fell onto Panastria, but their is no concrete evidence of this. After a failed uprising against the Empire, most are being relocated from their homeworld or imprisoned until further notice.</description>
@@ -24,6 +24,7 @@
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<notXenophobistTowards>
 					<li MayRequire="Seioch.Naki.HAR">Naki_Race</li>
+					<li>HalfSeren</li>
 				</notXenophobistTowards>
 				<minAgeForAdulthood>20</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
