@@ -15,8 +15,8 @@
 			<li>Body_Standard</li>
 			<li>LotusEyes_Seren</li>
 			<li>Ears_Seren</li>
-			<li>SerenDarkVision</li>
-			<li>SerenElongatedFingers</li>
+			<li>OLDarkVision</li>
+			<li>OLElongatedFingers</li>
 			<li>Libido_Low</li>
 			<li MayRequire="sarg.alphagenes">AG_SlowGestation</li>
 			

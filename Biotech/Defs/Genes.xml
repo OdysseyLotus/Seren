@@ -726,7 +726,7 @@
 	</GeneDef>
 	
 	<GeneDef>
-		<defName>SerenDarkVision</defName>
+		<defName>OLDarkVision</defName>
 		<label>dark vision</label>
 		<description>Carriers of this gene see well in low light and are unaffected by mood penalties related to darkness. They have a reflective layer behind the retina that amplifies their ability to see in the dark.</description>
 		<iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
@@ -751,7 +751,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHandsBase">
-		<defName>SerenElongatedFingers</defName>
+		<defName>OLElongatedFingers</defName>
 		<label>elongated fingers</label>
 		<description>Long, delicate fingers improve the carrier's manipulation capacity. This aids with many tasks, especially crafting and construction.</description>
 		<iconPath>UI/Icons/Genes/Gene_ElongatedFingers</iconPath>
