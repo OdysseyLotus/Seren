@@ -62,6 +62,63 @@
 						</li>
 					</value>
 				</li>
+				
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]</xpath>
+					<value>
+						<li Class="BetterRomance.SexualityChances">
+							<asexualChance>10</asexualChance>
+							<bisexualChance>40</bisexualChance>
+							<gayChance>20</gayChance>
+							<straightChance>30</straightChance>
+							
+							<aceAroChance>10</aceAroChance>
+							<aceBiChance>40</aceBiChance>
+							<aceHomoChance>20</aceHomoChance>
+							<aceHeteroChance>30</aceHeteroChance>
+						</li>
+					</value>
+				</li>
+				<li Class ="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]</xpath>
+					<value>
+						<li Class="BetterRomance.CasualSexSettings">
+							<caresAboutCheating>True</caresAboutCheating>
+							<willDoHookup>True</willDoHookup>
+							<hookupTriggers>
+								<minOpinion>15</minOpinion>
+								<mustBeFertile>False</mustBeFertile>
+							</hookupTriggers>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]</xpath>
+					<value>
+						<li Class="BetterRomance.RegularSexSettings">
+							<minAgeForSex>16</minAgeForSex>
+							<maxAgeForSex>170</maxAgeForSex>
+							<maxAgeGap>50</maxAgeGap>
+							<declineAtAge>115</declineAtAge>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]</xpath>
+					<value>
+						<li Class="BetterRomance.RelationSettings">
+							<maxFemaleAgeToHaveChildren>130</maxFemaleAgeToHaveChildren>
+							<maxMaleAgeToHaveChildren>165</maxMaleAgeToHaveChildren>
+							<spousesAllowed>True</spousesAllowed>
+							<minFemaleAgeToHaveChildren>16</minFemaleAgeToHaveChildren>
+							<usualFemaleAgeToHaveChildren>50</usualFemaleAgeToHaveChildren>
+							<minMaleAgeToHaveChildren>16</minMaleAgeToHaveChildren>
+							<usualMaleAgeToHaveChildren>50</usualMaleAgeToHaveChildren>
+							<maxChildrenDesired>6</maxChildrenDesired>
+						</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
