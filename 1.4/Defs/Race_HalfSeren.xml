@@ -303,7 +303,7 @@
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
 				<xenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Seren</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Seren_Base</li>
 				</xenotypeList>
 				<whiteGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
