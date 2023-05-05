@@ -16,7 +16,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
 		<skinColorBase>(64, 112, 128)</skinColorBase>
 		<displayOrderInCategory>10001</displayOrderInCategory>
-		<selectionWeight>0.8</selectionWeight>
+		<selectionWeight>0.08</selectionWeight>
 		<!--<minMelanin>0.1</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -34,7 +34,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
 		<skinColorBase>(64, 88, 128)</skinColorBase>
 		<displayOrderInCategory>10002</displayOrderInCategory>
-		<selectionWeight>0.9</selectionWeight>
+		<selectionWeight>0.09</selectionWeight>
 		<!--<minMelanin>0.2</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -52,7 +52,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
 		<skinColorBase>(64, 64, 128)</skinColorBase>
 		<displayOrderInCategory>10003</displayOrderInCategory>
-		<selectionWeight>0.9</selectionWeight>
+		<selectionWeight>0.09</selectionWeight>
 		<!--<minMelanin>0.3</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -70,7 +70,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
 		<skinColorBase>(80, 64, 128)</skinColorBase>
 		<displayOrderInCategory>10004</displayOrderInCategory>
-		<selectionWeight>0.9</selectionWeight>
+		<selectionWeight>0.09</selectionWeight>
 		<!--<minMelanin>0.4</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -88,7 +88,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
 		<skinColorBase>(96, 64, 128)</skinColorBase>
 		<displayOrderInCategory>10005</displayOrderInCategory>
-		<selectionWeight>0.9</selectionWeight>
+		<selectionWeight>0.09</selectionWeight>
 		<!--<minMelanin>0.5</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -106,7 +106,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
 		<skinColorBase>(112, 64, 128)</skinColorBase>
 		<displayOrderInCategory>10006</displayOrderInCategory>
-		<selectionWeight>0.8</selectionWeight>
+		<selectionWeight>0.08</selectionWeight>
 		<!--<minMelanin>0.6</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -125,7 +125,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
 		<skinColorBase>(128, 64, 128)</skinColorBase>
 		<displayOrderInCategory>10007</displayOrderInCategory>
-		<selectionWeight>0.7</selectionWeight>
+		<selectionWeight>0.07</selectionWeight>
 		<!--<minMelanin>0.7</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -142,7 +142,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
 		<skinColorBase>(128, 64, 112)</skinColorBase>
 		<displayOrderInCategory>10008</displayOrderInCategory>
-		<selectionWeight>0.7</selectionWeight>
+		<selectionWeight>0.07</selectionWeight>
 		<!--<minMelanin>0.8</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -159,7 +159,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
 		<skinColorBase>(128, 64, 96)</skinColorBase>
 		<displayOrderInCategory>10009</displayOrderInCategory>
-		<selectionWeight>0.6</selectionWeight>
+		<selectionWeight>0.06</selectionWeight>
 		<!--<minMelanin>0.9</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -177,7 +177,7 @@
 		<description>Carriers of this gene lack any pigmentation in their skin.</description>
 		<skinColorBase>(240, 240, 240)</skinColorBase>
 		<displayOrderInCategory>10010</displayOrderInCategory>
-		<selectionWeight>0.05</selectionWeight>
+		<selectionWeight>0.005</selectionWeight>
 		<!--<minMelanin>0</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -194,7 +194,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of blue.</description>
 		<skinColorBase>(32, 48, 64)</skinColorBase>
 		<displayOrderInCategory>10010</displayOrderInCategory>
-		<selectionWeight>0.1</selectionWeight>
+		<selectionWeight>0.01</selectionWeight>
 		<!--<minMelanin>0.35</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -212,7 +212,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of purple.</description>
 		<skinColorBase>(48, 32, 64)</skinColorBase>
 		<displayOrderInCategory>10010</displayOrderInCategory>
-		<selectionWeight>0.1</selectionWeight>
+		<selectionWeight>0.01</selectionWeight>
 		<!--minMelanin>0.65</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
@@ -230,7 +230,7 @@
 		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of pink.</description>
 		<skinColorBase>(64, 32, 48)</skinColorBase>
 		<displayOrderInCategory>10010</displayOrderInCategory>
-		<selectionWeight>0.1</selectionWeight>
+		<selectionWeight>0.01</selectionWeight>
 		<!--<minMelanin>0.95</minMelanin>-->
 		<symbolPack>
 			<prefixSymbols>
