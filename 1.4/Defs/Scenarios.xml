@@ -9,7 +9,7 @@
 			<summary>Four seren relocate to a rimworld.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>SioraiPlayerBase</factionDef>
+				<factionDef>SerenPlayerBase</factionDef>
 			</playerFaction>
 			<parts>
 				<!-- Starting Pawns -->

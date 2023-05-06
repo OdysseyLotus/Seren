@@ -313,9 +313,9 @@
 	
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationRemove">
+			<!--<li Class="PatchOperationRemove">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/headTypes</xpath>
-			</li>
+			</li>-->
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/graphicPaths/headMasks</xpath>
 			</li>
@@ -339,7 +339,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+	<!--
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -367,7 +367,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation>-->
 	<!--
 	<Operation Class="PatchOperationSequence">
 		<operations>

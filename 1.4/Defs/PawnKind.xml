@@ -201,7 +201,7 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>8~20</initialResistanceRange>
 	</PawnKindDef>
-	
+	<!--
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>HalfSerenChild</defName>
 		<label>seren</label>
@@ -230,7 +230,7 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>8~20</initialResistanceRange>
-	</PawnKindDef>
+	</PawnKindDef>-->
 	
 	<PawnKindDef ParentName="SerenPsycasterModel">
 		<defName>SerenAstropath</defName>

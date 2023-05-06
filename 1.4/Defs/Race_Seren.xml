@@ -24,7 +24,7 @@
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<notXenophobistTowards>
 					<li MayRequire="Seioch.Naki.HAR">Naki_Race</li>
-					<li>HalfSeren</li>
+					<!--<li>HalfSeren</li>-->
 				</notXenophobistTowards>
 				<minAgeForAdulthood>20</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
@@ -64,12 +64,12 @@
 							<li>(250, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
-					<hybridSpecific>
+					<!--<hybridSpecific>
 						<li>
 							<partnerRace>Human</partnerRace>
 							<childKindDef>HalfSerenChild</childKindDef>
 						</li>
-					</hybridSpecific>
+					</hybridSpecific>-->
 				</reproduction>
 				<alienPartGenerator>
 					<bodyTypes>
