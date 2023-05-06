@@ -249,7 +249,7 @@
 				<bodyMasks>Things/Seren/Masks/Body/Mask</bodyMasks>
 				<skinShader>Cutout</skinShader>
 			</graphicPaths>
-			<styleSettings>
+			<styleSettings Inherit="false">
 				<li>
 					<key>HairDef</key>
 					<value>

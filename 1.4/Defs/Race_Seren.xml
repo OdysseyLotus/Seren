@@ -1475,10 +1475,10 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Dull</li>
 				</blackGeneList>
 				<blackGeneTags>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+					<li>HairColor</li>
 				</blackGeneTags>
 				<blackEndoCategories>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+					<li>Melanin</li>
 				</blackEndoCategories>
 			</raceRestriction>
 			<compatibility>
