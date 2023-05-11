@@ -452,8 +452,8 @@
 			<foodType>OmnivoreHuman</foodType>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
-			<litterSizeCurve>
-				<points>
+			<litterSizeCurve Inherit="false">
+				<points Inherit="false">
 					<li>(0.5, 0)</li>
 					<li>(1, 1)</li>
 					<li>(1.01, 0.15)</li>
