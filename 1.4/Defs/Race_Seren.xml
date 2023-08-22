@@ -59,9 +59,8 @@
 							<li>(35, 1)</li>
 							<li>(175, 1)</li>
 							<li>(200, 0.5)</li>
-							<li>(215, 0.1)</li>
-							<li>(230, 0.02)</li>
-							<li>(250, 0)</li>
+							<li>(215, 0.02)</li>
+							<li>(230, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
 					<!--<hybridSpecific>
