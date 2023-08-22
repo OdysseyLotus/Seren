@@ -73,7 +73,7 @@
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<!--<XenotypeDef>
 		<defName>HalfSeren</defName>
 		<label>Half Seren</label>
 		<description>A seren phenotype.</description>
@@ -108,5 +108,5 @@
 			<li>SerenMarkings_Target</li>
 			<li>SerenMarkings_Tristar</li>
 		</genes>
-	</XenotypeDef>
+	</XenotypeDef>-->
  </Defs>
