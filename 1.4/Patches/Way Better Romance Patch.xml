@@ -63,7 +63,7 @@
 					</value>
 				</li>
 				
-				
+				<!--
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HalfSeren"]</xpath>
 					<value>
@@ -119,6 +119,7 @@
 						</li>
 					</value>
 				</li>
+				-->
 			</operations>
 		</match>
 	</Operation>

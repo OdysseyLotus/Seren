@@ -21,7 +21,7 @@
 	</GeneDef>
 	
 	<!-- Addons -->
-	<GeneDef Name="GeneEarsBase">
+	<GeneDef ParentName="GeneEarsBase">
 		<defName>Ears_Seren</defName>
 		<label>seren ears</label>
 		<description>Carriers of this gene have seren-like ears.</description>
