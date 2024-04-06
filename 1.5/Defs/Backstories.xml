@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Base
+	<AlienRace.AlienBackstoryDef>
+		<defName></defName>
+		<title></title>
+		<titleShort></titleShort>
+		<description></description>
+		<slot></slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<></>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName></defName>
+				<chance></chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName></defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li></li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	-->
+	
+	<AlienRace.AlienBackstoryDef Name="SerenBackstoryBase" Abstract="True">
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Childhood -->
+	<!-- 1 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenOrphan</defName>
+		<title>orphan</title>
+		<titleShort>orphan</titleShort>
+		<description>[PAWN_nameDef] was orphaned at a young age. [PAWN_pronoun] was traumatized by the violence that took [PAWN_possessive] parents away and swore to never inflict that on someone else.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Desensitized</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<relationSettings>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+		</relationSettings>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 2 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenAdoptedChild</defName>
+		<title>adopted child</title>
+		<titleShort>adopted</titleShort>
+		<description>[PAWN_nameDef] was adopted at a young age by human parents from the Empire. [PAWN_pronoun] did not learn much about [PAWN_possessive] home planet or the Seren culture. [PAWN_pronoun] often feel isolated from other Seren because of it.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Anxious</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<relationSettings>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+		</relationSettings>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 3 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenProphecyChild</defName>
+		<title>seren prophecy child</title>
+		<titleShort>prophecy child</titleShort>
+		<description>[PAWN_nameDef] was born on the day that all the stars aligned on Panastria, fulfilling a minor prophecy from one of the local fortune-tellers. [PAWN_pronoun] was treated like royalty by the locals and pampered into adulthood.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>1</Social>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 4 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenStardustChild</defName>
+		<title>stardust child</title>
+		<titleShort>stardust child</titleShort>
+		<description>[PAWN_nameDef] was said to have fallen from the sky, a new Seren created from the stardust in space before falling to Panastria. A local astronomer alleged found [PAWN_possessive] after witnessing [PAWN_possessive] fall, but it is unknown whether this tale is true.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>1</Animals>
+			<Artistic>1</Artistic>
+			<Construction>1</Construction>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Plants>1</Plants>
+			<Medicine>1</Medicine>
+			<Melee>1</Melee>
+			<Mining>1</Mining>
+			<Intellectual>1</Intellectual>
+			<Shooting>1</Shooting>
+			<Social>1</Social>
+		</skillGains>
+		<relationSettings>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+		</relationSettings>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 5 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenSpaceStationChild</defName>
+		<title>space station child</title>
+		<titleShort>space child</titleShort>
+		<description>[PAWN_nameDef] was born on a Seren space station orbiting one of Panastria's moons. [PAWN_pronoun] spent [PAWN_possessive] entire childhood on the space station, having no contact with any plants or animals.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Medicine>2</Medicine>
+			<Mining>-2</Mining>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AnimalLover</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Ecologist</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Menagerist</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Animals</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 6 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenHomelessChild</defName>
+		<title>homeless child</title>
+		<titleShort>homeless</titleShort>
+		<description>[PAWN_nameDef] lived with [PAWN_possessive] parents on the streets of Panastria. While the planet and the Seren presented themselves as a utopia of prosperity and art, [PAWN_nameDef] lived as a stark reminder of the reality of the wealth disparity in Panastria.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>1</Construction>
+			<Crafting>1</Crafting>
+			<Melee>2</Melee>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_WorldWeary</defName>
+				<chance>15</chance>
+			</li>
+			<li>
+				<defName>FastLearner</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 7 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenSlaveChild</defName>
+		<title>seren slave child</title>
+		<titleShort>slave child</titleShort>
+		<description>[PAWN_nameDef] was kidnapped at a young age and sold into slavery in the Empire. [PAWN_pronoun] was forced to do whatever [PAWN_possessive] master ordered [PAWN_pronoun] to do, no matter how dangerous or inhumane it was.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Desensitized</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+		</workDisables>
+		<relationSettings>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+		</relationSettings>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 8 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenProdigy</defName>
+		<title>seren prodigy</title>
+		<titleShort>prodigy</titleShort>
+		<description>[PAWN_nameDef] was a child prodigy. [PAWN_pronoun] excelled in school and received praises from almost every teacher [PAWN_pronoun] have had.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Artistic>-2</Artistic>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Prodigy</defName>
+					</li>
+					<li>
+						<defName>FastLearner</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 9 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenNobleChild</defName>
+		<title>seren noble child</title>
+		<titleShort>noble child</titleShort>
+		<description>[PAWN_nameDef] was born into Panastrian nobility. [PAWN_pronoun] ate food from the best cooks, dressed in the finest clothes, and attended the best schools, but [PAWN_pronoun] was too used to the lifestyle to appreciate any of it.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>2</Social>
+			<Melee>-2</Melee>
+			<Mining>-1</Mining>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Snob</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 10 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenBastardChild</defName>
+		<title>bastard</title>
+		<titleShort>bastard</titleShort>
+		<description>[PAWN_nameDef] was born to a prostitute and a nobleman in a Panastrian brothel. [PAWN_pronoun] grew up in the brothel with [PAWN_possessive] mother and was forced by the owner to clean and do other types of manual labor.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>1</Social>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Prude</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 11 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenUnluckyChild</defName>
+		<title>unfortunate child</title>
+		<titleShort>unfortunate child</titleShort>
+		<description>[PAWN_nameDef] was born under unfortunate stars, and was ostracized from [PAWN_possessive] community because of it. [PAWN_pronoun] spent much of [PAWN_possessive] childhood friendless.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Clumsy</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Dunce</defName>
+					</li>
+					<li>
+						<defName>SlowLearner</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 12 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenApprenticeChild</defName>
+		<title>seren apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<description>[PAWN_nameDef] was a relative of a well-known artisan on Panastria. This artisan took a liking to [PAWN_nameDef], so they agreed to take [PAWN_pronoun] under their wing. [PAWN_pronoun] learned from the best starting at a young age and excelled from there.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Workaholic</defName>
+					</li>
+					<li>
+						<defName Degree="1">Industriousness</defName>
+					</li>
+					<li>
+						<defName Degree="2">Industriousness</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 13 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenPriestChild</defName>
+		<title>seren astropath-in-training</title>
+		<titleShort>astropath child</titleShort>
+		<description>[PAWN_nameDef] was chosen for life as an astropath, a religious leader of Caelestism, for [PAWN_possessive] latent psychic sensitivity. [PAWN_pronoun] taken into the monastery and blinded during [PAWN_possessive] induction ceremony, as all members were, so [PAWN_pronoun] could focus on honing [PAWN_possessive] abilities. [PAWN_pronoun] lived and meditated at the monastery for the rest of [PAWN_possessive] childhood.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenPriestBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>1</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="2">PsychicSensitivity</defName>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Bloodlust</defName>
+			</li>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<linkedBackstory>SerenPriest</linkedBackstory>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 14 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenFeralChild</defName>
+		<title>seren feral child</title>
+		<titleShort>feral child</titleShort>
+		<description>[PAWN_nameDef]'s parents were killed during the Seren Uprising and [PAWN_pronoun] was left alone, in the ruins of [PAWN_possessive] home. [PAWN_pronoun] was driven to one of the few forests left on Panastria and lived among the wildlife.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>2</Animals>
+			<Plants>2</Plants>
+			<Social>-4</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Wanderlust</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Nudist</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Ascetic</defName>
+				<chance>15</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Ecologist</defName>
+				<chance>5</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Transhumanist</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AnimalHater</defName>
+			</li>
+		</disallowedTraitsChance>
+		<bioAgeRange>
+			<min>15</min>
+			<max>30</max>
+		</bioAgeRange>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 15, See if I can fix later
+	<AlienRace.AlienBackstoryDef>
+		<defName>SerenExperimentChild</defName>
+		<title>cybernetics experiment</title>
+		<titleShort>cybernetics experiment</titleShort>
+		<description>[PAWN_nameDef] was plucked from an orphanage for the sole purpose of testing experimental cybernetics on seren children. [PAWN_pronoun] had parts removed and replaced without [PAWN_possessive] consent. After the end of the experiments, [PAWN_pronoun] was able to keep [PAWN_possessive] new cybernetics.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Transhumanist</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>BodyPurist</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Technophobe</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li></li>
+		</workDisables>
+		<forcedHediffs>
+			<li>
+				<defName>BionicHeart</defName>
+			</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef> -->
+	
+	<!-- 16 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenArchivesChild</defName>
+		<title>panastrian archives assistant</title>
+		<titleShort>archives assistant</titleShort>
+		<description>[PAWN_nameDef] was chosen by lottery to be removed from [PAWN_possessive] home and work with seren elders in the ancient Panastrian archives. [PAWN_pronoun] would run information and transcribe articles for their elder masters as they so desired, hoping that [PAWN_pronoun] would be able to rise into the role of archivist.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>GreatMemory</defName>
+					</li>
+					<li>
+						<defName>TooSmart</defName>
+					</li>
+					<li>
+						<defName Degree="1">Neurotic</defName>
+					</li>
+					<li>
+						<defName Degree="2">Neurotic</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Perfectionist</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Academian</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Pyromaniac</defName>
+			</li>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-2</degree>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 17 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenQuietChild</defName>
+		<title>quiet child</title>
+		<titleShort>quiet child</titleShort>
+		<description>[PAWN_nameDef] was a quiet child growing up. [PAWN_pronoun] made few friends and did not quite connect with many people, but those who got to know [PAWN_pronoun] were able to see [PAWN_possessive] more creative and intelligent sides.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>2</Artistic>
+			<Intellectual>2</Intellectual>
+			<Social>-2</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 18 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenActorChild</defName>
+		<title>child actor</title>
+		<titleShort>child actor</titleShort>
+		<description>[PAWN_nameDef] was a child actor on a popular Panastrian television show. [PAWN_pronoun] spent many hours perfecting [PAWN_possessive] acting skills and memorizing [PAWN_possessive] scenes, which left them somewhat lacking in many skills.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>2</Social>
+			<Artistic>2</Artistic>
+			<Intellectual>-1</Intellectual>
+			<Construction>-1</Construction>
+			<Crafting>-1</Crafting>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>AnnoyingVoice</defName>
+			</li>
+			<li>
+				<defName>CreepyBreathing</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Adulthood -->
+	<!-- 1 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenPOW</defName>
+		<title>Seren Uprising POW</title>
+		<titleShort>seren POW</titleShort>
+		<description>[PAWN_nameDef] was a soldier in the uprising against the Empire. During combat, [PAWN_pronoun] was wounded and captured by Empire soldiers. [PAWN_pronoun] spent the last few years of [PAWN_possessive] life in an Empire prison ship. They got to know their fellow inmates and even their guards very well by the time they were released.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>2</Melee>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Vengeful</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">ShootingAccuracy</defName>
+					</li>
+					<li>
+						<defName Degree="2">ShootingAccuracy</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Coward</defName>
+			</li>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 2 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenProstitute</defName>
+		<title>seren prostitute</title>
+		<titleShort>prostitute</titleShort>
+		<description>[PAWN_nameDef] was a civilian living in Empire territory during the Seren Uprising. Social pressures, economic troubles, and a growing Seren fetishization in the Empire pushed [PAWN_possessive] into prostitution. [PAWN_pronoun] learned quickly how to get what [PAWN_pronoun] wanted through honeyed words.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>6</Social>
+			<Medicine>2</Medicine>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Submissive</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Insatiable</defName>
+					</li>
+					<li>
+						<defName>Masochist</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Beauty</defName>
+					</li>
+					<li>
+						<defName Degree="2">Beauty</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Prude</defName>
+			</li>
+			<li>
+				<defName>Asexual</defName>
+			</li>
+		</disallowedTraitsChance>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 3 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenProfiteer</defName>
+		<title>seren war profiteer</title>
+		<titleShort>war profiteer</titleShort>
+		<description>[PAWN_nameDef] was elated to hear about the beginning of the uprising. [PAWN_pronoun] gained massive profits selling weapons, food, and other goods to the Seren warfront. However, after the Empire's victory, [PAWN_nameDef] was stripped of [PAWN_possessive] wealth and briefly jailed.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+		</skillGains>
+		<workDisables>
+			<li>Hauling</li>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Tycoon</defName>
+				<chance>50</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Snob</defName>
+				<chance>10</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Coward</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+		</disallowedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 4 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenSoldier</defName>
+		<title>Seren Uprising soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>[PAWN_nameDef] joined the Panastrian army once the rebellion against the Empire began. [PAWN_pronoun] fought on the frontlines until the end of the uprising.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Vengeful</defName>
+				<chance>10</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Brave</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>ShootingAccuracy</defName>
+				<degree>1</degree>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Coward</defName>
+			</li>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 5 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenPilot</defName>
+		<title>spaceship pilot</title>
+		<titleShort>pilot</titleShort>
+		<description>[PAWN_nameDef] was a pilot that worked for private companies both on Panastria and throughout Empire territory. [PAWN_pronoun] avoided much of the conflict that came with the uprising and instead worked transporting goods and contrband across the galaxy.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Intellectual>4</Intellectual>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Rebel</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 6 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenMystic</defName>
+		<title>seren fortune-teller</title>
+		<titleShort>fortune-teller</titleShort>
+		<description>[PAWN_nameDef] was a fortune-teller on Panastria. [PAWN_pronoun] learned how to read the position of the stars to tell the fortunes of those who sought [PAWN_possessive] wisdom. [PAWN_pronoun] held a higher social status than most because of her career, and [PAWN_pronoun] made sure to utilize it.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>6</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Snob</defName>
+				<chance>15</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AbsentMinded</defName>
+				<chance>10</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Eccentric</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Cleaning</li>
+			<li>Hauling</li>
+		</workDisables>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 7 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenBiologist</defName>
+		<title>seren biologist</title>
+		<titleShort>biologist</titleShort>
+		<description>[PAWN_nameDef] has always been enamored with life. [PAWN_pronoun] traveled to many worlds, documenting and studying the native plant and animal life. [PAWN_pronoun] lived a relatively peaceful and fulfilled life.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+							<defName>VTE_Ecologist</defName>
+						</li>
+						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+							<defName>VTE_Menagerist</defName>
+						</li>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>35</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AnimalHater</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 8 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenSpaceSalvager</defName>
+		<title>space salvager</title>
+		<titleShort>space salvager</titleShort>
+		<description>[PAWN_nameDef] was a space salvager that would sweep through areas of debris after space battles. [PAWN_pronoun] made a decent living selling the scrap metal, valuables, and dead bodies back to their families.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>4</Crafting>
+			<Construction>4</Construction>
+			<Medicine>-3</Medicine>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<li>
+							<defName Degree="1">Industriousness</defName>
+						</li>
+						<li>
+							<defName Degree="2">Industriousness</defName>
+						</li>
+						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+							<defName>VTE_Workaholic</defName>
+						</li>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 9 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenCombatMedic</defName>
+		<title>seren combat medic</title>
+		<titleShort>combat medic</titleShort>
+		<description>[PAWN_nameDef] enlisted in the Seren Uprising. Because of [PAWN_possessive] prior medical knowledge, [PAWN_pronoun] was trained as a combat medic.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Medicine>4</Medicine>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_MadSurgeon</defName>
+				<chance>10</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Desensitized</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Coward</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Squeamish</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 10 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenSculptor</defName>
+		<title>seren sculptor</title>
+		<titleShort>sculptor</titleShort>
+		<description>[PAWN_nameDef] was a sculptor on Panastria. [PAWN_pronoun] created grand statues and sculptures to be enjoyed by high society.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Construction>4</Construction>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Eccentric</defName>
+				<chance>10</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_WorldWeary</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>TorturedArtist</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 11 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenGraffitiArtist</defName>
+		<title>seren graffiti artist</title>
+		<titleShort>graffitist</titleShort>
+		<description>[PAWN_nameDef] was a grafitti artist on Panastria. [PAWN_pronoun] used [PAWN_possessive] art to protest the Empire occupation and rally people behind the rebelling cause.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>8</Artistic>
+			<Intellectual>-2</Intellectual>
+			<Mining>-2</Mining>
+			<Crafting>-2</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Rebel</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 12 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenPopStar</defName>
+		<title>seren pop star</title>
+		<titleShort>pop star</titleShort>
+		<description>[PAWN_nameDef] was an interplanetary pop star, well-known throughout Panastria, the Empire, and other planets in the solar system. [PAWN_pronoun] gave no comment on [PAWN_possessive] feelings about the Seren Uprising in an attempt to protect [PAWN_possessive] career, but after the uprising failed, [PAWN_pronoun] was treated like every other Seren.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+			<Artistic>4</Artistic>
+			<Intellectual>-4</Intellectual>
+			<Melee>-2</Melee>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<li>
+							<defName Degree="1">Beauty</defName>
+						</li>
+						<li>
+							<defName Degree="2">Beauty</defName>
+						</li>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_FunLoving</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Greedy</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Jealous</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Anxious</defName>
+			</li>
+			<li>
+				<defName>CreepyBreathing</defName>
+			</li>
+			<li>
+				<defName>AnnoyingVoice</defName>
+			</li>
+		</disallowedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 13 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenHomeless</defName>
+		<title>seren homeless</title>
+		<titleShort>homeless</titleShort>
+		<description>[PAWN_nameDef] lived on the streets of Panastria. While the planet and the Seren presented themselves as a utopia of prosperity and art, [PAWN_nameDef] lived as a stark reminder of the reality of the wealth disparity in Panastria.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
+			<Melee>2</Melee>
+			<Intellectual>-4</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_WorldWeary</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>FastLearner</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 14 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenSlave</defName>
+		<title>seren slave</title>
+		<titleShort>slave</titleShort>
+		<description>[PAWN_nameDef] was kidnapped and sold into slavery in the Empire. [PAWN_pronoun] was forced to do whatever [PAWN_possessive] master ordered [PAWN_pronoun] to do, no matter how dangerous or inhumane it was.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Shooting>2</Shooting>
+			<Crafting>2</Crafting>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Desensitized</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+			<li>Social</li>
+			<li>Artistic</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 15 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenTravelingChef</defName>
+		<title>seren traveling chef</title>
+		<titleShort>traveling chef</titleShort>
+		<description>[PAWN_nameDef] was a traveling chef who would travel to different planets to try the cuisine and attempt to recreate it. [PAWN_pronoun] gained some notoriety for [PAWN_possessive] travels, cooking, and the occasional cookbook.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>7</Cooking>
+			<Melee>-2</Melee>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Gastronomist</defName>
+					</li>
+					<li>
+						<defName>Gourmand</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_IronStomach</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 16 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenDiplomat</defName>
+		<title>seren diplomat</title>
+		<titleShort>diplomat</titleShort>
+		<description>[PAWN_nameDef] was an interstellar diplomat on behalf of Panastria. [PAWN_pronoun] would travel throughout the galaxy to attend interplanetary political meetings. [PAWN_pronoun] watched the relations between Panastria and the Empire sour as the Seren Uprising began.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>6</Social>
+			<Intellectual>2</Intellectual>
+			<Melee>-4</Melee>
+			<Shooting>-4</Shooting>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Anxious</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Cleaning</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 17 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenGemMiner</defName>
+		<title>seren gem miner</title>
+		<titleShort>gem miner</titleShort>
+		<description>[PAWN_nameDef] was a gem miner. [PAWN_pronoun] would harvest the gems from below the mountains of Panastria and either craft them into jewelry or sell them to sculptorrs or other artisans.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Mining>4</Mining>
+			<Crafting>3</Crafting>
+			<Intellectual>-2</Intellectual>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Groundbreaker</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 18 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenFormerPsychic</defName>
+		<title>former psycaster</title>
+		<titleShort>former psycaster</titleShort>
+		<description>[PAWN_nameDef] was a psycaster and high ranking official on Panastria. [PAWN_pronoun] led [PAWN_possessive] troops against the Empire in the Seren Uprising. After the Seren defeat, [PAWN_nameDef] was captured and had their Psylink neuroformer surgically removed, taking away [PAWN_possessive] psychic abilities.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+			<Crafting>-2</Crafting>
+			<Medicine>-2</Medicine>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="-1">NaturalMood</defName>
+					</li>
+					<li>
+						<defName Degree="-2">NaturalMood</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">PsychicSensitivity</defName>
+					</li>
+					<li>
+						<defName Degree="2">PsychicSensitivity</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Coward</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 19 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenThief</defName>
+		<title>seren thief</title>
+		<titleShort>thief</titleShort>
+		<description>[PAWN_nameDef] was a thief. [PAWN_pronoun] stole from anyone and everyone that did not keep an eye on their valuables. The Seren Uprising only emboldened [PAWN_nameDef], who began stealing from the homes of those who were out fighting.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Social>2</Social>
+			<Crafting>-2</Crafting>
+			<Construction>-2</Construction>
+			<Artistic>-2</Artistic>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Kleptomaniac</defName>
+				<chance>35</chance>
+			</li>
+		</forcedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 20 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenImperialMurderer</defName>
+		<title>imperial serial killer</title>
+		<titleShort>imperial killer</titleShort>
+		<description>[PAWN_nameDef] had many members of [PAWN_possessive] family die fighting in the Seren Uprising. [PAWN_pronoun] began hating all the people of the Empire and turned to killing Imperial civilians in secret to satisfy [PAWN_possessive] bloodlust and hatred.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Vengeful</defName>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_MadSurgeon</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Desensitized</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li>Caring</li>
+			<li>Social</li>
+		</workDisables>
+		<possessions>
+			<MeleeWeapon_Knife>1</MeleeWeapon_Knife>
+		</possessions>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 21 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenAstronomer</defName>
+		<title>astronomer</title>
+		<titleShort>astronomer</titleShort>
+		<description>[PAWN_nameDef] was an astronomer on Panastria. Unlike the many fortune-tellers and spiritualist of the planet, [PAWN_pronoun] studied the stars and planets scientifically rather than religiously.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Mining>-2</Mining>
+			<Melee>-2</Melee>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>TooSmart</defName>
+					</li>
+					<li>
+						<defName Degree="1">Neurotic</defName>
+					</li>
+					<li>
+						<defName Degree="2">Neurotic</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Academian</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-2</degree>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+		</disallowedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 22 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenConfectioner</defName>
+		<title>seren confectioner</title>
+		<titleShort>confectioner</titleShort>
+		<description>[PAWN_nameDef] was a confectioner on Panastria, specializing in different types of hard candies. Not only did [PAWN_pronoun] create sweet treats and candies, but [PAWN_pronoun] also became popular with [PAWN_possessive] sweet-toothed customers.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Social>3</Social>
+			<Melee>-2</Melee>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Gourmand</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Gastronomist</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName>Kind</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 23 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenUprisingSniper</defName>
+		<title>uprising sniper</title>
+		<titleShort>sniper</titleShort>
+		<description>[PAWN_nameDef] was a sniper during the Seren Uprising. [PAWN_pronoun] were trained as an elite sniper for [PAWN_possessive] innate accuracy and shooting abilities.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>-4</Melee>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">ShootingAccuracy</defName>
+					</li>
+					<li>
+						<defName Degree="2">ShootingAccuracy</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Brawler</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_MartialArtist</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_DrunkenMaster</defName>
+			</li>
+		</disallowedTraitsChance>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 24 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenRecluse</defName>
+		<title>recluse</title>
+		<titleShort>recluse</titleShort>
+		<description>[PAWN_nameDef] was a social recluse. [PAWN_pronoun] secretly withdrew into the emergency underground bunkers on Panastria to live away from the rest of society. Nobody found [PAWN_pronoun] until the Empire searched the bunkers for any valuables after the Seren Uprising.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Undergrounder</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Anxious</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Schizoid</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Nerves</defName>
+				<degree>2</degree>
+			</li>
+			<li>
+				<defName>Nerves</defName>
+				<degree>1</degree>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_FunLoving</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Wanderlust</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 25 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenArchivist</defName>
+		<title>panastrian archivist</title>
+		<titleShort>archivist</titleShort>
+		<description>[PAWN_nameDef] was one of Panastria's official archivists. [PAWN_pronoun] were tasked with archiving everything that happened on Panastria down to the minute detail. Everything was up for transcription and archiving, and it was [PAWN_nameDef]'s job to make sure that it was done well.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>8</Intellectual>
+			<Social>-4</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>GreatMemory</defName>
+					</li>
+					<li>
+						<defName Degree="1">Neurotic</defName>
+					</li>
+					<li>
+						<defName Degree="2">Neurotic</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Perfectionist</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Academian</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Pyromaniac</defName>
+			</li>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-2</degree>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+		</disallowedTraitsChance>
+		<workDisables>
+			<li>Hauling</li>
+			<li>ManualDumb</li>
+			<li>Cleaning</li>
+			<li>Violent</li>
+		</workDisables>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 26 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenTranslator</defName>
+		<title>translator</title>
+		<titleShort>translator</titleShort>
+		<description>[PAWN_nameDef] was a translator for Panastria. [PAWN_pronoun] spent years learning and practicing many alien languages, helping to advance the serens' understanding of other languages and cultures from many different planets.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+			<Animals>-2</Animals>
+			<Plants>-2</Plants>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="-1">HAR_Xenophobia</defName>
+					</li>
+					<li>
+						<defName Degree="-2">HAR_Xenophobia</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Anxious</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+			<li>
+				<defName>HAR_Xenophobia</defName>
+				<degree>1</degree>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 27 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenBioengineer</defName>
+		<title>bioengineer</title>
+		<titleShort>bioengineer</titleShort>
+		<description>[PAWN_nameDef] was a bioengineer on Panastria. [PAWN_pronoun] was tasked with creating an alternative source of food in case of an emergency, so [PAWN_pronoun] studied plant and animal life in the hopes of creating a more efficient food source. Unfortunately, [PAWN_possessive] work was destroyed when [PAWN_pronoun] was taken into Imperial custody.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+			<Intellectual>2</Intellectual>
+			<Melee>-2</Melee>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Ecologist</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AnimalHater</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 28 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenGownTailor</defName>
+		<title>gown tailor</title>
+		<titleShort>gown tailor</titleShort>
+		<description>[PAWN_nameDef] was a gown tailor on Panastria. [PAWN_pronoun] was commissioned by the nobility, rich, and famous of Panastria to create extravagant, beautiful gowns to be shown off at dances and galas. [PAWN_pronoun] would painstakingly create each gown by hand, and for [PAWN_possessive] immense efforts, [PAWN_pronoun] was not always fairly paid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>6</Crafting>
+			<Artistic>2</Artistic>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>TorturedArtist</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Perfectionist</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Workaholic</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AbsentMinded</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 29 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenCivilEngineer</defName>
+		<title>civil engineer</title>
+		<titleShort>engineer</titleShort>
+		<description>[PAWN_nameDef] was in charge of planning for the most important parts of every Panastrian citizens' lives: their bridges, tunnels, buildings, and many more. While [PAWN_pronoun] was not often doing the construction, [PAWN_pronoun] knows [PAWN_possessive] way around tools and a construction site.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>6</Construction>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Groundbreaker</defName>
+				<chance>25</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Workaholic</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_AbsentMinded</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 30 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenPlasticSurgeon</defName>
+		<title>plastic surgeon</title>
+		<titleShort>plastic surgeon</titleShort>
+		<description>[PAWN_nameDef] was employed as a plastic surgeon on Panastria. Looks began to dominate the minds of the uppercrust of Panastria, and [PAWN_nameDef] was there to serve their desires. While [PAWN_pronoun] only worked on the appearances of others for [PAWN_possessive] career, [PAWN_pronoun] knows how to perform other surgeries as well.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>4</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Transhumanist</defName>
+				<chance>25</chance>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_MadSurgeon</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>BodyPurist</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 31 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenDrugDealer</defName>
+		<title>drug dealer</title>
+		<titleShort>drug dealer</titleShort>
+		<description>[PAWN_nameDef] operated in shady houses and abadoned buildings. [PAWN_pronoun] created illegal drugs in these places, selling it to whoever paid the right price. The homeless and the rich sought out [PAWN_nameDef] for the highs and lows [PAWN_pronoun] created.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Crafting>3</Crafting>
+			<Medicine>2</Medicine>
+			<Mining>-2</Mining>
+			<Animals>-2</Animals>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">DrugDesire</defName>
+					</li>
+					<li>
+						<defName Degree="2">DrugDesire</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Stoner</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Lush</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>75</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>DrugDesire</defName>
+				<degree>-1</degree>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 32 -->
+	<AlienRace.AlienBackstoryDef ParentName="SerenBackstoryBase">
+		<defName>SerenPriest</defName>
+		<title>seren astropath</title>
+		<titleShort>astropath</titleShort>
+		<description>[PAWN_nameDef] was an astropath, a religious leader for Panastria's planetary religion known as Caelestism. [PAWN_pronoun] was blinded as a child so [PAWN_pronoun] could focus on honing her psychic abilities. [PAWN_nameDef] was believed to be able to speak with the stars themselves and would bless Caelestians with what [PAWN_pronoun] learned in religious ceremonies.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SerenPriestBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>4</Medicine>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">PsychicSensitivity</defName>
+					</li>
+					<li>
+						<defName Degree="2">PsychicSensitivity</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+			<li>
+				<defName>Ascetic</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Bloodlust</defName>
+			</li>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>

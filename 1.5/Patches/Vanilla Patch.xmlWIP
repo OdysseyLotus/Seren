@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+		<value>
+			<SerenWanderer>1</SerenWanderer>
+			<SerenSimpleGunner>1</SerenSimpleGunner>
+			<SerenLightGunner>1</SerenLightGunner>
+			<SerenHeavyGunner>1</SerenHeavyGunner>
+			<SerenSniper>.5</SerenSniper>
+			<SerenMeleeUltratech>.5</SerenMeleeUltratech>
+			<SerenCommander>0.1</SerenCommander>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[2]/options</xpath>
+		<value>
+			<SerenWanderer>1</SerenWanderer>
+			<SerenSimpleGunner>1</SerenSimpleGunner>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards</xpath>
+		<value>
+			<SerenSimpleGunner>1</SerenSimpleGunner>
+			<SerenLightGunner>1</SerenLightGunner>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+		<value>
+			<SerenWanderer>1</SerenWanderer>
+			<SerenSimpleGunner>1</SerenSimpleGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options</xpath>
+		<value>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[2]/options</xpath>
+		<value>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[4]/options</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[5]/options</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/guards</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[7]/options</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[8]/options</xpath>
+		<value>
+			<SerenFighter>0.5</SerenFighter>
+			<SerenLightArcher>0.75</SerenLightArcher>
+			<SerenRangedDecent>0.75</SerenRangedDecent>
+			<SerenHeavyArcher>0.75</SerenHeavyArcher>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[1]/options</xpath>
+		<value>
+			<SerenWanderer>1</SerenWanderer>
+			<SerenSimpleGunner>1</SerenSimpleGunner>
+			<SerenLightGunner>1</SerenLightGunner>
+			<SerenHeavyGunner>1</SerenHeavyGunner>
+			<SerenSniper>0.5</SerenSniper>
+			<SerenMeleeUltratech>0.5</SerenMeleeUltratech>
+			<SerenCommander>0.25</SerenCommander>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[2]/options</xpath>
+		<value>
+			<SerenMeleeUltratech>0.5</SerenMeleeUltratech>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[3]/options</xpath>
+		<value>
+			<SerenWanderer>1</SerenWanderer>
+			<SerenSimpleGunner>1</SerenSimpleGunner>
+			<SerenLightGunner>1</SerenLightGunner>
+			<SerenHeavyGunner>1</SerenHeavyGunner>
+			<SerenSniper>0.5</SerenSniper>
+			<SerenCommander>0.25</SerenCommander>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
+		<value>
+			<SerenHeavyGunner>1</SerenHeavyGunner>
+			<SerenSniper>1</SerenSniper>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+		<value>
+			<SerenSniper>1.5</SerenSniper>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[6]/options</xpath>
+		<value>
+			<SerenWanderer>2.5</SerenWanderer>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ScenarioDef[defName="Crashlanded"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<overrideKinds>
+					<li>
+						<xenotype>Seren_Base</xenotype>
+						<pawnKind>SerenColonist</pawnKind>
+					</li>
+				</overrideKinds>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ScenarioDef[defName="LostTribe"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<overrideKinds>
+					<li>
+						<xenotype>Seren_Base</xenotype>
+						<pawnKind>SerenTribalPlayer</pawnKind>
+					</li>
+				</overrideKinds>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ScenarioDef[defName="TheRichExplorer"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<overrideKinds>
+					<li>
+						<xenotype>Seren_Base</xenotype>
+						<pawnKind>SerenColonist</pawnKind>
+					</li>
+				</overrideKinds>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ScenarioDef[defName="NakedBrutality"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<overrideKinds>
+					<li>
+						<xenotype>Seren_Base</xenotype>
+						<pawnKind>SerenColonist</pawnKind>
+					</li>
+				</overrideKinds>
+			</li>
+		</value>
+	</Operation> -->
+	
+</Patch>
