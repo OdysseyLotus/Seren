@@ -368,7 +368,17 @@
 								<BodyPart>
 									<bodyPart>Ear</bodyPart>
 									<bodyPartLabel>left ear</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Warcasket</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 							</conditions>
 							<extendedGraphics>
 								<Age For="HumanlikeBaby">Things/Seren/Ears/Average/Baby/LeftEar</Age>
@@ -430,10 +440,6 @@
 									</extendedGraphics>
 								</HeadType>
 							</extendedGraphics>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
 						</li>
 						<li>
 							<!-- Right Ear -->
@@ -452,7 +458,17 @@
 								<BodyPart>
 									<bodyPart>Ear</bodyPart>
 									<bodyPartLabel>left ear</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Warcasket</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 							</conditions>
 							<extendedGraphics>
 								<Age For="HumanlikeBaby">Things/Seren/Ears/Average/Baby/RightEar</Age>
@@ -513,10 +529,6 @@
 									</extendedGraphics>
 								</HeadType>
 							</extendedGraphics>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
 						</li>
 						<li>
 							<!-- Left Sensor -->
@@ -533,7 +545,13 @@
 								<BodyPart>
 									<bodyPart>SerenSensor</bodyPart>
 									<bodyPartLabel>left sensor</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Warcasket</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 							</conditions>
 							<extendedGraphics>
 								<Age For="HumanlikeBaby">Things/Seren/Horns/Baby/SerenHornLeft</Age>
@@ -557,7 +575,13 @@
 								<BodyPart>
 									<bodyPart>SerenSensor</bodyPart>
 									<bodyPartLabel>right sensor</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Warcasket</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 							</conditions>
 							<extendedGraphics>
 								<Age For="HumanlikeBaby">Things/Seren/Horns/Baby/SerenHornRight</Age>

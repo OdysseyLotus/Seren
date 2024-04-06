@@ -36,7 +36,6 @@
 			<xenotypeChances>
 				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<humanPregnancyChance>0.03</humanPregnancyChance>
 	</PawnKindDef>
@@ -160,7 +159,6 @@
 			<xenotypeChances>
 				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -194,7 +192,6 @@
 			<xenotypeChances>
 				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -224,7 +221,6 @@
 			<xenotypeChances>
 				<HalfSeren MayRequire="Ludeon.RimWorld.Biotech">999</HalfSeren>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
