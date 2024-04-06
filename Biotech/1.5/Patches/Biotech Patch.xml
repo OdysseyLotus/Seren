@@ -151,19 +151,19 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/extendedGraphics</xpath>
 				<value>
 					<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/extendedGraphics</xpath>
 				<value>
 					<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[3]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[3]/extendedGraphics</xpath>
 				<value>
 					<Gene For="SerenSensors_Back">
 						<path>Things/Seren/Transparent</path>
@@ -216,7 +216,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[4]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[4]/extendedGraphics</xpath>
 				<value>
 					<Gene For="SerenSensors_Back">
 						<path>Things/Seren/Transparent</path>
