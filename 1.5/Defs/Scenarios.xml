@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>SerenRelocated</defName>
+		<label>Forced Relocation</label>
+		<description>After the failed Seren Uprising, the Empire has been scattering the seren throughout the galaxy through forced removal and relocation. You and a few others have been chosen to relocate to a rimworld on the edge of the galaxy.</description>
+		<scenario>
+			<summary>Four seren relocate to a rimworld.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>SerenPlayerBase</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Starting Pawns -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>4</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				
+				<!-- Pawn Arrival -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>true</visible>
+				</li>
+				
+				<!-- Starting Items -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>750</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>60</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_BoltActionRifle</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Revolver</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Autopistol</thingDef>
+					<count>1</count>
+				</li>
+				
+				<!-- Scattered Items Near Start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>375</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>375</count>
+				</li>
+				
+				<!-- Scattered Items Throughout Map -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>50</count>
+				</li>
+				
+				<!-- Starting Message -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>You have been ordered by the Empire to relocate from your homeworld, Panastria, after the failed Seren uprising. With your home and possessions gone, you were given a location and some survival tools. You will receive no further help from the Empire. Your new life and survival is up to you now.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				
+			</parts>
+		</scenario>
+	</ScenarioDef>
+	
+	<ScenarioDef>
+		<defName>SerenPrisonCrash</defName>
+		<label>Seren Prison Ship Crash</label>
+		<description>During the Seren Uprising, the Empire stored POWs and political prisoners on prison ships that orbited the outer reaches of the galaxy. Even now, the prisoners haven't been released. You faced little hope of being freed until the ship began to crash on a strange rimworld. You and a few other prisoners managed to grab a few things and secure a few escape pods and make it to the rimworld surface.\nYou have few supplies and no silver. This is a difficult scenario.</description>
+		<scenario>
+			<summary>Five seren prisoners escape a crashing ship. Difficult.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>SerenPlayerBase</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Starting Pawns -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>5</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				
+				<!-- Pawn Arrival -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>true</visible>
+				</li>
+				
+				<!-- Starting Items -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Steel</stuff>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Mace</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				
+				<!-- Scattered Items Near Start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>150</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>150</count>
+				</li>
+				
+				<!-- Scattered Items Throughout Map -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+				</li>
+				
+				<!-- Starting Message -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Your prison ship has crashed. You and four other prisoners from the failed Seren Uprising managed to escape in pods with some food, medicine, and basic weapons, but nothing else. With the descruction of the prison ship, all criminal records of the prisoners onboard were destroyed and you now have a clean record, but you'll have to survive in order to capitalize on your newfound freedom.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

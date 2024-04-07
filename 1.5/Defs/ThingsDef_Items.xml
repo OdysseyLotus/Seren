@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Seren Leather -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>SerenLeather</defName>
+		<label>seren leather</label>
+		<graphicData>
+			<color>(125, 77, 153)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.9</MarketValue>
+			<StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(125, 77, 153)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>SerenSensor_Item</defName>
+		<label>seren sensor</label>
+		<description>A seren's sensor. It acts as a psychic tuning fork for seren. It can be crushed and refined to create a drug called serenity.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+  
+</Defs>

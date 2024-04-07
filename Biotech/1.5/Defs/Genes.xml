@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Eyes -->
+	<GeneDef ParentName="GeneEyeColor">
+		<defName>LotusEyes_Seren</defName>
+		<label>seren eyes</label>
+		<labelShortAdj>seren eyes</labelShortAdj>
+		<description>Carriers of this gene have seren eyes, with long eyelashes and white, star-shaped pupils.</description>
+		<iconPath>UI/Icons/Genes/Gene_WhiteEyes</iconPath>
+		<displayOrderInCategory>10031</displayOrderInCategory>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Things/Seren/HeadAttachments/Eyes/Male/SerenEyes_Male</texPath>
+				<texPathFemale>Things/Seren/HeadAttachments/Eyes/Female/SerenEyes_Female</texPathFemale>
+				<anchorTag>RightEye</anchorTag>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.2</drawSize>
+				<side>Right</side>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, -0.25)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Things/Seren/HeadAttachments/Eyes/Male/SerenEyes_Male</texPath>
+				<texPathFemale>Things/Seren/HeadAttachments/Eyes/Female/SerenEyes_Female</texPathFemale>
+				<anchorTag>LeftEye</anchorTag>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.2</drawSize>
+				<side>Left</side>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, -0.25)</offset>
+						<flip>true</flip>
+					</defaultData>
+					<dataWest>
+						<flip>false</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<!-- Addons -->
+	<GeneDef Name="GeneEarsBase">
+		<defName>Ears_Seren</defName>
+		<label>seren ears</label>
+		<description>Carriers of this gene have seren-like ears.</description>
+		<iconPath>UI/Icons/Genes/Gene_EarSeren</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Ears/SerenEars</texPath>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>point</symbol></li>
+				<li><symbol>sharp</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>ear</symbol></li>
+				<li><symbol>point</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef Name="GeneSerenSensorBase" ParentName="GeneHeadboneBase" Abstract="True">
+		<exclusionTags>
+			<li>SerenSensors</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Back</defName>
+		<label>back-facing seren sensors</label>
+		<description>Carriers of this gene have sensors that grow towards the back of the head, similar to an impala's horns.</description>
+		<iconPath>UI/Icons/Genes/Gene_BackSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Back/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>back</symbol></li>
+				<li><symbol>backward</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Branched</defName>
+		<label>branched seren sensors</label>
+		<description>Carriers of this gene have branching sensors, similar to a deer's antlers.</description>
+		<iconPath>UI/Icons/Genes/Gene_BranchedSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Branched/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>branched</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Curled</defName>
+		<label>curled seren sensors</label>
+		<description>Carriers of this gene have curled sensors, similar to a ram's horns.</description>
+		<iconPath>UI/Icons/Genes/Gene_CurledSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Curled/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>curled</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Curved</defName>
+		<label>curved seren sensors</label>
+		<description>Carriers of this gene have sensors that grow upwards and curve towards the center.</description>
+		<iconPath>UI/Icons/Genes/Gene_CurvedSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Curved/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>curved</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Double</defName>
+		<label>doubled seren sensors</label>
+		<description>Carriers of this gene have four small sensors.</description>
+		<iconPath>UI/Icons/Genes/Gene_DoubleSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Double/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>doubled</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Drop</defName>
+		<label>drop-shaped seren sensors</label>
+		<description>Carriers of this gene have short, wide sensors shaped like water drops.</description>
+		<iconPath>UI/Icons/Genes/Gene_DropSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Drop/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>tear-drop</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Spike</defName>
+		<label>spike seren sensors</label>
+		<description>Carriers of this gene have straight sensors that end in a sharp point.</description>
+		<iconPath>UI/Icons/Genes/Gene_SpikeSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Spike/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>spike</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenSensorBase">
+		<defName>SerenSensors_Tall</defName>
+		<label>tall seren sensors</label>
+		<description>Carriers of this gene have tall sensors that curve slightly in the middle.</description>
+		<iconPath>UI/Icons/Genes/Gene_TallSensors</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Seren/Horns/Genes/Tall/SerenSensors</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>pointed</symbol></li>
+				<li><symbol>sharp</symbol></li>
+				<li><symbol>tall</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sensor</symbol></li>
+				<li><symbol>horn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef Name="GeneSerenMarkingsBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>bright</symbol></li>
+				<li><symbol>white</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>star</symbol></li>
+				<li><symbol>mark</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<exclusionTags>
+			<li>SerenMarkings</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Big</defName>
+		<label>big star marking</label>
+		<description>Carriers of this gene have one large star marking on their forehead.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingBig</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Big</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Brows</defName>
+		<label>brow markings</label>
+		<description>Carriers of this gene have a pair of star marking above their eyes.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingBrows</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Brows</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Cheeks</defName>
+		<label>cheek markings</label>
+		<description>Carriers of this gene have a pair of star markings on their cheeks.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingCheeks</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Cheeks</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Freckles</defName>
+		<label>freckle markings</label>
+		<description>Carriers of this gene have many small markings on their cheeks, resembling freckles.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingFreckles</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Freckles</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Small</defName>
+		<label>small star markings</label>
+		<description>Carriers of this gene have one small star marking on their forehead.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingSmall</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Small</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Target</defName>
+		<label>target-like markings</label>
+		<description>Carriers of this gene have two star markings on their forehead, with one positioned inside the other.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingTarget</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Target</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneSerenMarkingsBase">
+		<defName>SerenMarkings_Tristar</defName>
+		<label>tristar markings</label>
+		<description>Carriers of this gene have three star markings: two smaller ones above the eyes and one larger one on the forehead.</description>
+		<iconPath>UI/Icons/Genes/Gene_SerenMarkingTristar</iconPath>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Seren/Markings/Genes/Tristar</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>OLDarkVision</defName>
+		<label>dark vision</label>
+		<description>Carriers of this gene see well in low light and are unaffected by mood penalties related to darkness. They have a reflective layer behind the retina that amplifies their ability to see in the dark.</description>
+		<iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
+		<ignoreDarkness>true</ignoreDarkness>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<biostatMet>0</biostatMet>
+		<symbolPack>
+		  <prefixSymbols>
+			<li><symbol>dark</symbol></li>
+			<li><symbol>night</symbol></li>
+			<li><symbol>dim</symbol></li>
+			<li><symbol>gloom</symbol></li>
+			<li><symbol>murk</symbol></li>
+			<li><symbol>deep</symbol></li>
+			<li><symbol>umbra</symbol></li>
+		  </prefixSymbols>
+		  <suffixSymbols>
+			<li><symbol>shadow</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>OLElongatedFingers</defName>
+		<label>elongated fingers</label>
+		<description>Long, delicate fingers improve the carrier's manipulation capacity. This aids with many tasks, especially crafting and construction.</description>
+		<iconPath>UI/Icons/Genes/Gene_ElongatedFingers</iconPath>
+		<displayOrderInCategory>320</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<capMods>
+		  <li>
+			<capacity>Manipulation</capacity>
+			<postFactor>1.1</postFactor>
+		  </li>
+		</capMods>
+		<symbolPack>
+		  <prefixSymbols>
+			<li><symbol>long</symbol></li>
+			<li><symbol>elon</symbol></li>
+			<li><symbol>pencil</symbol></li>
+		  </prefixSymbols>
+		  <suffixSymbols>
+			<li><symbol>finger</symbol></li>
+			<li><symbol>dactyl</symbol></li>
+			<li><symbol>digit</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+</Defs>
