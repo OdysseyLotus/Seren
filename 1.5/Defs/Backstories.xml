@@ -929,19 +929,17 @@
 			</li>
 			<li>
 				<options>
-					<li>
-						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-							<defName>VTE_Coward</defName>
-						</li>
-						<li MayRequire="Sierra.RT.GeneralTraits">
-							<defName>RT_Craven</defName>
-						</li>
-						<li MayRequire="Sierra.RT.GeneralTraits">
-							<defName>RT_Fragile</defName>
-						</li>
-						<li MayRequire="Sierra.RT.GeneralTraits">
-							<defName>RT_Feeble</defName>
-						</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Coward</defName>
+					</li>
+					<li MayRequire="Sierra.RT.GeneralTraits">
+						<defName>RT_Craven</defName>
+					</li>
+					<li MayRequire="Sierra.RT.GeneralTraits">
+						<defName>RT_Fragile</defName>
+					</li>
+					<li MayRequire="Sierra.RT.GeneralTraits">
+						<defName>RT_Feeble</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -990,19 +988,17 @@
 			</li>
 			<li>
 				<options>
-					<li>
-						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-							<defName>VTE_Brave</defName>
-						</li>
-						<li MayRequire="Sierra.RT.GeneralTraits">
-							<defName>RT_Valiant</defName>
-						</li>
-						<li MayRequire="Sierra.RT.GeneralTraits">
-							<defName>RT_Resilient</defName>
-						</li>
-						<li MayRequire="Sierra.RT.GeneralTraits">
-							<defName>RT_Hardy</defName>
-						</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Brave</defName>
+					</li>
+					<li MayRequire="Sierra.RT.GeneralTraits">
+						<defName>RT_Valiant</defName>
+					</li>
+					<li MayRequire="Sierra.RT.GeneralTraits">
+						<defName>RT_Resilient</defName>
+					</li>
+					<li MayRequire="Sierra.RT.GeneralTraits">
+						<defName>RT_Hardy</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1114,13 +1110,11 @@
 		<forcedTraitsChance>
 			<li>
 				<options>
-					<li>
-						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-							<defName>VTE_Ecologist</defName>
-						</li>
-						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-							<defName>VTE_Menagerist</defName>
-						</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Ecologist</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Menagerist</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1171,15 +1165,13 @@
 			<li>
 				<options>
 					<li>
-						<li>
-							<defName Degree="1">Industriousness</defName>
-						</li>
-						<li>
-							<defName Degree="2">Industriousness</defName>
-						</li>
-						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-							<defName>VTE_Workaholic</defName>
-						</li>
+						<defName Degree="1">Industriousness</defName>
+					</li>
+					<li>
+						<defName Degree="2">Industriousness</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Workaholic</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1222,13 +1214,11 @@
 		<forcedTraitsChance>
 			<li MayRequire="consolidatedtraits.lc.rw">
 				<options>
-					<li>
-						<li MayRequire="consolidatedtraits.lc.rw">
-							<defName Degree="1">RCT_Medic</defName>
-						</li>
-						<li MayRequire="consolidatedtraits.lc.rw">
-							<defName Degree="2">RCT_Medic</defName>
-						</li>
+					<li MayRequire="consolidatedtraits.lc.rw">
+						<defName Degree="1">RCT_Medic</defName>
+					</li>
+					<li MayRequire="consolidatedtraits.lc.rw">
+						<defName Degree="2">RCT_Medic</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1318,12 +1308,10 @@
 			<li>
 				<options>
 					<li>
-						<li>
-							<defName>TorturedArtist</defName>
-						</li>
-						<li MayRequire="Dynamic.DynamicsTraits">
-							<defName>Creative_DT</defName>
-						</li>
+						<defName>TorturedArtist</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Creative_DT</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1358,12 +1346,10 @@
 			<li>
 				<options>
 					<li>
-						<li>
-							<defName Degree="1">Beauty</defName>
-						</li>
-						<li>
-							<defName Degree="2">Beauty</defName>
-						</li>
+						<defName Degree="1">Beauty</defName>
+					</li>
+					<li>
+						<defName Degree="2">Beauty</defName>
 					</li>
 				</options>
 				<count>1</count>

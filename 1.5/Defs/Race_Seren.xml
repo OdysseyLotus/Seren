@@ -357,7 +357,6 @@
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<userCustomizable>false</userCustomizable>
-							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
 							<path>Things/Seren/Ears/Average/LeftEar</path>
 							<alignWithHead>true</alignWithHead>
 							<colorChannel>skin</colorChannel>
@@ -440,6 +439,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 							</extendedGraphics>
@@ -450,7 +450,6 @@
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<userCustomizable>false</userCustomizable>
-							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
 							<path>Things/Seren/Ears/Average/RightEar</path>
 							<alignWithHead>true</alignWithHead>
 							<colorChannel>skin</colorChannel>
