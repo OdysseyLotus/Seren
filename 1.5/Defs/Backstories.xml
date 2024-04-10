@@ -112,6 +112,9 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -158,8 +161,15 @@
 		<skillGains>
 			<Intellectual>2</Intellectual>
 			<Medicine>2</Medicine>
-			<Mining>-2</Mining>
+			<Animals>-1</Animals>
+			<Plants>-1</Plants>
 		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Hypochondriac_DT</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_AnimalLover</defName>
@@ -225,9 +235,17 @@
 			<Crafting>1</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
-			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-				<defName>VTE_Desensitized</defName>
-				<chance>25</chance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Desensitized</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Mute_DT</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>40</chance>
 			</li>
 		</forcedTraitsChance>
 		<workDisables>
@@ -271,6 +289,12 @@
 			<li>
 				<defName>SlowLearner</defName>
 			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -294,10 +318,17 @@
 				<defName>VTE_Snob</defName>
 				<chance>25</chance>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Narcissist_DT</defName>
+				<chance>15</chance>
+			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li>
 				<defName>Ascetic</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<workDisables>
@@ -343,8 +374,14 @@
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Clumsy</defName>
 					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Clumsy_DT</defName>
+					</li>
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Dunce</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Dunce_DT</defName>
 					</li>
 					<li>
 						<defName>SlowLearner</defName>
@@ -367,7 +404,7 @@
 			<li>SerenBackstory</li>
 		</spawnCategories>
 		<skillGains>
-			<Crafting>5</Crafting>
+			<Crafting>4</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -390,6 +427,9 @@
 			<li>
 				<defName>SlowLearner</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Clumsy_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -409,7 +449,27 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName Degree="2">PsychicSensitivity</defName>
+				<options>
+					<li>
+						<defName Degree="1">PsychicSensitivity</defName>
+					</li>
+					<li>
+						<defName Degree="2">PsychicSensitivity</defName>
+					</li>
+				</options>
+				<count>1</count>
+			</li>
+			<li>
+				<options>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Devout_DT</defName>
+					</li>
+					<li>
+						<defName>Ascetic</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
@@ -418,6 +478,12 @@
 			</li>
 			<li>
 				<defName>Psychopath</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Sociopath_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Skeptic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<linkedBackstory>SerenPriest</linkedBackstory>
@@ -439,21 +505,24 @@
 			<Social>-4</Social>
 		</skillGains>
 		<forcedTraitsChance>
-			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-				<defName>VTE_Wanderlust</defName>
-				<chance>10</chance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Wanderlust</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Wanderer_DT</defName>
+					</li>
+				</options>
+				<count>25</count>
 			</li>
 			<li>
 				<defName>Nudist</defName>
-				<chance>10</chance>
-			</li>
-			<li>
-				<defName>Ascetic</defName>
 				<chance>15</chance>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Ecologist</defName>
-				<chance>5</chance>
+				<chance>15</chance>
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
@@ -462,6 +531,18 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_AnimalHater</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Snob</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Zoophobic_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Botanophobic_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Technophile_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<bioAgeRange>
@@ -549,6 +630,9 @@
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Academian</defName>
 					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Unimaginative_DT</defName>
+					</li>
 				</options>
 				<count>1</count>
 				<chance>25</chance>
@@ -572,6 +656,9 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -590,6 +677,27 @@
 			<Intellectual>2</Intellectual>
 			<Social>-2</Social>
 		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
+				<chance>35</chance>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Creative_DT</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
+		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
 	<!-- 18 -->
@@ -615,6 +723,9 @@
 			</li>
 			<li>
 				<defName>CreepyBreathing</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -715,6 +826,9 @@
 			<li>
 				<defName>Asexual</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -756,6 +870,9 @@
 		<disallowedTraitsChance>
 			<li>
 				<defName>Ascetic</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<bodyTypeMale>Thin</bodyTypeMale>
@@ -864,6 +981,9 @@
 			<li>
 				<defName>Ascetic</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -901,6 +1021,18 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_AnimalHater</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Zoophobic_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Botanophobic_DT</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -937,9 +1069,17 @@
 				<count>1</count>
 				<chance>50</chance>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Technophile_DT</defName>
+				<chance>35</chance>
+			</li>
 		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Clumsy_DT</defName>
+			</li>
+		</disallowedTraitsChance>
 		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</AlienRace.AlienBackstoryDef>
 	
 	<!-- 9 -->
@@ -974,6 +1114,9 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Squeamish</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Hemophobic_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -997,15 +1140,20 @@
 				<defName>VTE_Eccentric</defName>
 				<chance>10</chance>
 			</li>
-			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-				<defName>VTE_WorldWeary</defName>
-				<chance>10</chance>
-			</li>
 			<li>
 				<defName>TorturedArtist</defName>
 				<chance>15</chance>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Creative_DT</defName>
+				<chance>25</chance>
+			</li>
 		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Unimaginative_DT</defName>
+			</li>
+		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
 	<!-- 11 -->
@@ -1029,7 +1177,26 @@
 				<defName>VTE_Rebel</defName>
 				<chance>25</chance>
 			</li>
+			<li>
+				<options>
+					<li>
+						<li>
+							<defName>TorturedArtist</defName>
+						</li>
+						<li MayRequire="Dynamic.DynamicsTraits">
+							<defName>Creative_DT</defName>
+						</li>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
 		</forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Unimaginative_DT</defName>
+			</li>
+		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
 	<!-- 12 -->
@@ -1071,9 +1238,9 @@
 				<defName>Greedy</defName>
 				<chance>10</chance>
 			</li>
-			<li>
-				<defName>Jealous</defName>
-				<chance>10</chance>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Narcissist_DT</defName>
+				<chance>15</chance>
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
@@ -1085,6 +1252,12 @@
 			</li>
 			<li>
 				<defName>AnnoyingVoice</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Unimaginative_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<bodyTypeMale>Thin</bodyTypeMale>
@@ -1116,6 +1289,18 @@
 				<defName>FastLearner</defName>
 				<chance>20</chance>
 			</li>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">DrugDesire</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Hedonistic_DT</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li>
@@ -1141,9 +1326,17 @@
 			<Intellectual>-2</Intellectual>
 		</skillGains>
 		<forcedTraitsChance>
-			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-				<defName>VTE_Desensitized</defName>
-				<chance>25</chance>
+			<li>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Desensitized</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Mute_DT</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>40</chance>
 			</li>
 		</forcedTraitsChance>
 		<workDisables>
@@ -1178,6 +1371,7 @@
 					</li>
 				</options>
 				<count>1</count>
+				<chance>50</chance>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_IronStomach</defName>
@@ -1187,6 +1381,12 @@
 		<disallowedTraitsChance>
 			<li>
 				<defName>Ascetic</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Ageusia_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Anorexic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -1213,6 +1413,12 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Anxious</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<workDisables>
@@ -1244,8 +1450,8 @@
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
-			<li>
-				<defName>SlowLearner</defName>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Claustrophobic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -1290,6 +1496,10 @@
 					</li>
 				</options>
 				<count>1</count>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Skeptic_DT</defName>
+				<chance>35</chance>
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
@@ -1345,11 +1555,11 @@
 		<forcedTraitsChance>
 			<li>
 				<options>
-					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-						<defName>VTE_Vengeful</defName>
-					</li>
 					<li>
 						<defName>Psychopath</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Sociopath_DT</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1362,6 +1572,9 @@
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Desensitized</defName>
 					</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>VTE_Vengeful</defName>
+					</li>
 				</options>
 				<count>1</count>
 				<chance>50</chance>
@@ -1370,6 +1583,9 @@
 		<disallowedTraitsChance>
 			<li>
 				<defName>Kind</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Patient_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<workDisables>
@@ -1431,6 +1647,9 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -1455,24 +1674,38 @@
 		<forcedTraitsChance>
 			<li>
 				<options>
-					<li>
-						<defName>Gourmand</defName>
-					</li>
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Gastronomist</defName>
+					</li>
+					<li>
+						<defName>Gourmand</defName>
 					</li>
 				</options>
 				<count>1</count>
 				<chance>50</chance>
 			</li>
 			<li>
-				<defName>Kind</defName>
+				<options>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+						<defName>Patient_DT</defName>
+					</li>
+					<li>
+						<defName>Kind</defName>
+					</li>
+				</options>
+				<count>1</count>
 				<chance>25</chance>
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li>
 				<defName>Ascetic</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Ageusia_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Anorexic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -1548,6 +1781,9 @@
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Schizoid</defName>
 					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Mute_DT</defName>
+					</li>
 				</options>
 				<count>1</count>
 				<chance>50</chance>
@@ -1567,6 +1803,12 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Wanderlust</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Wanderer_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Claustrophobic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<workDisables>
@@ -1606,6 +1848,9 @@
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Academian</defName>
 					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Unimaginative_DT</defName>
+					</li>
 				</options>
 				<count>1</count>
 			</li>
@@ -1627,6 +1872,9 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 		<workDisables>
@@ -1676,12 +1924,18 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 			<li>
 				<defName>SlowLearner</defName>
 			</li>
 			<li>
 				<defName>HAR_Xenophobia</defName>
 				<degree>1</degree>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -1713,6 +1967,18 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_AnimalHater</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Zoophobic_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Botanophobic_DT</defName>
+			</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+				<defName>VTE_Dunce</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Dunce_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -1735,16 +2001,15 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>TorturedArtist</defName>
-				<chance>25</chance>
-			</li>
-			<li>
 				<options>
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Perfectionist</defName>
 					</li>
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Workaholic</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Creative_DT</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1754,6 +2019,12 @@
 		<disallowedTraitsChance>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_AbsentMinded</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Unimaginative_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Clumsy_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -1786,6 +2057,9 @@
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_AbsentMinded</defName>
 			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Unimaginative_DT</defName>
+			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -1808,14 +2082,13 @@
 				<defName>Transhumanist</defName>
 				<chance>25</chance>
 			</li>
-			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
-				<defName>VTE_MadSurgeon</defName>
-				<chance>10</chance>
-			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li>
 				<defName>BodyPurist</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Hemophobic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
@@ -1851,6 +2124,9 @@
 					</li>
 					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 						<defName>VTE_Lush</defName>
+					</li>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Hedonistic_DT</defName>
 					</li>
 				</options>
 				<count>1</count>
@@ -1892,8 +2168,16 @@
 				<count>1</count>
 			</li>
 			<li>
-				<defName>Ascetic</defName>
-				<chance>25</chance>
+				<options>
+					<li MayRequire="Dynamic.DynamicsTraits">
+						<defName>Devout_DT</defName>
+					</li>
+					<li>
+						<defName>Ascetic</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
 			</li>
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
@@ -1902,6 +2186,12 @@
 			</li>
 			<li>
 				<defName>Psychopath</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Mute_DT</defName>
+			</li>
+			<li MayRequire="Dynamic.DynamicsTraits">
+				<defName>Skeptic_DT</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
