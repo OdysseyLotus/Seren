@@ -16,7 +16,7 @@
 				<anchorTag>RightEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
-				<drawSize>0.2</drawSize>
+				<drawSize>0.17</drawSize>
 				<side>Right</side>
 				<drawData>
 					<defaultData>
@@ -31,7 +31,7 @@
 				<anchorTag>LeftEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
-				<drawSize>0.2</drawSize>
+				<drawSize>0.17</drawSize>
 				<side>Left</side>
 				<drawData>
 					<defaultData>
@@ -60,7 +60,7 @@
 				<texPath>Things/Seren/Ears/SerenEars</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Head</parentTagDef>
-				<useSkinShader>true</useSkinShader>
+				<useSkinShader>false</useSkinShader>
 				<useRottenColor>true</useRottenColor>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
@@ -398,16 +398,16 @@
 				<texPath>Things/Seren/Markings/Genes/Big</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -422,16 +422,16 @@
 				<texPath>Things/Seren/Markings/Genes/Brows</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -446,16 +446,16 @@
 				<texPath>Things/Seren/Markings/Genes/Cheeks</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -470,16 +470,16 @@
 				<texPath>Things/Seren/Markings/Genes/Freckles</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -494,16 +494,16 @@
 				<texPath>Things/Seren/Markings/Genes/Small</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -518,16 +518,16 @@
 				<texPath>Things/Seren/Markings/Genes/Target</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -542,16 +542,16 @@
 				<texPath>Things/Seren/Markings/Genes/Tristar</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<color>(255, 255, 255)</color>
 				<parentTagDef>Head</parentTagDef>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>10</layer>
-					</dataNorth>
-				</drawData>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<baseLayer>51</baseLayer>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
