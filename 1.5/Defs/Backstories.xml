@@ -170,8 +170,7 @@
 		<skillGains>
 			<Intellectual>2</Intellectual>
 			<Medicine>2</Medicine>
-			<Animals>-1</Animals>
-			<Plants>-1</Plants>
+			<Mining>-2</Mining>
 		</skillGains>
 		<forcedTraitsChance>
 			<li MayRequire="Dynamic.DynamicsTraits">
@@ -690,12 +689,10 @@
 				<defName>SlowLearner</defName>
 			</li>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>-1</degree>
+				<defName Degree="-1">Industriousness</defName>
 			</li>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>-2</degree>
+				<defName Degree="-2">Industriousness</defName>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
@@ -988,8 +985,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>ShootingAccuracy</defName>
-				<degree>1</degree>
+				<defName Degree="1">ShootingAccuracy</defName>
 				<chance>20</chance>
 			</li>
 			<li>
@@ -1818,12 +1814,10 @@
 				<defName>SlowLearner</defName>
 			</li>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>-1</degree>
+				<defName Degree="-1">Industriousness</defName>
 			</li>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>-2</degree>
+				<defName Degree="-2">Industriousness</defName>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
@@ -1987,12 +1981,10 @@
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li>
-				<defName>Nerves</defName>
-				<degree>2</degree>
+				<defName Degree="2">Nerves</defName>
 			</li>
 			<li>
-				<defName>Nerves</defName>
-				<degree>1</degree>
+				<defName Degree="1">Nerves</defName>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Wanderlust</defName>
@@ -2065,12 +2057,10 @@
 				<defName>SlowLearner</defName>
 			</li>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>-1</degree>
+				<defName Degree="-1">Industriousness</defName>
 			</li>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>-2</degree>
+				<defName Degree="-2">Industriousness</defName>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Dunce</defName>
@@ -2127,8 +2117,7 @@
 				<defName>SlowLearner</defName>
 			</li>
 			<li>
-				<defName>HAR_Xenophobia</defName>
-				<degree>1</degree>
+				<defName Degree="1">HAR_Xenophobia</defName>
 			</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
 				<defName>VTE_Anxious</defName>
@@ -2393,8 +2382,7 @@
 		</forcedTraitsChance>
 		<disallowedTraitsChance>
 			<li>
-				<defName>DrugDesire</defName>
-				<degree>-1</degree>
+				<defName Degree="-1">DrugDesire</defName>
 			</li>
 		</disallowedTraitsChance>
 	</AlienRace.AlienBackstoryDef>

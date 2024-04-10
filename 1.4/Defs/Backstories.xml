@@ -231,12 +231,8 @@
 				<value>2</value>
 			</li>
 			<li>
-				<key>Animals</key>
-				<value>-1</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>-1</value>
+				<key>Mining</key>
+				<value>-2</value>
 			</li>
 		</skillGains>
 		<forcedTraitsChance>

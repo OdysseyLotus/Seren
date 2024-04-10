@@ -360,9 +360,7 @@
 							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
 							<path>Things/Seren/Ears/Average/LeftEar</path>
 							<alignWithHead>true</alignWithHead>
-							<drawnInBed>true</drawnInBed>
 							<colorChannel>skin</colorChannel>
-							<drawnDesiccated>false</drawnDesiccated>
 							<inFrontOfBody>true</inFrontOfBody>
 							<conditions>
 								<BodyPart>
@@ -455,9 +453,7 @@
 							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
 							<path>Things/Seren/Ears/Average/RightEar</path>
 							<alignWithHead>true</alignWithHead>
-							<drawnInBed>true</drawnInBed>
 							<colorChannel>skin</colorChannel>
-							<drawnDesiccated>false</drawnDesiccated>
 							<inFrontOfBody>true</inFrontOfBody>
 							<conditions>
 								<BodyPart>
@@ -552,7 +548,6 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<alignWithHead>true</alignWithHead>
-							<drawnDesiccated>false</drawnDesiccated>
 							<conditions>
 								<BodyPart>
 									<bodyPart>SerenSensor</bodyPart>
@@ -589,7 +584,6 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<alignWithHead>true</alignWithHead>
-							<drawnDesiccated>false</drawnDesiccated>
 							<conditions>
 								<BodyPart>
 									<bodyPart>SerenSensor</bodyPart>
