@@ -384,7 +384,7 @@
 								<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/LeftEar</Age>
 								<Age For="HumanlikeChild">Things/Seren/Ears/Average/Child/LeftEar</Age>
 								<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Average/Child/LeftEar</Age>
-								<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+								<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 								<HeadType For="Male_NarrowNormal">
 									<path>Things/Seren/Ears/Narrow/LeftEar</path>
 									<extendedGraphics>
@@ -392,7 +392,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowPointy">
@@ -402,7 +402,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowWide">
@@ -412,7 +412,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowNormal">
@@ -422,7 +422,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowPointy">
@@ -432,7 +432,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowWide">
@@ -479,7 +479,7 @@
 								<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/RightEar</Age>
 								<Age For="HumanlikeChild">Things/Seren/Ears/Average/Child/RightEar</Age>
 								<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Average/Child/RightEar</Age>
-								<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+								<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 								<HeadType For="Male_NarrowNormal">
 									<path>Things/Seren/Ears/Narrow/RightEar</path>
 									<extendedGraphics>
@@ -487,7 +487,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowPointy">
@@ -497,7 +497,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowWide">
@@ -507,16 +507,17 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowNormal">
 									<path>Things/Seren/Ears/Narrow/RightEar</path>
 									<extendedGraphics>
-										<HumanlikeBaby>Things/Seren/Ears/Narrow/Baby/RightEar</HumanlikeBaby>
-										<HumanlikeChild>Things/Seren/Ears/Narrow/Child/RightEar</HumanlikeChild>
-										<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</HumanlikePreTeenager>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Age For="HumanlikeBaby">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
+										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/RightEar</Age>
+										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
+										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowPointy">
@@ -526,7 +527,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowWide">
@@ -536,7 +537,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren">Things/Seren/Transparent</Gene>
+										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 							</extendedGraphics>
@@ -568,14 +569,14 @@
 								<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Horns/Baby/SerenHornLeft</Age>
 								<Age For="HumanlikeChild">Things/Seren/Horns/Child/SerenHornLeft</Age>
 								<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Horns/Child/SerenHornLeft</Age>
-								<Gene For="SerenSensors_Back">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Branched">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Curled">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Curved">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Double">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Drop">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Spike">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Tall">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Back" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Branched" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Curled" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Curved" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Double" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Drop" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Spike" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Tall" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 							</extendedGraphics>
 						</li>
 						<li>
@@ -605,14 +606,14 @@
 								<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Horns/Baby/SerenHornRight</Age>
 								<Age For="HumanlikeChild">Things/Seren/Horns/Child/SerenHornRight</Age>
 								<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Horns/Child/SerenHornRight</Age>
-								<Gene For="SerenSensors_Back">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Branched">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Curled">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Curved">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Double">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Drop">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Spike">Things/Seren/Transparent</Gene>
-								<Gene For="SerenSensors_Tall">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Back" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Branched" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Curled" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Curved" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Double" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Drop" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Spike" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="SerenSensors_Tall" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 							</extendedGraphics>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 						</li>
