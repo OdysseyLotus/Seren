@@ -192,6 +192,7 @@
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
 									<coverage>0.07</coverage>
+									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>UpperHead</li>
                     					<li>FullHead</li>
