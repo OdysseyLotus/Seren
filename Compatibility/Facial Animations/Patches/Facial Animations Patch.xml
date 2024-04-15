@@ -32,6 +32,7 @@
 								<li><compClass>FacialAnimation.LidControllerComp</compClass></li>
 								<li><compClass>FacialAnimation.BrowControllerComp</compClass></li>
 								<li><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+								<li><compClass>FacialAnimation.SkinControllerComp</compClass></li>
 								<li><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 							</comps>
 						</value>
@@ -45,12 +46,99 @@
 							<li><compClass>FacialAnimation.LidControllerComp</compClass></li>
 							<li><compClass>FacialAnimation.BrowControllerComp</compClass></li>
 							<li><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+							<li><compClass>FacialAnimation.SkinControllerComp</compClass></li>
 							<li><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 						</value>
 					</match>
 				</li>
 			</operations>
 		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[1]/texPathFemale</xpath>
+					<value>
+						<texPathFemale>Things/Seren/Transparent</texPathFemale>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[2]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[2]/texPathFemale</xpath>
+					<value>
+						<texPathFemale>Things/Seren/Transparent</texPathFemale>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Ears_Seren"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Ears/FacialAnimations/SerenEars</texPath>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Big"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Brows"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Cheeks"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Freckles"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Small"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Target"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="SerenMarkings_Tristar"]/renderNodeProperties/li[1]/texPath</xpath>
+					<value>
+						<texPath>Things/Seren/Transparent</texPath>
+					</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationFindMod">
