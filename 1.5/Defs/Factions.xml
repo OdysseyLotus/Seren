@@ -182,14 +182,14 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<SerenWanderer>15</SerenWanderer>
-					<SerenSimpleGunner>10</SerenSimpleGunner>
-					<SerenLightGunner>10</SerenLightGunner>
-					<SerenHeavyGunner>5</SerenHeavyGunner>
-					<SerenSniper>1</SerenSniper>
-					<SerenGrenadier>1</SerenGrenadier>
-					<SerenMeleeUltratech>5</SerenMeleeUltratech>
-					<SerenCommander>5</SerenCommander>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+					<SerenHeavyGunner>10</SerenHeavyGunner>
+					<SerenSniper>5</SerenSniper>
+					<SerenGrenadier>5</SerenGrenadier>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+					<SerenCommander>10</SerenCommander>
 				</options>
 			</li>
 			<li>
@@ -210,18 +210,6 @@
 					<SerenWanderer>20</SerenWanderer>
 					<SerenSimpleGunner>20</SerenSimpleGunner>
 					<SerenLightGunner>15</SerenLightGunner>
-				</options>
-			</li>
-			<li>
-				<kindDef>Peaceful</kindDef>
-				<options>
-					<SerenWanderer>20</SerenWanderer>
-					<SerenSimpleGunner>10</SerenSimpleGunner>
-					<SerenLightGunner>7</SerenLightGunner>
-					<SerenHeavyGunner>3</SerenHeavyGunner>
-					<SerenMeleeUltratech>3</SerenMeleeUltratech>
-					<SerenAstropath>3</SerenAstropath>
-					<SerenPureOne>1</SerenPureOne>
 				</options>
 			</li>
 			<li>
@@ -287,16 +275,43 @@ After the failure of the Seren Uprising, a certain part of seren society blamed 
 		</colorSpectrum>
 		<pawnGroupMakers>
 			<li>
-				<kindDef>Settlement</kindDef>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
 				<options>
-					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+					<SerenHeavyGunner>10</SerenHeavyGunner>
+					<SerenSniper>5</SerenSniper>
+					<SerenGrenadier>5</SerenGrenadier>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+					<SerenCommander>10</SerenCommander>
+					<SerenPureOne>5</SerenPureOne>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
 					<SerenLightGunner>10</SerenLightGunner>
 					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenMeleeUltratech>5</SerenMeleeUltratech>
 					<SerenAstropath>5</SerenAstropath>
-					<SerenMeleeUltratech>3</SerenMeleeUltratech>
-					<SerenGrenadier>3</SerenGrenadier>
-					<SerenCommander>2</SerenCommander>
-					<SerenPureOne>1</SerenPureOne>
+					<SerenPureOne>3</SerenPureOne>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+					<SerenHeavyGunner>10</SerenHeavyGunner>
+					<SerenAstropath>10</SerenAstropath>
+					<SerenMeleeUltratech>8</SerenMeleeUltratech>
+					<SerenGrenadier>8</SerenGrenadier>
+					<SerenCommander>7</SerenCommander>
+					<SerenPureOne>5</SerenPureOne>
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -341,16 +356,43 @@ After the failure of the Seren Uprising, these seren believe that the Empire is 
 		<naturalEnemy>true</naturalEnemy>
 		<pawnGroupMakers>
 			<li>
-				<kindDef>Settlement</kindDef>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
 				<options>
-					<SerenSimpleGunner>10</SerenSimpleGunner>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+					<SerenHeavyGunner>10</SerenHeavyGunner>
+					<SerenSniper>5</SerenSniper>
+					<SerenGrenadier>5</SerenGrenadier>
+					<SerenMeleeUltratech>10</SerenMeleeUltratech>
+					<SerenCommander>10</SerenCommander>
+					<SerenStellaregis>5</SerenStellaregis>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<SerenWanderer>20</SerenWanderer>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
 					<SerenLightGunner>10</SerenLightGunner>
 					<SerenHeavyGunner>5</SerenHeavyGunner>
+					<SerenMeleeUltratech>5</SerenMeleeUltratech>
 					<SerenAstropath>5</SerenAstropath>
-					<SerenMeleeUltratech>3</SerenMeleeUltratech>
-					<SerenGrenadier>3</SerenGrenadier>
-					<SerenCommander>2</SerenCommander>
-					<SerenStellaregis>2</SerenStellaregis>
+					<SerenStellaregis>3</SerenStellaregis>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SerenSimpleGunner>15</SerenSimpleGunner>
+					<SerenLightGunner>15</SerenLightGunner>
+					<SerenHeavyGunner>10</SerenHeavyGunner>
+					<SerenAstropath>10</SerenAstropath>
+					<SerenMeleeUltratech>8</SerenMeleeUltratech>
+					<SerenGrenadier>8</SerenGrenadier>
+					<SerenCommander>7</SerenCommander>
+					<SerenStellaregis>5</SerenStellaregis>
 				</options>
 			</li>
 		</pawnGroupMakers>

@@ -776,7 +776,7 @@
 		<initialResistanceRange>14~22</initialResistanceRange>
 	</PawnKindDef>
 
-  <PawnKindDef ParentName="SerenTribalModel">
+	<PawnKindDef ParentName="SerenTribalModel">
 		<defName>SerenFighter</defName>
 		<label>seren fighter</label>
 		<combatPower>50</combatPower>
