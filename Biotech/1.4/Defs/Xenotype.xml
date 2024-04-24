@@ -2,21 +2,22 @@
 <Defs>
   
 	<XenotypeDef>
-		<defName>Seren_Base</defName>
+		<defName>OL_SerenBase</defName>
 		<label>base seren</label>
 		<description>A seren phenotype.</description>
-		<descriptionShort>Probably just copy-paste race description</descriptionShort>
+		<descriptionShort>A seren phenotype.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Seren</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
+			<li>OL_SerenBlood</li>
+			<li>OL_SerenEyes</li>
+			<li>OL_SerenEars</li>
+			<li>OL_DarkVision</li>
+			<li>OL_ElongatedFingers</li>
 			<li>Hair_Grayless</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Body_Thin</li>
 			<li>Body_Standard</li>
-			<li>LotusEyes_Seren</li>
-			<li>Ears_Seren</li>
-			<li>OLDarkVision</li>
-			<li>OLElongatedFingers</li>
 			<li>Libido_Low</li>
 			<li MayRequire="sarg.alphagenes">AG_SlowGestation</li>
 			
@@ -37,39 +38,39 @@
 			<li>SerenMarkings_Target</li>
 			<li>SerenMarkings_Tristar</li>
 			
-			<li>LotusSkin_Teal</li>
-			<li>LotusSkin_Cobalt</li>
-			<li>LotusSkin_Indigo</li>
-			<li>LotusSkin_Royal</li>
-			<li>LotusSkin_Violet</li>
-			<li>LotusSkin_Plum</li>
-			<li>LotusSkin_Orchid</li>
-			<li>LotusSkin_Majenta</li>
-			<li>LotusSkin_Rouge</li>
-			<li>LotusSkin_Albino</li>
-			<li>LotusSkin_Twilight</li>
-			<li>LotusSkin_Nebula</li>
-			<li>LotusSkin_Planetary</li>
+			<li>OL_SkinTeal</li>
+			<li>OL_SkinCobalt</li>
+			<li>OL_SkinIndigo</li>
+			<li>OL_SkinRoyal</li>
+			<li>OL_SkinViolet</li>
+			<li>OL_SkinPlum</li>
+			<li>OL_SkinOrchid</li>
+			<li>OL_SkinMajenta</li>
+			<li>OL_SkinRouge</li>
+			<li>OL_SkinAlbino</li>
+			<li>OL_SkinTwilight</li>
+			<li>OL_SkinNebula</li>
+			<li>OL_SkinPlanetary</li>
 			
-			<li>LotusHair_Sky</li>
-			<li>LotusHair_Powder</li>
-			<li>LotusHair_Periwinkle</li>
-			<li>LotusHair_Aegean</li>
-			<li>LotusHair_Navy</li>
-			<li>LotusHair_Lapis</li>
-			<li>LotusHair_Lilac</li>
-			<li>LotusHair_Lavender</li>
-			<li>LotusHair_Mauve</li>
-			<li>LotusHair_Indigo</li>
-			<li>LotusHair_Eggplant</li>
-			<li>LotusHair_Plum</li>
-			<li>LotusHair_Wisteria</li>
-			<li>LotusHair_Blush</li>
-			<li>LotusHair_Rose</li>
-			<li>LotusHair_Berry</li>
-			<li>LotusHair_Wine</li>
-			<li>LotusHair_Amaranth</li>
-			<li>LotusHair_Albino</li>
+			<li>OL_HairSky</li>
+			<li>OL_HairPowder</li>
+			<li>OL_HairPeriwinkle</li>
+			<li>OL_HairAegean</li>
+			<li>OL_HairNavy</li>
+			<li>OL_HairLapis</li>
+			<li>OL_HairLilac</li>
+			<li>OL_HairLavender</li>
+			<li>OL_HairMauve</li>
+			<li>OL_HairIndigo</li>
+			<li>OL_HairEggplant</li>
+			<li>OL_HairPlum</li>
+			<li>OL_HairWisteria</li>
+			<li>OL_HairBlush</li>
+			<li>OL_HairRose</li>
+			<li>OL_HairBerry</li>
+			<li>OL_HairWine</li>
+			<li>OL_HairAmaranth</li>
+			<li>OL_HairAlbino</li>
 		</genes>
 	</XenotypeDef>
 
@@ -81,10 +82,10 @@
 		<iconPath>UI/Icons/Xenotypes/HalfSeren</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
-			<li>Hair_Grayless</li>
+			<li>HairGrayless</li>
 			<li>Body_Thin</li>
 			<li>Body_Standard</li>
-			<li>LotusEyes_Seren</li>
+			<li>OL_Eyes_Seren</li>
 			<li>Ears_Seren</li>
 			<li>OLDarkVision</li>
 			<li>OLElongatedFingers</li>
@@ -109,4 +110,5 @@
 			<li>SerenMarkings_Tristar</li>
 		</genes>
 	</XenotypeDef>-->
+	
  </Defs>

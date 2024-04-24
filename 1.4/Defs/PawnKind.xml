@@ -34,7 +34,7 @@
 		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
@@ -158,7 +158,7 @@
 		</techHediffsTags>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
@@ -192,7 +192,7 @@
 		</techHediffsTags>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>

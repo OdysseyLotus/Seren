@@ -3,7 +3,7 @@
 
 	<!-- Eyes -->
 	<GeneDef ParentName="GeneEyeColor">
-		<defName>LotusEyes_Seren</defName>
+		<defName>OL_SerenEyes</defName>
 		<label>seren eyes</label>
 		<labelShortAdj>seren eyes</labelShortAdj>
 		<description>Carriers of this gene have seren eyes, with long eyelashes and white, star-shaped pupils.</description>
@@ -47,9 +47,31 @@
 		</renderNodeProperties>
 	</GeneDef>
 	
+	<!-- Blood -->
+	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <defName>OL_SerenBlood</defName>
+        <label>Seren blood</label>
+        <description>Those with thise gene have the same blood type as other seren, giving it a purple color.</description>
+        <iconPath>UI/Icons/Genes/Gene_SerenBlood</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+		<displayCategory MayRequireAnyOf="SX99.biotech.bloodcolorgenes,SX99.biotech.lessbloodcolorgenes">Blood_Color</displayCategory>
+		<biostatCpx>0</biostatCpx>
+        <modExtensions>
+            <li Class="VanillaGenesExpanded.GeneExtension">
+                <customBloodThingDef>OL_SerenBlood</customBloodThingDef>
+                <customBloodIcon>UI/Icons/Medical/SerenBlood_BleedingIcon</customBloodIcon>
+                <customBloodEffect>OL_SerenDamage</customBloodEffect>
+                <customWoundsFromFleshtype>OL_SerenFlesh</customWoundsFromFleshtype>
+            </li>
+        </modExtensions>
+		<exclusionTags>
+			<li>BloodColor</li>
+		</exclusionTags>
+    </GeneDef>
+	
 	<!-- Addons -->
 	<GeneDef Name="GeneEarsBase">
-		<defName>Ears_Seren</defName>
+		<defName>OL_SerenEars</defName>
 		<label>seren ears</label>
 		<description>Carriers of this gene have seren-like ears.</description>
 		<iconPath>UI/Icons/Genes/Gene_EarSeren</iconPath>
@@ -557,7 +579,7 @@
 	</GeneDef>
 	
 	<GeneDef>
-		<defName>OLDarkVision</defName>
+		<defName>OL_DarkVision</defName>
 		<label>dark vision</label>
 		<description>Carriers of this gene see well in low light and are unaffected by mood penalties related to darkness. They have a reflective layer behind the retina that amplifies their ability to see in the dark.</description>
 		<iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
@@ -582,7 +604,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneHandsBase">
-		<defName>OLElongatedFingers</defName>
+		<defName>OL_ElongatedFingers</defName>
 		<label>elongated fingers</label>
 		<description>Long, delicate fingers improve the carrier's manipulation capacity. This aids with many tasks, especially crafting and construction.</description>
 		<iconPath>UI/Icons/Genes/Gene_ElongatedFingers</iconPath>

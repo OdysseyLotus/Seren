@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Manifest>
     <identifier>odysseylotus.seren</identifier>
-	<version>1.4.2</version>
+	<version>1.4.3</version>
     <showCrossPromotions>true</showCrossPromotions>
     <suggests>
         <li>2844766352</li>

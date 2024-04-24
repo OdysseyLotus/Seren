@@ -381,7 +381,7 @@
 								<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/LeftEar</Age>
 								<Age For="HumanlikeChild">Things/Seren/Ears/Average/Child/LeftEar</Age>
 								<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Average/Child/LeftEar</Age>
-								<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 								<HeadType For="Male_NarrowNormal">
 									<path>Things/Seren/Ears/Narrow/LeftEar</path>
 									<extendedGraphics>
@@ -389,7 +389,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowPointy">
@@ -399,7 +399,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowWide">
@@ -409,7 +409,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowNormal">
@@ -419,7 +419,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowPointy">
@@ -429,7 +429,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowWide">
@@ -439,7 +439,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/LeftEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/LeftEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 							</extendedGraphics>
@@ -474,7 +474,7 @@
 								<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/RightEar</Age>
 								<Age For="HumanlikeChild">Things/Seren/Ears/Average/Child/RightEar</Age>
 								<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Average/Child/RightEar</Age>
-								<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+								<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 								<HeadType For="Male_NarrowNormal">
 									<path>Things/Seren/Ears/Narrow/RightEar</path>
 									<extendedGraphics>
@@ -482,7 +482,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowPointy">
@@ -492,7 +492,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Male_NarrowWide">
@@ -502,7 +502,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowNormal">
@@ -512,7 +512,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Average/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowPointy">
@@ -522,7 +522,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 								<HeadType For="Female_NarrowWide">
@@ -532,7 +532,7 @@
 										<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Seren/Ears/Narrow/Baby/RightEar</Age>
 										<Age For="HumanlikeChild">Things/Seren/Ears/Narrow/Child/RightEar</Age>
 										<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Ears/Narrow/Child/RightEar</Age>
-										<Gene For="Ears_Seren" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
+										<Gene For="OL_SerenEars" MayRequire="Ludeon.RimWorld.Biotech">Things/Seren/Transparent</Gene>
 									</extendedGraphics>
 								</HeadType>
 							</extendedGraphics>
@@ -549,7 +549,7 @@
 							<alignWithHead>true</alignWithHead>
 							<conditions>
 								<BodyPart>
-									<bodyPart>SerenSensor</bodyPart>
+									<bodyPart>OL_SerenSensor</bodyPart>
 									<bodyPartLabel>left sensor</bodyPartLabel>
 								</BodyPart>
 								<Apparel>
@@ -585,7 +585,7 @@
 							<alignWithHead>true</alignWithHead>
 							<conditions>
 								<BodyPart>
-									<bodyPart>SerenSensor</bodyPart>
+									<bodyPart>OL_SerenSensor</bodyPart>
 									<bodyPartLabel>right sensor</bodyPartLabel>
 								</BodyPart>
 								<Apparel>
@@ -669,11 +669,12 @@
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
 				<xenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Seren_Base</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenBase</li>
 				</xenotypeList>
 				<whiteGeneList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenBlood</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEyes</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</li>
 				</whiteGeneList>
 				<whiteGeneTags>
 					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSkinColor</li>
@@ -808,22 +809,24 @@
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
+			<nameCategory>HumanStandard</nameCategory>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>275</lifeExpectancy>
-			<bloodDef>Filth_SerenBlood</bloodDef>
-			<leatherDef>SerenLeather</leatherDef>
-			<fleshType>Seren</fleshType>
-			<nameCategory>HumanStandard</nameCategory>
-			<body>Seren_Body</body>
+			<fleshType>OL_SerenFlesh</fleshType>
+			<bloodDef>OL_SerenBlood</bloodDef>
+			<bloodSmearDef>OL_SerenBloodSmear</bloodSmearDef>
+			<leatherDef>OL_SerenLeather</leatherDef>
+			<body>OL_SerenBody</body>
 			<baseBodySize>0.95</baseBodySize>
 			<baseHealthScale>0.85</baseHealthScale>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<foodType>OmnivoreHuman</foodType>
-			<canBecomeShambler>true</canBecomeShambler>
-			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
-			<anomalyKnowledge>1</anomalyKnowledge>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>1</anomalyKnowledge>	
+			<canBecomeShambler>true</canBecomeShambler>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -859,6 +862,30 @@
 					<minAge>35</minAge>
 				</li>
 			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>3</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+				<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">13</DarkStudy>
+			</lifeStageWorkSettings>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<!--<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>-->
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -897,6 +924,40 @@
 				<li>Human</li>
 			</hediffGiverSets>
 		</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BlissLobotomy</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">GhoulInfusion</li>
+		</recipes>
+		<comps>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+				<getsColdContainmentBonus>false</getsColdContainmentBonus>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresImprisonment>true</requiresImprisonment>
+			</li>
+		</comps>
 	</AlienRace.ThingDef_AlienRace>
 	
 	<AlienRace.RaceSettings>
@@ -1068,99 +1129,5 @@
 			</alienwandererkinds>
 		</pawnKindSettings>
 	</AlienRace.RaceSettings>
-	
-	<FleshTypeDef>
-		<defName>Seren</defName>
-		<corpseCategory>CorpsesAnimal</corpseCategory>
-		<damageEffecter>Damage_HitFlesh</damageEffecter>
-		<isOrganic>true</isOrganic>
-		<genericWounds>
-			<li>
-				<texture>Things/Seren/Wounds/WoundFleshA</texture>
-			</li>
-			<li>
-				<texture>Things/Seren/Wounds/WoundFleshB</texture>
-			</li>
-			<li>
-				<texture>Things/Seren/Wounds/WoundFleshC</texture>
-			</li>
-		</genericWounds>
-		<bandagedWounds>
-			<li>
-				<texture>Things/Pawn/Wounds/BandagedA</texture>
-			</li>
-			<li>
-				<texture>Things/Pawn/Wounds/BandagedB</texture>
-			</li>
-			<li>
-				<texture>Things/Pawn/Wounds/BandagedC</texture>
-			</li>
-		</bandagedWounds>
-		<hediffWounds>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<hediff>Scarification</hediff>
-				<wounds>
-					<li>
-						<texture>Things/Pawn/Wounds/ScarificationA</texture>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<displayOverApparel>false</displayOverApparel>
-						<displayPermanent>false</displayPermanent>
-						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
-					</li>
-					<li>
-						<texture>Things/Pawn/Wounds/ScarificationB</texture>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<displayOverApparel>false</displayOverApparel>
-						<displayPermanent>false</displayPermanent>
-						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
-					</li>
-					<li>
-						<texture>Things/Pawn/Wounds/ScarificationC</texture>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<displayOverApparel>false</displayOverApparel>
-						<displayPermanent>false</displayPermanent>
-						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
-					</li>
-				</wounds>
-			</li>
-			<li>
-				<hediff>MissingBodyPart</hediff>
-				<wounds>
-					<li>
-						<textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
-						<textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
-						<textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
-						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
-						<flipWest>true</flipWest>
-						<onlyOnPart>Eye</onlyOnPart>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
-						<flipOnRotation>South</flipOnRotation>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<missingBodyPartFresh>false</missingBodyPartFresh>
-						<scale>0.7</scale>
-						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
-					</li>
-					<li>
-						<textureSouth>Things/Seren/Wounds/MissingEye_Fresh</textureSouth>
-						<textureNorth>Things/Seren/Wounds/MissingEye_Fresh</textureNorth>
-						<textureEast>Things/Seren/Wounds/MissingEye_Fresh</textureEast>
-						<textureWest>Things/Seren/Wounds/MissingEye_Fresh</textureWest>
-						<flipWest>true</flipWest>
-						<onlyOnPart>Eye</onlyOnPart>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
-						<flipOnRotation>South</flipOnRotation>
-						<missingBodyPartFresh>true</missingBodyPartFresh>
-						<scale>0.7</scale>
-						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
-					</li>
-				</wounds>
-			</li>
-		</hediffWounds>
-	</FleshTypeDef>
 
 </Defs>

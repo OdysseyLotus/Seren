@@ -211,7 +211,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<Seren_Base>0.05</Seren_Base>
+					<OL_SerenBase>0.05</OL_SerenBase>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -219,7 +219,7 @@
 				<value>
 					<xenotypeSet>
 						<xenotypeChances>
-							<Seren_Base>0.05</Seren_Base>
+							<OL_SerenBase>0.05</OL_SerenBase>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -227,7 +227,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<Seren_Base>0.05</Seren_Base>
+					<OL_SerenBase>0.05</OL_SerenBase>
 				</value>
 			</li>
 		</operations>
@@ -243,13 +243,13 @@
 						<pawnChoiceCount>8</pawnChoiceCount>
 						<overrideKinds>
 							<li>
-								<xenotype>Seren_Base</xenotype>
+								<xenotype>OL_SerenBase</xenotype>
 								<pawnKind>SerenColonist</pawnKind>
 							</li>
 						</overrideKinds>
 						<xenotypeCounts>
 							<li>
-								<xenotype>Seren_Base</xenotype>
+								<xenotype>OL_SerenBase</xenotype>
 								<count>4</count>
 								<description>seren colonists</description>
 								<requiredAtStart>true</requiredAtStart>
@@ -267,13 +267,13 @@
 						<pawnChoiceCount>8</pawnChoiceCount>
 						<overrideKinds>
 							<li>
-								<xenotype>Seren_Base</xenotype>
+								<xenotype>OL_SerenBase</xenotype>
 								<pawnKind>SerenColonist</pawnKind>
 							</li>
 						</overrideKinds>
 						<xenotypeCounts>
 							<li>
-								<xenotype>Seren_Base</xenotype>
+								<xenotype>OL_SerenBase</xenotype>
 								<count>5</count>
 								<description>seren colonists</description>
 								<requiredAtStart>true</requiredAtStart>
@@ -307,13 +307,13 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 					<value>
-						<Seren_Base>0.05</Seren_Base>
+						<OL_SerenBase>0.05</OL_SerenBase>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
 					<value>
-						<Seren_Base>0.05</Seren_Base>
+						<OL_SerenBase>0.05</OL_SerenBase>
 					</value>
 				</li>
 			</operations>
@@ -327,7 +327,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/FactionDef[defName="VFEP_Junkers"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
-				<Seren_Base>0.05</Seren_Base>
+				<OL_SerenBase>0.05</OL_SerenBase>
 			</value>
 		</match>
 	</Operation>-->

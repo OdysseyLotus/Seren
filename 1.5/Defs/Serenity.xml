@@ -1,268 +1,267 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="MakeableDrugBase">
-    <defName>Drug_Serenity</defName>
-    <label>serenity</label>
-    <description>A powdery drug made from crushing and refining seren bones, although their horns are the most common ingredient. Seren bones contain a chemical compound that, when crushed and refined, heightens the user's senses significantly; however, it is extremely addictive and hallucinogenic.</description>
-    <descriptionHyperlinks>
-      <HediffDef>SerenityHigh</HediffDef>
-      <HediffDef>SerenityTolerance</HediffDef>
-      <HediffDef>SerenityAddiction</HediffDef>
-      <HediffDef>ChemicalDamageSevere</HediffDef>
-    </descriptionHyperlinks>
-    <graphicData>
-      <texPath>Things/Item/Drug/Yayo</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(209, 190, 237)</color>
-      <drawSize>0.75</drawSize>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <statBases>
-      <WorkToMake>400</WorkToMake>
-      <MarketValue>20</MarketValue>
-      <Mass>0.05</Mass>
-    </statBases>
-    <techLevel>Industrial</techLevel>
-    <minRewardCount>10</minRewardCount>
-    <ingestible>
-      <foodType>Processed</foodType>
-      <joyKind>Chemical</joyKind>
-      <joy>0.35</joy>
-      <baseIngestTicks>650</baseIngestTicks>
-      <nurseable>true</nurseable>
-      <drugCategory>Hard</drugCategory>
-      <ingestSound>Ingest_Snort</ingestSound>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.21,0,0.05)</offset>
-        </northDefault>
-      </ingestHoldOffsetStanding>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Snort {0}</ingestCommandString>
-      <ingestReportString>Snorting {0}.</ingestReportString>
-      <useEatingSpeedStat>false</useEatingSpeedStat>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SerenityHigh</hediffDef>
-          <severity>0.75</severity>
-          <toleranceChemical>Serenity</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>0.2</offset>
-          <toleranceChemical>Serenity</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SerenityTolerance</hediffDef>
-          <severity>0.04</severity>
-          <divideByBodySize>true</divideByBodySize>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-    <recipeMaker>
-      <researchPrerequisite>PsychiteRefining</researchPrerequisite>
-      <recipeUsers>
-        <li>DrugLab</li>
-      </recipeUsers>
-      <soundWorking>Recipe_Drug</soundWorking>
-    </recipeMaker>
-    <costList>
-      <SerenSensor_Item>1</SerenSensor_Item>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>Serenity</chemical>
-        <addictiveness>0.05</addictiveness>
-        <existingAddictionSeverityOffset>0.30</existingAddictionSeverityOffset>
-        <needLevelOffset>0.9</needLevelOffset>
-        <listOrder>110</listOrder>
-        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
-        <largeOverdoseChance>0.015</largeOverdoseChance>
-      </li>
-    </comps>
-  </ThingDef>
-  
-  <HediffDef>
-    <defName>SerenityHigh</defName>
-    <label>high on serenity</label>
-    <labelNoun>a serenity high</labelNoun>
-    <description>Active serenity in the bloodstream. Causes hallucinations and heightened senses.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-3.0</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-	<stages>
-	  <li>
-		<painOffset>0.25</painOffset>
-		<capMods>
-			<li>
-				<capacity>Consciousness</capacity>
-				<offset>0.25</offset>
-            </li>
-			<li>
-				<capacity>Hearing</capacity>
-				<offset>0.25</offset>
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>Drug_Serenity</defName>
+		<label>serenity</label>
+		<description>A powdery drug made from crushing and refining seren bones, although their horns are the most common ingredient. Seren bones contain a chemical compound that, when crushed and refined, heightens the user's senses significantly; however, it is extremely addictive and hallucinogenic.</description>
+		<descriptionHyperlinks>
+			<HediffDef>SerenityHigh</HediffDef>
+			<HediffDef>SerenityTolerance</HediffDef>
+			<HediffDef>SerenityAddiction</HediffDef>
+			<HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Yayo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(209, 190, 237)</color>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>20</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<minRewardCount>10</minRewardCount>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.35</joy>
+			<baseIngestTicks>650</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Hard</drugCategory>
+			<ingestSound>Ingest_Snort</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Snort {0}</ingestCommandString>
+			<ingestReportString>Snorting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SerenityHigh</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Serenity</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.2</offset>
+					<toleranceChemical>Serenity</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SerenityTolerance</hediffDef>
+					<severity>0.04</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<costList>
+			<OL_SerenSensor_Item>1</OL_SerenSensor_Item>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Serenity</chemical>
+				<addictiveness>0.05</addictiveness>
+				<existingAddictionSeverityOffset>0.30</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<largeOverdoseChance>0.015</largeOverdoseChance>
 			</li>
-			<li>
-				<capacity>Sight</capacity>
-				<offset>0.25</offset>
-			</li>
-			<li>
-				<capacity>Manipulation</capacity>
-				<offset>0.25</offset>
-			</li>
-		</capMods>
-		<statOffsets>
-            <WorkSpeedGlobal>0.75</WorkSpeedGlobal>
-            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.25</MeditationFocusGain>
-        </statOffsets>
-	  </li>
-    </stages>
-  </HediffDef>
+		</comps>
+	</ThingDef>
   
-  <ThoughtDef>
-    <defName>SerenityHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>SerenityHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>high on serenity</label>
-        <description>I am one with the universe. I can feel the stars move and the world breath.</description>
-        <baseMoodEffect>15</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<HediffDef>
+		<defName>SerenityHigh</defName>
+		<label>high on serenity</label>
+		<labelNoun>a serenity high</labelNoun>
+		<description>Active serenity in the bloodstream. Causes hallucinations and heightened senses.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.25</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.25</MeditationFocusGain>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
   
-  <ChemicalDef>
-    <defName>Serenity</defName>
-    <label>Serenity</label>
-    <addictionHediff>SerenityAddiction</addictionHediff>
-    <toleranceHediff>SerenityTolerance</toleranceHediff>
-    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
-  </ChemicalDef>
+	<ThoughtDef>
+		<defName>SerenityHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SerenityHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>high on serenity</label>
+				<description>I am one with the universe. I can feel the stars move and the world breath.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+	<ChemicalDef>
+		<defName>Serenity</defName>
+		<label>Serenity</label>
+		<addictionHediff>SerenityAddiction</addictionHediff>
+		<toleranceHediff>SerenityTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
 
-  <NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>Chemical_Serenity</defName>
-    <needClass>Need_Chemical</needClass>
-    <label>serenity</label>
-    <description>Because of a serenity dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
-    <listPriority>25</listPriority>
-  </NeedDef>
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Serenity</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>serenity</label>
+		<description>Because of a serenity dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<listPriority>25</listPriority>
+	</NeedDef>
   
-  <HediffDef ParentName="DrugToleranceBase">
-    <defName>SerenityTolerance</defName>
-    <label>serenity tolerance</label>
-    <description>A built-up tolerance to serenity. The more severe this tolerance is, the more serenity it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.015</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>Serenity</chemical>
-      </li>
-    </comps>
-    <hediffGivers>
-      <li Class="HediffGiver_RandomDrugEffect">
-        <hediff>Cataract</hediff>
-        <severityToMtbDaysCurve>
-          <points>
-            <li>(0.36, 99999)</li>
-            <li>(0.4, 180)</li>
-            <li>(1, 135)</li>
-          </points>
-        </severityToMtbDaysCurve>
-        <partsToAffect>
-          <li>Eye</li>
-        </partsToAffect>
-        <countToAffect>1</countToAffect>
-      </li>
-	  <li Class="HediffGiver_RandomDrugEffect">
-        <hediff>HearingLoss</hediff>
-        <severityToMtbDaysCurve>
-          <points>
-            <li>(0.36, 99999)</li>
-            <li>(0.4, 180)</li>
-            <li>(1, 135)</li>
-          </points>
-        </severityToMtbDaysCurve>
-        <partsToAffect>
-          <li>Ear</li>
-        </partsToAffect>
-        <countToAffect>1</countToAffect>
-      </li>
-    </hediffGivers>
-  </HediffDef>
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>SerenityTolerance</defName>
+		<label>serenity tolerance</label>
+		<description>A built-up tolerance to serenity. The more severe this tolerance is, the more serenity it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Serenity</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Cataract</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.36, 99999)</li>
+						<li>(0.4, 180)</li>
+						<li>(1, 135)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Eye</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>HearingLoss</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.36, 99999)</li>
+						<li>(0.4, 180)</li>
+						<li>(1, 135)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Ear</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
   
-  <HediffDef ParentName="AddictionBase">
-    <defName>SerenityAddiction</defName>
-    <label>serenity dependence</label>
-    <description>A chemical addiction to serenity. Long-term use of serenity has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of serenity, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>Chemical_Serenity</causesNeed>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.0333</severityPerDay>
-        <showDaysToRecover>true</showDaysToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-      </li>
-      <li>
-        <label>withdrawal</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>Sight</capacity>
-            <offset>-0.15</offset>
-          </li>
-		  <li>
-            <capacity>Hearing</capacity>
-            <offset>-0.15</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Wander_Psychotic</mentalState>
-            <mtbDays>30</mtbDays>
-          </li>
-          <li>
-            <mentalState>Binging_DrugMajor</mentalState>
-            <mtbDays>50</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-    </stages>
-  </HediffDef>
+	<HediffDef ParentName="AddictionBase">
+		<defName>SerenityAddiction</defName>
+		<label>serenity dependence</label>
+		<description>A chemical addiction to serenity. Long-term use of serenity has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.\nWithout regular doses of serenity, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>Chemical_Serenity</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>30</mtbDays>
+					</li>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
 
-  <ThoughtDef>
-    <defName>SerenityWithdrawal</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>SerenityAddiction</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>serenity withdrawal</label>
-        <description>I can't feel the movements of the universe anymore. It feels like I've lost one of my senses.</description>
-        <baseMoodEffect>-20</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<ThoughtDef>
+		<defName>SerenityWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SerenityAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>serenity withdrawal</label>
+				<description>I can't feel the movements of the universe anymore. It feels like I've lost one of my senses.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>

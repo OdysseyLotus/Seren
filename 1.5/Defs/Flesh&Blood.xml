@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<FleshTypeDef>
+		<defName>OL_SerenFlesh</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>OL_SerenDamage</damageEffecter>
+		<isOrganic>true</isOrganic>
+		<genericWounds>
+			<li>
+				<texture>Things/Seren/Wounds/WoundFleshA</texture>
+			</li>
+			<li>
+				<texture>Things/Seren/Wounds/WoundFleshB</texture>
+			</li>
+			<li>
+				<texture>Things/Seren/Wounds/WoundFleshC</texture>
+			</li>
+		</genericWounds>
+		<bandagedWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedC</texture>
+			</li>
+		</bandagedWounds>
+		<hediffWounds>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<hediff>Scarification</hediff>
+				<wounds>
+					<li>
+						<texture>Things/Pawn/Wounds/ScarificationA</texture>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<displayOverApparel>false</displayOverApparel>
+						<displayPermanent>false</displayPermanent>
+						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+					</li>
+					<li>
+						<texture>Things/Pawn/Wounds/ScarificationB</texture>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<displayOverApparel>false</displayOverApparel>
+						<displayPermanent>false</displayPermanent>
+						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+					</li>
+					<li>
+						<texture>Things/Pawn/Wounds/ScarificationC</texture>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<displayOverApparel>false</displayOverApparel>
+						<displayPermanent>false</displayPermanent>
+						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+					</li>
+				</wounds>
+			</li>
+			<li>
+				<hediff>MissingBodyPart</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<missingBodyPartFresh>false</missingBodyPartFresh>
+						<scale>0.7</scale>
+						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+					</li>
+					<li>
+						<textureSouth>Things/Seren/Wounds/MissingEye_Fresh</textureSouth>
+						<textureNorth>Things/Seren/Wounds/MissingEye_Fresh</textureNorth>
+						<textureEast>Things/Seren/Wounds/MissingEye_Fresh</textureEast>
+						<textureWest>Things/Seren/Wounds/MissingEye_Fresh</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<missingBodyPartFresh>true</missingBodyPartFresh>
+						<scale>0.7</scale>
+						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+					</li>
+				</wounds>
+			</li>
+		</hediffWounds>
+	</FleshTypeDef>
+	
+	<ThingDef Name="SerenBlood" ParentName="BaseFilth">
+		<defName>OL_SerenBlood</defName>
+		<label>seren blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(130, 55, 120, 180)</color>
+		</graphicData>
+		<filth>
+            <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+            <disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+  
+	<ThingDef ParentName="SerenBlood">
+		<defName>OL_SerenBloodSmear</defName>
+		<label>seren blood smear</label>
+		<graphicData>
+			<texPath>Things/Filth/CrawlSmear</texPath>
+			<color>(130, 55, 120, 165)</color>
+			<graphicClass>Graphic_ClusterTight</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>OL_SerenDamage</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.4</positionRadius>
+				<fleckDef>AirPuff</fleckDef>
+				<burstCount>4~5</burstCount>
+				<speed>0.4~0.8</speed>
+				<scale>1.0~1.1</scale>
+				<color>(95, 20, 75)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(205, 70, 210)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.0</positionRadius>
+				<fleckDef>BodyImpact</fleckDef>
+				<burstCount>1</burstCount>
+				<scale>0.4</scale>
+				<color>(250, 35, 180, 60)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+		<offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+		<positionRadius>0.1</positionRadius>
+	</EffecterDef>
+
+</Defs>

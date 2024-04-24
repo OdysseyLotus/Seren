@@ -2,7 +2,7 @@
 <Defs>
 	
 	<BodyPartDef>
-		<defName>SerenSensor</defName>
+		<defName>OL_SerenSensor</defName>
 		<label>sensor</label>
 		<description>A seren's sensor. It is full of blood and nerve endings, making it sensitive to the touch. It acts as a psychic tuning fork for seren.</description>
 		<hitPoints>20</hitPoints>
@@ -13,12 +13,12 @@
 		<permanentInjuryChanceFactor>10</permanentInjuryChanceFactor>
 		<beautyRelated>true</beautyRelated>
 		<alive>true</alive>
-		<spawnThingOnRemoved>SerenSensor_Item</spawnThingOnRemoved>
+		<spawnThingOnRemoved>OL_SerenSensor_Item</spawnThingOnRemoved>
 		<canSuggestAmputation>true</canSuggestAmputation>
 	</BodyPartDef>
 	
 	<BodyDef>
-		<defName>Seren_Body</defName>
+		<defName>OL_SerenBody</defName>
 		<label>seren</label>
 		<corePart>
 			<def>Torso</def>
@@ -208,7 +208,7 @@
 									</groups>
 								</li>
 								<li>
-									<def>SerenSensor</def>
+									<def>OL_SerenSensor</def>
 									<customLabel>left sensor</customLabel>
 									<coverage>0.07</coverage>
 									<groups>
@@ -217,7 +217,7 @@
 									</groups>
 								</li>
 								<li>
-									<def>SerenSensor</def>
+									<def>OL_SerenSensor</def>
 									<customLabel>right sensor</customLabel>
 									<coverage>0.07</coverage>
 									<groups>

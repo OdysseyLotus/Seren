@@ -10,7 +10,7 @@
 	
 	<!-- Blue -->
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Teal</defName>
+		<defName>OL_SkinTeal</defName>
 		<label>teal skin</label>
 		<labelShortAdj>teal</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
@@ -28,7 +28,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Cobalt</defName>
+		<defName>OL_SkinCobalt</defName>
 		<label>cobalt skin</label>
 		<labelShortAdj>cobalt</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
@@ -46,7 +46,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Indigo</defName>
+		<defName>OL_SkinIndigo</defName>
 		<label>indigo skin</label>
 		<labelShortAdj>indigo</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of blue.</description>
@@ -64,7 +64,7 @@
 	
 	<!-- Purple -->
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Royal</defName>
+		<defName>OL_SkinRoyal</defName>
 		<label>royal-purple skin</label>
 		<labelShortAdj>royal-purple</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
@@ -82,7 +82,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Violet</defName>
+		<defName>OL_SkinViolet</defName>
 		<label>violet skin</label>
 		<labelShortAdj>violet</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
@@ -100,7 +100,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Plum</defName>
+		<defName>OL_SkinPlum</defName>
 		<label>plum skin</label>
 		<labelShortAdj>plum</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of purple.</description>
@@ -119,7 +119,7 @@
 	
 	<!-- Pink -->
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Orchid</defName>
+		<defName>OL_SkinOrchid</defName>
 		<label>orchid-pink skin</label>
 		<labelShortAdj>orchid</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
@@ -136,7 +136,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Majenta</defName>
+		<defName>OL_SkinMajenta</defName>
 		<label>majenta skin</label>
 		<labelShortAdj>majenta</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
@@ -153,7 +153,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Rouge</defName>
+		<defName>OL_SkinRouge</defName>
 		<label>rouge skin</label>
 		<labelShortAdj>rouge</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a shade of pink.</description>
@@ -171,7 +171,7 @@
 	
 	<!-- Rare -->
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Albino</defName>
+		<defName>OL_SkinAlbino</defName>
 		<label>albino skin</label>
 		<labelShortAdj>albino</labelShortAdj>
 		<description>Carriers of this gene lack any pigmentation in their skin.</description>
@@ -188,7 +188,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Twilight</defName>
+		<defName>OL_SkinTwilight</defName>
 		<label>twilight-blue skin</label>
 		<labelShortAdj>twilight-blue</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of blue.</description>
@@ -206,7 +206,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Nebula</defName>
+		<defName>OL_SkinNebula</defName>
 		<label>nebula-purple skin</label>
 		<labelShortAdj>nebula-purple</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of purple.</description>
@@ -224,7 +224,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSkinColorMelaninSeren">
-		<defName>LotusSkin_Planetary</defName>
+		<defName>OL_SkinPlanetary</defName>
 		<label>planetary-pink skin</label>
 		<labelShortAdj>planetary-pink</labelShortAdj>
 		<description>Carriers of this gene produce a pigment that turns their skin a dark shade of pink.</description>
@@ -253,7 +253,7 @@
 	
 	<!-- Light Blues -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Sky</defName>
+		<defName>OL_HairSky</defName>
 		<label>sky-blue hair</label>
 		<hairColorOverride>(128, 176, 192)</hairColorOverride>
 		<selectionWeight>0.08</selectionWeight>
@@ -261,7 +261,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Powder</defName>
+		<defName>OL_HairPowder</defName>
 		<label>powder-blue hair</label>
 		<hairColorOverride>(128, 160, 192)</hairColorOverride>
 		<selectionWeight>0.09</selectionWeight>
@@ -269,7 +269,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Periwinkle</defName>
+		<defName>OL_HairPeriwinkle</defName>
 		<label>periwinkle hair</label>
 		<hairColorOverride>(128, 144, 192)</hairColorOverride>
 		<selectionWeight>0.09</selectionWeight>
@@ -278,7 +278,7 @@
 	
 	<!-- Dark Blues -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Aegean</defName>
+		<defName>OL_HairAegean</defName>
 		<label>sea-blue hair</label>
 		<hairColorOverride>(32, 64, 80)</hairColorOverride>
 		<selectionWeight>0.03</selectionWeight>
@@ -286,7 +286,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Navy</defName>
+		<defName>OL_HairNavy</defName>
 		<label>navy-blue hair</label>
 		<hairColorOverride>(32, 48, 80)</hairColorOverride>
 		<selectionWeight>0.03</selectionWeight>
@@ -294,7 +294,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Lapis</defName>
+		<defName>OL_HairLapis</defName>
 		<label>lapis hair</label>
 		<hairColorOverride>(32, 32, 80)</hairColorOverride>
 		<selectionWeight>0.03</selectionWeight>
@@ -303,7 +303,7 @@
 	
 	<!-- Light Purples -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Lilac</defName>
+		<defName>OL_HairLilac</defName>
 		<label>lilac hair</label>
 		<hairColorOverride>(144, 128, 192)</hairColorOverride>
 		<selectionWeight>0.09</selectionWeight>
@@ -311,7 +311,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Lavender</defName>
+		<defName>OL_HairLavender</defName>
 		<label>lavender hair</label>
 		<hairColorOverride>(160, 128, 192)</hairColorOverride>
 		<selectionWeight>0.08</selectionWeight>
@@ -319,7 +319,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Mauve</defName>
+		<defName>OL_HairMauve</defName>
 		<label>mauve hair</label>
 		<hairColorOverride>(176, 128, 192)</hairColorOverride>
 		<selectionWeight>0.08</selectionWeight>
@@ -328,7 +328,7 @@
 	
 	<!-- Dark Purples -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Indigo</defName>
+		<defName>OL_HairIndigo</defName>
 		<label>indigo hair</label>
 		<hairColorOverride>(48, 32, 80)</hairColorOverride>
 		<selectionWeight>0.025</selectionWeight>
@@ -336,7 +336,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Eggplant</defName>
+		<defName>OL_HairEggplant</defName>
 		<label>eggplant-purple hair</label>
 		<hairColorOverride>(64, 32, 80)</hairColorOverride>
 		<selectionWeight>0.025</selectionWeight>
@@ -344,7 +344,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Plum</defName>
+		<defName>OL_HairPlum</defName>
 		<label>plum hair</label>
 		<hairColorOverride>(80, 32, 80)</hairColorOverride>
 		<selectionWeight>0.025</selectionWeight>
@@ -353,7 +353,7 @@
 	
 	<!-- Light Pinks -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Wisteria</defName>
+		<defName>OL_HairWisteria</defName>
 		<label>wisteria hair</label>
 		<hairColorOverride>(192, 128, 192)</hairColorOverride>
 		<selectionWeight>0.07</selectionWeight>
@@ -361,7 +361,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Blush</defName>
+		<defName>OL_HairBlush</defName>
 		<label>blush hair</label>
 		<hairColorOverride>(192, 128, 176)</hairColorOverride>
 		<selectionWeight>0.07</selectionWeight>
@@ -369,7 +369,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Rose</defName>
+		<defName>OL_HairRose</defName>
 		<label>rosy hair</label>
 		<hairColorOverride>(192, 128, 160)</hairColorOverride>
 		<selectionWeight>0.06</selectionWeight>
@@ -378,7 +378,7 @@
 	
 	<!-- Dark Pinks -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Berry</defName>
+		<defName>OL_HairBerry</defName>
 		<label>berry-colored hair</label>
 		<hairColorOverride>(80, 32, 64)</hairColorOverride>
 		<selectionWeight>0.02</selectionWeight>
@@ -386,7 +386,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Wine</defName>
+		<defName>OL_HairWine</defName>
 		<label>wine-colored hair</label>
 		<hairColorOverride>(80, 32, 48)</hairColorOverride>
 		<selectionWeight>0.02</selectionWeight>
@@ -394,7 +394,7 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Amaranth</defName>
+		<defName>OL_HairAmaranth</defName>
 		<label>amaranth hair</label>
 		<hairColorOverride>(96, 32, 48)</hairColorOverride>
 		<selectionWeight>0.02</selectionWeight>
@@ -403,7 +403,7 @@
 	
 	<!-- Albino -->
 	<GeneDef ParentName="GeneSerenHairColorBase">
-		<defName>LotusHair_Albino</defName>
+		<defName>OL_HairAlbino</defName>
 		<label>albino hair</label>
 		<hairColorOverride>(240, 240, 240)</hairColorOverride>
 		<selectionWeight>0.005</selectionWeight>

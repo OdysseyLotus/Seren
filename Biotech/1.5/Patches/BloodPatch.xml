@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[LFS] Genes Expanded - Blood</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/GeneDef[defName="OL_SerenBlood"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/XenotypeDef[defName="OL_SerenBase"]/genes/li[1]</xpath>
+					<value>
+						<li>GEB_Blood_Plum</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/raceRestriction/whiteGeneList/li[1]</xpath>
+					<value>
+						<li MayRequire="LazyFridayStudio.GenesExpandedBlood">GEB_Blood_Plum</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

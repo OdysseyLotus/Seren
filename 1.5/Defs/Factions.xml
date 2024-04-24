@@ -15,7 +15,7 @@
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
-			<li>Panastrian</li>
+			<li>OL_Panastrian</li>
 		</allowedCultures>
 		<colorSpectrum>
 			<li>(0.55, 0.4, 0.875)</li>
@@ -54,11 +54,11 @@
 		<canSiege>false</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<allowedCultures>
-			<li>Panastrian</li>
+			<li>OL_Panastrian</li>
 		</allowedCultures>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Seren_Base MayRequire="Ludeon.RimWorld.Biotech">999</Seren_Base>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
 		</xenotypeSet>
 		<structureMemeWeights>

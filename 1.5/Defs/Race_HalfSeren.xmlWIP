@@ -307,7 +307,7 @@
 				</xenotypeList>
 				<whiteGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</li>
 				</whiteGeneList>
 				<whiteGeneTags>
 					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSkinColor</li>

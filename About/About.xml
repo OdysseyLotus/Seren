@@ -14,12 +14,6 @@ Tensions rose as the Empire attempted their takeover, and there soon came to be 
 Empire. After their victory, the Empire sought to make sure that they couldn't rise again, so they began a program of Seren relocation throughout the galaxy. 
 Now, many inhabit rimworlds in small colonies, dreaming of their former glory.</description>
 	<modDependencies>
-		<!--<li>
-			<packageId>erdelf.HumanoidAlienRaces.dev</packageId>
-			<displayName>Humanoid Alien Races ~ Dev</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
-			<downloadUrl>https://github.com/erdelf/AlienRaces/</downloadUrl>
-		</li>-->
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
 			<displayName>Humanoid Alien Races</displayName>
@@ -34,12 +28,11 @@ Now, many inhabit rimworlds in small colonies, dreaming of their former glory.</
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>brrainz.harmony</li>
 		<li>erdelf.HumanoidAlienRaces</li>
-		<li>erdelf.HumanoidAlienRaces.dev</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>imranfish.xmlextensions</li>
-		<li>automatic.highqualitytextures</li>
 		<li>Nals.FacialAnimation</li>
 		<li>Nals.FacialAnimationExperimentals</li>
 		<li>WRK.THIGAPPE</li>
+		<li>LazyFridayStudio.GenesExpandedBlood</li>
 	</loadAfter>
 </ModMetaData>

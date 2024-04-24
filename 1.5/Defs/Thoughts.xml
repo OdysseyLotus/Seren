@@ -57,7 +57,7 @@
 	</ThoughtDef>
 	
 	
-	<ThoughtDef>
+	<!--<ThoughtDef>
 		<defName>HalfSerenCannibalism</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
@@ -110,6 +110,6 @@
 				<baseMoodEffect>-7</baseMoodEffect>
 			</li>
 		</stages>
-	</ThoughtDef>
+	</ThoughtDef>-->
 
 </Defs>

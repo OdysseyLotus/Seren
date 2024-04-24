@@ -355,7 +355,7 @@
 						<li>
 							<!-- Left Ear (Average) -->
 							<drawSize>1</drawSize>
-							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</geneRequirement>
 							<path>Things/Seren/Ears/Average/LeftEar</path>
 							<bodyPart>Ear</bodyPart>
 							<bodyPartLabel>left ear</bodyPartLabel>
@@ -862,7 +862,7 @@
 						<li>
 							<!-- Right Ear -->
 							<drawSize>1</drawSize>
-							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</geneRequirement>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</geneRequirement>
 							<path>Things/Seren/Ears/Average/RightEar</path>
 							<bodyPart>Ear</bodyPart>
 							<bodyPartLabel>right ear</bodyPartLabel>
@@ -1364,7 +1364,7 @@
 							<!-- Left Sensor -->
 							<drawSize>1</drawSize>
 							<path>Things/Seren/Horns/SerenHornLeft</path>
-							<bodyPart>SerenSensor</bodyPart>
+							<bodyPart>OL_SerenSensor</bodyPart>
 							<bodyPartLabel>left sensor</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
@@ -1380,7 +1380,7 @@
 							<!-- Right Sensor -->
 							<drawSize>1</drawSize>
 							<path>Things/Seren/Horns/SerenHornRight</path>
-							<bodyPart>SerenSensor</bodyPart>
+							<bodyPart>OL_SerenSensor</bodyPart>
 							<bodyPartLabel>right sensor</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
@@ -1452,11 +1452,12 @@
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
 				<xenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Seren_Base</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenBase</li>
 				</xenotypeList>
 				<whiteGeneList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">LotusEyes_Seren</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Seren</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenBlood</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEyes</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</li>
 				</whiteGeneList>
 				<whiteGeneTags>
 					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSkinColor</li>
@@ -1592,11 +1593,11 @@
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>275</lifeExpectancy>
-			<bloodDef>Filth_SerenBlood</bloodDef>
-			<leatherDef>SerenLeather</leatherDef>
-			<fleshType>Seren</fleshType>
+			<body>OL_SerenBody</body>
+			<bloodDef>OL_SerenBlood</bloodDef>
+			<leatherDef>OL_SerenLeather</leatherDef>
+			<fleshType>OL_SerenFlesh</fleshType>
 			<nameCategory>HumanStandard</nameCategory>
-			<body>Seren_Body</body>
 			<baseBodySize>0.95</baseBodySize>
 			<baseHealthScale>0.85</baseHealthScale>
 			<gestationPeriodDays>45</gestationPeriodDays>
@@ -1847,98 +1848,5 @@
 			</alienwandererkinds>
 		</pawnKindSettings>
 	</AlienRace.RaceSettings>
-	
-	<FleshTypeDef>
-		<defName>Seren</defName>
-		<corpseCategory>CorpsesAnimal</corpseCategory>
-		<damageEffecter>Damage_HitFlesh</damageEffecter>
-		<genericWounds>
-			<li>
-				<texture>Things/Seren/Wounds/WoundFleshA</texture>
-			</li>
-			<li>
-				<texture>Things/Seren/Wounds/WoundFleshB</texture>
-			</li>
-			<li>
-				<texture>Things/Seren/Wounds/WoundFleshC</texture>
-			</li>
-		</genericWounds>
-		<bandagedWounds>
-			<li>
-				<texture>Things/Pawn/Wounds/BandagedA</texture>
-			</li>
-			<li>
-				<texture>Things/Pawn/Wounds/BandagedB</texture>
-			</li>
-			<li>
-				<texture>Things/Pawn/Wounds/BandagedC</texture>
-			</li>
-		</bandagedWounds>
-		<hediffWounds>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<hediff>Scarification</hediff>
-				<wounds>
-					<li>
-						<texture>Things/Pawn/Wounds/ScarificationA</texture>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<displayOverApparel>false</displayOverApparel>
-						<displayPermanent>false</displayPermanent>
-						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
-					</li>
-					<li>
-						<texture>Things/Pawn/Wounds/ScarificationB</texture>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<displayOverApparel>false</displayOverApparel>
-						<displayPermanent>false</displayPermanent>
-						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
-					</li>
-					<li>
-						<texture>Things/Pawn/Wounds/ScarificationC</texture>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<displayOverApparel>false</displayOverApparel>
-						<displayPermanent>false</displayPermanent>
-						<drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
-					</li>
-				</wounds>
-			</li>
-			<li>
-				<hediff>MissingBodyPart</hediff>
-				<wounds>
-					<li>
-						<textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
-						<textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
-						<textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
-						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
-						<flipWest>true</flipWest>
-						<onlyOnPart>Eye</onlyOnPart>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
-						<flipOnRotation>South</flipOnRotation>
-						<tintWithSkinColor>true</tintWithSkinColor>
-						<missingBodyPartFresh>false</missingBodyPartFresh>
-						<scale>0.7</scale>
-						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
-					</li>
-					<li>
-						<textureSouth>Things/Seren/Wounds/MissingEye_Fresh</textureSouth>
-						<textureNorth>Things/Seren/Wounds/MissingEye_Fresh</textureNorth>
-						<textureEast>Things/Seren/Wounds/MissingEye_Fresh</textureEast>
-						<textureWest>Things/Seren/Wounds/MissingEye_Fresh</textureWest>
-						<flipWest>true</flipWest>
-						<onlyOnPart>Eye</onlyOnPart>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
-						<flipOnRotation>South</flipOnRotation>
-						<missingBodyPartFresh>true</missingBodyPartFresh>
-						<scale>0.7</scale>
-						<drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
-						<drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
-					</li>
-				</wounds>
-			</li>
-		</hediffWounds>
-	</FleshTypeDef>
 
 </Defs>

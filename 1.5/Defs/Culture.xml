@@ -2,7 +2,7 @@
 <Defs>
 
 	<CultureDef>
-		<defName>Panastrian</defName>
+		<defName>OL_Panastrian</defName>
 		<label>Panastrian</label>
 		<description>A culture celebrating and worshiping the stars, common among the seren.</description>
 		<pawnNameMaker>NamerSerenMale</pawnNameMaker>
