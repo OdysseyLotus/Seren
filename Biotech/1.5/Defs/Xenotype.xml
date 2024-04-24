@@ -9,7 +9,7 @@
 		<iconPath>UI/Icons/Xenotypes/Seren</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
-			<li>OL_SerenBlood</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OL_SerenBlood</li>
 			<li>OL_SerenEyes</li>
 			<li>OL_SerenEars</li>
 			<li>OL_DarkVision</li>
