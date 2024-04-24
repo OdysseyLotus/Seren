@@ -103,7 +103,7 @@
 		</statBases>
 		<graphicData>
 			<texPath>Things/Filth/Spatter</texPath>
-			<color>(130, 55, 120, 180)</color>
+			<color>(130, 35, 120, 180)</color>
 		</graphicData>
 		<filth>
             <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
