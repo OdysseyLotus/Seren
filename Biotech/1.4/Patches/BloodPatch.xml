@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Call a Vampire a Vampire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="OL_SerenBlood"]/description</xpath>
+					<value>
+						<description>Those with thise gene have the same blood type as other seren, giving it a purple color.\n\nThere are rumors floating around in vampire circles that say that seren blood tastes like grape candy, but that hasn't been substantiated yet.</description>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

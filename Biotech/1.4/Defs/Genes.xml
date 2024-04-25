@@ -24,7 +24,7 @@
 	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <defName>OL_SerenBlood</defName>
         <label>Seren blood</label>
-        <description>Those with thise gene have the same blood type as other seren, giving it a purple color.</description>
+        <description>Those with thise gene have the same blood type as other seren, giving it a purple color.\n\nThere are rumors floating around in sanguophage circles that say that seren hemogen tastes like grape candy, but that hasn't been substantiated yet.</description>
         <iconPath>UI/Icons/Genes/Gene_SerenBlood</iconPath>
         <displayOrderInCategory>0</displayOrderInCategory>
 		<displayCategory MayRequireAnyOf="SX99.biotech.bloodcolorgenes,SX99.biotech.lessbloodcolorgenes">Blood_Color</displayCategory>

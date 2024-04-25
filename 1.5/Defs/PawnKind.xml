@@ -271,17 +271,6 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
-		<modExtensions>
-			<li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
-				<implantDef>VPE_PsycastAbilityImplant</implantDef>
-				<initialLevel>1</initialLevel>
-				<statUpgradePoints>1~3</statUpgradePoints>
-				<unlockedPaths>
-					<VPE_Protector>1~2|1~3</VPE_Protector>
-					<VPE_Archon>1~2|1~3</VPE_Archon>
-				</unlockedPaths>
-			</li>
-		</modExtensions>
 		<missingParts>
 			<li>
 				<bodyPart>Eye</bodyPart>
@@ -294,6 +283,17 @@
 			<li>ImplantEmpireCommon</li>
 			<li>Advanced</li>
 		</techHediffsTags>
+		<modExtensions>
+			<li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>1~3</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Protector>1~3|1~4</VPE_Protector>
+					<VPE_Archon>1~3|1~4</VPE_Archon>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="SerenCivilModel">

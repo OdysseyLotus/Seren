@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="SerenHAR">
+		<defName>OL_SerenCreepJoiner</defName>
+		<tradeability>Sellable</tradeability>
+		<race>
+			<linkedCorpseKind>Seren</linkedCorpseKind>
+			<useMeatFrom>Seren</useMeatFrom>
+			<knowledgeCategory>Advanced</knowledgeCategory>
+			<anomalyKnowledge>2</anomalyKnowledge>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+ 
+</Defs>

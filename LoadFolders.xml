@@ -4,28 +4,29 @@
 		<li>1.3</li>
         <li>Common</li>
 		<li IfModActive="imranfish.xmlextensions">Settings</li>
-		<li IfModActive="WRK.THIGAPPE">Compatibility/THIGAPPE</li>
 		<li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VPE</li>
 		<li IfModActive="Nals.FacialAnimation">Compatibility/Facial Animations</li>
+		<li IfModActive="WRK.THIGAPPE">Compatibility/THIGAPPE</li>
     </v1.3>
 	<v1.4>
 		<li>1.4</li>
         <li>Common</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">Biotech/1.4</li>
 		<li IfModActive="imranfish.xmlextensions">Settings</li>
-		<li IfModActive="WRK.THIGAPPE">Compatibility/THIGAPPE</li>
 		<li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VPE</li>
 		<li IfModActive="Nals.FacialAnimation">Compatibility/Facial Animations</li>
+		<li IfModActive="WRK.THIGAPPE">Compatibility/THIGAPPE</li>
 		<li IfModActive="Rooboid.Minotaur.Expanded">Compatibility/Minotaur</li>
     </v1.4>
 	<v1.5>
 		<li>1.5</li>
         <li>Common</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">Anolamy</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">Biotech/1.5</li>
 		<li IfModActive="imranfish.xmlextensions">Settings</li>
-		<li IfModActive="WRK.THIGAPPE">Compatibility/THIGAPPE</li>
 		<li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VPE</li>
 		<li IfModActive="Nals.FacialAnimation">Compatibility/Facial Animations</li>
+		<li IfModActive="WRK.THIGAPPE">Compatibility/THIGAPPE</li>
 		<li IfModActive="Rooboid.Minotaur.Expanded">Compatibility/Minotaur</li>
     </v1.5>
 </loadFolders>
