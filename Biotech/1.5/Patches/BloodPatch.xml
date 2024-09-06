@@ -19,9 +19,11 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/raceRestriction/whiteGeneList/li[1]</xpath>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/raceGenes/li[3]</xpath>
 					<value>
-						<li MayRequire="LazyFridayStudio.GenesExpandedBlood">GEB_Blood_Plum</li>
+						<li MayRequire="LazyFridayStudio.GenesExpandedBlood">
+							<defName>GEB_Blood_Plum</defName>
+						</li>
 					</value>
 				</li>
 			</operations>
