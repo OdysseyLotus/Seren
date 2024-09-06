@@ -74,36 +74,36 @@
 					</femaleFertilityAgeFactor>
 				</reproduction>
 				<raceGenes MayRequire="Ludeon.RimWorld.Biotech">
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SerenEars</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SerenEyes</defName>
 					</li>
-					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+					<li MayRequire="Ludeon.RimWorld.Biotech, OskarPotocki.VanillaFactionsExpanded.Core">
 						<defName>OL_SerenBlood</defName>
 					</li>
 					
 					
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>Body_Thin</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>Body_Standard</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_DarkVision</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_ElongatedFingers</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>Hair_Grayless</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>Beard_NoBeardOnly</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>Libido_Low</defName>
 					</li>
 					<li MayRequire="sarg.alphagenes">
@@ -111,151 +111,151 @@
 					</li>
 					
 					
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Back</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Branched</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Curled</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Curved</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Double</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Drop</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Spike</defName>
 					</li>
 					
 					
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenSensors_Tall</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Big</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Brows</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Cheeks</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Freckles</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Small</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Target</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>SerenMarkings_Tristar</defName>
 					</li>
 					
 					
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinTeal</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinCobalt</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinIndigo</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinRoyal</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinViolet</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinPlum</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinOrchid</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinMajenta</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinRouge</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinAlbino</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinTwilight</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinNebula</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SkinPlanetary</defName>
 					</li>
 					
 					
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairSky</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairPowder</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairPeriwinkle</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairAegean</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairNavy</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairLapis</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairLilac</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairLavender</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairMauve</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairIndigo</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairEggplant</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairPlum</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairWisteria</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairBlush</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairRose</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairBerry</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairWine</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairAmaranth</defName>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairAlbino</defName>
 					</li>
 				</raceGenes>
