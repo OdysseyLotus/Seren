@@ -62,25 +62,25 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[1]/texPath</xpath>
+					<xpath>/Defs/GeneDef[defName="OL_SerenEyes"]/renderNodeProperties/li[1]/texPath</xpath>
 					<value>
 						<texPath>Things/Seren/Transparent</texPath>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[1]/texPathFemale</xpath>
+					<xpath>/Defs/GeneDef[defName="OL_SerenEyes"]/renderNodeProperties/li[1]/texPathFemale</xpath>
 					<value>
 						<texPathFemale>Things/Seren/Transparent</texPathFemale>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[2]/texPath</xpath>
+					<xpath>/Defs/GeneDef[defName="OL_SerenEyes"]/renderNodeProperties/li[2]/texPath</xpath>
 					<value>
 						<texPath>Things/Seren/Transparent</texPath>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="LotusEyes_Seren"]/renderNodeProperties/li[2]/texPathFemale</xpath>
+					<xpath>/Defs/GeneDef[defName="OL_SerenEyes"]/renderNodeProperties/li[2]/texPathFemale</xpath>
 					<value>
 						<texPathFemale>Things/Seren/Transparent</texPathFemale>
 					</value>
@@ -88,7 +88,7 @@
 				
 				
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="Ears_Seren"]/renderNodeProperties/li[1]/texPath</xpath>
+					<xpath>/Defs/GeneDef[defName="OL_SerenEars"]/renderNodeProperties/li[1]/texPath</xpath>
 					<value>
 						<texPath>Things/Seren/Ears/FacialAnimations/SerenEars</texPath>
 					</value>
