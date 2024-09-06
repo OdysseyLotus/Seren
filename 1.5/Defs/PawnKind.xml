@@ -32,11 +32,11 @@
 		<techHediffsChance>0.1</techHediffsChance>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
-		<xenotypeSet>
+		<!--<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>
+		</xenotypeSet>-->
 		<humanPregnancyChance>0.03</humanPregnancyChance>
 	</PawnKindDef>
 	
@@ -155,11 +155,11 @@
 			<li>Simple</li>
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
-		<xenotypeSet>
+		<!--<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>
+		</xenotypeSet>-->
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<initialWillRange>0~1</initialWillRange>
@@ -188,11 +188,11 @@
 			<li>Simple</li>
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
-		<xenotypeSet>
+		<!--<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>
+		</xenotypeSet>-->
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<initialWillRange>0~1</initialWillRange>

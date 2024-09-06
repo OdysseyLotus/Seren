@@ -233,7 +233,7 @@
 		</operations>
 	</Operation>-->
 	
-	<Operation Class="PatchOperationSequence">
+	<!--<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ScenarioDef[defName="SerenRelocated"]/scenario/parts/li[1]</xpath>
@@ -284,7 +284,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation>-->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>

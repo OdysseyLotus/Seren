@@ -26,6 +26,7 @@
 					<li MayRequire="Seioch.Naki.HAR">Naki_Race</li>
 					<!--<li>HalfSeren</li>-->
 				</notXenophobistTowards>
+				<canLayDown>true</canLayDown>
 				<minAgeForAdulthood>20</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
 				<growthAges>
@@ -33,6 +34,14 @@
 					<li>13</li>
 					<li>20</li>
 				</growthAges>
+				<ageSkillFactorCurve>
+					<points>
+						<li>(3, 0.2)</li>
+						<li>(20, 1)</li>
+						<li>(120, 1)</li>
+						<li>(205, 1.6)</li>
+					</points>
+				</ageSkillFactorCurve>
 				<lovinIntervalHoursFromAge>
 					<points>
 						<li>(16, 3)</li>
@@ -63,13 +72,193 @@
 							<li>(230, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
-					<!--<hybridSpecific>
-						<li>
-							<partnerRace>Human</partnerRace>
-							<childKindDef>HalfSerenChild</childKindDef>
-						</li>
-					</hybridSpecific>-->
 				</reproduction>
+				<raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+					<li>
+						<defName>OL_SerenEars</defName>
+					</li>
+					<li>
+						<defName>OL_SerenEyes</defName>
+					</li>
+					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+						<defName>OL_SerenBlood</defName>
+					</li>
+					
+					
+					<li>
+						<defName>Body_Thin</defName>
+					</li>
+					<li>
+						<defName>Body_Standard</defName>
+					</li>
+					<li>
+						<defName>OL_DarkVision</defName>
+					</li>
+					<li>
+						<defName>OL_ElongatedFingers</defName>
+					</li>
+					<li>
+						<defName>Hair_Grayless</defName>
+					</li>
+					<li>
+						<defName>Beard_NoBeardOnly</defName>
+					</li>
+					<li>
+						<defName>Libido_Low</defName>
+					</li>
+					<li MayRequire="sarg.alphagenes">
+						<defName>AG_SlowGestation</defName>
+					</li>
+					
+					
+					<li>
+						<defName>SerenSensors_Back</defName>
+					</li>
+					<li>
+						<defName>SerenSensors_Branched</defName>
+					</li>
+					<li>
+						<defName>SerenSensors_Curled</defName>
+					</li>
+					<li>
+						<defName>SerenSensors_Curved</defName>
+					</li>
+					<li>
+						<defName>SerenSensors_Double</defName>
+					</li>
+					<li>
+						<defName>SerenSensors_Drop</defName>
+					</li>
+					<li>
+						<defName>SerenSensors_Spike</defName>
+					</li>
+					
+					
+					<li>
+						<defName>SerenSensors_Tall</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Big</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Brows</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Cheeks</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Freckles</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Small</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Target</defName>
+					</li>
+					<li>
+						<defName>SerenMarkings_Tristar</defName>
+					</li>
+					
+					
+					<li>
+						<defName>OL_SkinTeal</defName>
+					</li>
+					<li>
+						<defName>OL_SkinCobalt</defName>
+					</li>
+					<li>
+						<defName>OL_SkinIndigo</defName>
+					</li>
+					<li>
+						<defName>OL_SkinRoyal</defName>
+					</li>
+					<li>
+						<defName>OL_SkinViolet</defName>
+					</li>
+					<li>
+						<defName>OL_SkinPlum</defName>
+					</li>
+					<li>
+						<defName>OL_SkinOrchid</defName>
+					</li>
+					<li>
+						<defName>OL_SkinMajenta</defName>
+					</li>
+					<li>
+						<defName>OL_SkinRouge</defName>
+					</li>
+					<li>
+						<defName>OL_SkinAlbino</defName>
+					</li>
+					<li>
+						<defName>OL_SkinTwilight</defName>
+					</li>
+					<li>
+						<defName>OL_SkinNebula</defName>
+					</li>
+					<li>
+						<defName>OL_SkinPlanetary</defName>
+					</li>
+					
+					
+					<li>
+						<defName>OL_HairSky</defName>
+					</li>
+					<li>
+						<defName>OL_HairPowder</defName>
+					</li>
+					<li>
+						<defName>OL_HairPeriwinkle</defName>
+					</li>
+					<li>
+						<defName>OL_HairAegean</defName>
+					</li>
+					<li>
+						<defName>OL_HairNavy</defName>
+					</li>
+					<li>
+						<defName>OL_HairLapis</defName>
+					</li>
+					<li>
+						<defName>OL_HairLilac</defName>
+					</li>
+					<li>
+						<defName>OL_HairLavender</defName>
+					</li>
+					<li>
+						<defName>OL_HairMauve</defName>
+					</li>
+					<li>
+						<defName>OL_HairIndigo</defName>
+					</li>
+					<li>
+						<defName>OL_HairEggplant</defName>
+					</li>
+					<li>
+						<defName>OL_HairPlum</defName>
+					</li>
+					<li>
+						<defName>OL_HairWisteria</defName>
+					</li>
+					<li>
+						<defName>OL_HairBlush</defName>
+					</li>
+					<li>
+						<defName>OL_HairRose</defName>
+					</li>
+					<li>
+						<defName>OL_HairBerry</defName>
+					</li>
+					<li>
+						<defName>OL_HairWine</defName>
+					</li>
+					<li>
+						<defName>OL_HairAmaranth</defName>
+					</li>
+					<li>
+						<defName>OL_HairAlbino</defName>
+					</li>
+				</raceGenes>
 				<alienPartGenerator>
 					<bodyTypes>
 						<li>Female</li>
@@ -668,20 +857,6 @@
 			<raceRestriction>
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
-				<xenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenBase</li>
-				</xenotypeList>
-				<whiteGeneList>
-					<li MayRequire="Ludeon.RimWorld.Biotech,OskarPotocki.VanillaFactionsExpanded.Core">OL_SerenBlood</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEyes</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</li>
-				</whiteGeneList>
-				<whiteGeneTags>
-					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSkinColor</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">SerenHairColor</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">SerenSensors</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">SerenMarkings</li>
-				</whiteGeneTags>
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw_Heavy</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_BushyOnly</li>

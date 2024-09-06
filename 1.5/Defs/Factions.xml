@@ -56,11 +56,11 @@
 		<allowedCultures>
 			<li>OL_Panastrian</li>
 		</allowedCultures>
-		<xenotypeSet>
+		<!--<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>
+		</xenotypeSet>-->
 		<structureMemeWeights>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">5</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">7</Structure_TheistAbstract>
