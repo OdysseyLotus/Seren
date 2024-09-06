@@ -545,16 +545,17 @@
 							<name>seren left ear</name>
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<userCustomizable>false</userCustomizable>
 							<path>Things/Seren/Ears/Average/LeftEar</path>
 							<alignWithHead>true</alignWithHead>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
+							<userCustomizable>false</userCustomizable>
 							<conditions>
 								<BodyPart>
-									<bodyPart>Ear</bodyPart>
 									<bodyPartLabel>left ear</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<hiddenUnderApparelFor>
 										<li>FullHead</li>
@@ -564,6 +565,7 @@
 										<li>Warcasket</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Gene MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</Gene>
 							</conditions>
 							<extendedGraphics>
 								<Age For="HumanlikeBaby">Things/Seren/Ears/Average/Baby/LeftEar</Age>
@@ -638,16 +640,17 @@
 							<name>seren right ear</name>
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<userCustomizable>false</userCustomizable>
 							<path>Things/Seren/Ears/Average/RightEar</path>
 							<alignWithHead>true</alignWithHead>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
+							<userCustomizable>false</userCustomizable>
 							<conditions>
 								<BodyPart>
-									<bodyPart>Ear</bodyPart>
-									<bodyPartLabel>left ear</bodyPartLabel>
+									<bodyPartLabel>right ear</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<hiddenUnderApparelFor>
 										<li>FullHead</li>
@@ -657,6 +660,7 @@
 										<li>Warcasket</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Gene MayRequire="Ludeon.RimWorld.Biotech">OL_SerenEars</Gene>
 							</conditions>
 							<extendedGraphics>
 								<Age For="HumanlikeBaby">Things/Seren/Ears/Average/Baby/RightEar</Age>
@@ -731,16 +735,17 @@
 							<name>left sensor</name>
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<userCustomizable>true</userCustomizable>
 							<path>Things/Seren/Horns/SerenHornLeft</path>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<alignWithHead>true</alignWithHead>
+							<allowColorOverride>true</allowColorOverride>
 							<conditions>
 								<BodyPart>
-									<bodyPart>OL_SerenSensor</bodyPart>
 									<bodyPartLabel>left sensor</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<RotStage>Fresh,Rotting,Dessicated</RotStage>
 								<Apparel>
 									<hiddenUnderApparelTag>
 										<li>Warcasket</li>
@@ -767,16 +772,17 @@
 							<name>right sensor</name>
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<userCustomizable>true</userCustomizable>
 							<path>Things/Seren/Horns/SerenHornRight</path>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<alignWithHead>true</alignWithHead>
+							<allowColorOverride>true</allowColorOverride>
 							<conditions>
 								<BodyPart>
-									<bodyPart>OL_SerenSensor</bodyPart>
 									<bodyPartLabel>right sensor</bodyPartLabel>
+									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
+								<RotStage>Fresh,Rotting,Dessicated</RotStage>
 								<Apparel>
 									<hiddenUnderApparelTag>
 										<li>Warcasket</li>
