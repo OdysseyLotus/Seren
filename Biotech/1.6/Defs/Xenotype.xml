@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<XenotypeDef>
+		<defName>OL_SerenBase</defName>
+		<label>base seren</label>
+		<description>A seren phenotype.</description>
+		<descriptionShort>A seren phenotype.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Seren</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OL_SerenBlood</li>
+			<li>OL_SerenEyes</li>
+			<li>OL_SerenEars</li>
+			<li>OL_DarkVision</li>
+			<li>OL_ElongatedFingers</li>
+			<li>Hair_Grayless</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Libido_Low</li>
+			<li MayRequire="sarg.alphagenes">AG_SlowGestation</li>
+			
+			<li>SerenSensors_Back</li>
+			<li>SerenSensors_Branched</li>
+			<li>SerenSensors_Curled</li>
+			<li>SerenSensors_Curved</li>
+			<li>SerenSensors_Double</li>
+			<li>SerenSensors_Drop</li>
+			<li>SerenSensors_Spike</li>
+			<li>SerenSensors_Tall</li>
+			
+			<li>SerenMarkings_Big</li>
+			<li>SerenMarkings_Brows</li>
+			<li>SerenMarkings_Cheeks</li>
+			<li>SerenMarkings_Freckles</li>
+			<li>SerenMarkings_Small</li>
+			<li>SerenMarkings_Target</li>
+			<li>SerenMarkings_Tristar</li>
+			
+			<li>OL_SkinTeal</li>
+			<li>OL_SkinCobalt</li>
+			<li>OL_SkinIndigo</li>
+			<li>OL_SkinRoyal</li>
+			<li>OL_SkinViolet</li>
+			<li>OL_SkinPlum</li>
+			<li>OL_SkinOrchid</li>
+			<li>OL_SkinMajenta</li>
+			<li>OL_SkinRouge</li>
+			<li>OL_SkinAlbino</li>
+			<li>OL_SkinTwilight</li>
+			<li>OL_SkinNebula</li>
+			<li>OL_SkinPlanetary</li>
+			
+			<li>OL_HairSky</li>
+			<li>OL_HairPowder</li>
+			<li>OL_HairPeriwinkle</li>
+			<li>OL_HairAegean</li>
+			<li>OL_HairNavy</li>
+			<li>OL_HairLapis</li>
+			<li>OL_HairLilac</li>
+			<li>OL_HairLavender</li>
+			<li>OL_HairMauve</li>
+			<li>OL_HairIndigo</li>
+			<li>OL_HairEggplant</li>
+			<li>OL_HairPlum</li>
+			<li>OL_HairWisteria</li>
+			<li>OL_HairBlush</li>
+			<li>OL_HairRose</li>
+			<li>OL_HairBerry</li>
+			<li>OL_HairWine</li>
+			<li>OL_HairAmaranth</li>
+			<li>OL_HairAlbino</li>
+		</genes>
+	</XenotypeDef>
+
+	<!--<XenotypeDef>
+		<defName>HalfSeren</defName>
+		<label>Half Seren</label>
+		<description>A seren phenotype.</description>
+		<descriptionShort>Probably just copy-paste race description</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/HalfSeren</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>HairGrayless</li>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>OL_Eyes_Seren</li>
+			<li>OL_SerenEars</li>
+			<li>OL_DarkVision</li>
+			<li>OL_ElongatedFingers</li>
+			<li>Libido_Low</li>
+			<li MayRequire="sarg.alphagenes">AG_SlowGestation</li>
+			
+			<li>SerenSensors_Back</li>
+			<li>SerenSensors_Branched</li>
+			<li>SerenSensors_Curled</li>
+			<li>SerenSensors_Curved</li>
+			<li>SerenSensors_Double</li>
+			<li>SerenSensors_Drop</li>
+			<li>SerenSensors_Spike</li>
+			<li>SerenSensors_Tall</li>
+			
+			<li>SerenMarkings_Big</li>
+			<li>SerenMarkings_Brows</li>
+			<li>SerenMarkings_Cheeks</li>
+			<li>SerenMarkings_Freckles</li>
+			<li>SerenMarkings_Small</li>
+			<li>SerenMarkings_Target</li>
+			<li>SerenMarkings_Tristar</li>
+		</genes>
+	</XenotypeDef>-->
+	
+ </Defs>

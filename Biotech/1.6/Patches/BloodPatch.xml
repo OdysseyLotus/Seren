@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[LFS] Genes Expanded - Blood</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/GeneDef[defName="OL_SerenBlood"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/XenotypeDef[defName="OL_SerenBase"]/genes/li[1]</xpath>
+					<value>
+						<li>GEB_Blood_Plum</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/raceGenes/li[3]</xpath>
+					<value>
+						<li MayRequire="LazyFridayStudio.GenesExpandedBlood">
+							<defName>GEB_Blood_Plum</defName>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Call a Vampire a Vampire</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/GeneDef[defName="OL_SerenBlood"]/description</xpath>
+						<value>
+							<description>Those with thise gene have the same blood type as other seren, giving it a purple color.\n\nThere are rumors floating around in vampire circles that say that seren blood tastes like grape candy, but that hasn't been substantiated yet.</description>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</nomatch>
+	</Operation>
+	
+</Patch>
