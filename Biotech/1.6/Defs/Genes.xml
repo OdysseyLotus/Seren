@@ -75,10 +75,6 @@
 		<label>seren ears</label>
 		<description>Carriers of this gene have seren-like ears.</description>
 		<iconPath>UI/Icons/Genes/Gene_EarSeren</iconPath>
-		<displayCategory>Cosmetic</displayCategory>
-		<exclusionTags>
-		<li>Ears</li>
-		</exclusionTags>
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>

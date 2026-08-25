@@ -264,7 +264,7 @@ After the failure of the Seren Uprising, a certain part of seren society blamed 
 			<!-- Alpha Memes -->
 			<li MayRequire="Sarg.AlphaMemes">AM_Madness</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Sadist</li>
-			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalCorruptors</li>
+			<li MayRequire="sarg.alphaanimals">AA_BiologicalCorruptors</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
 		</disallowedMemes>
 		<requiredMemes>
@@ -342,7 +342,7 @@ After the failure of the Seren Uprising, these seren believe that the Empire is 
 			<!-- Alpha Memes -->
 			<li MayRequire="Sarg.AlphaMemes">AM_Madness</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
-			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalCorruptors</li>
+			<li MayRequire="sarg.alphaanimals">AA_BiologicalCorruptors</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Monastic</li>
 		</disallowedMemes>

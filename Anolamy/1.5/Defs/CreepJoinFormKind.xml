@@ -108,7 +108,6 @@
 		<forceNormalGearQuality>false</forceNormalGearQuality>
 		<apparelColor>(58,58,58)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(58,58,58)</favoriteColor>
 		<requires>
 			<li>Occultist</li>
 			<li>DeathRefusal</li>
@@ -162,7 +161,6 @@
 		<forceNormalGearQuality>false</forceNormalGearQuality>
 		<apparelColor>(156,31,56)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(156,31,56)</favoriteColor>
 		<requires>
 			<li>Joybringer</li>
 			<li>PerfectHuman</li>
