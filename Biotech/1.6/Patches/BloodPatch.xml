@@ -37,7 +37,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/GeneDef[defName="OL_SerenBlood"]/description</xpath>
 						<value>
-							<description>Those with thise gene have the same blood type as other seren, giving it a purple color.\n\nThere are rumors floating around in vampire circles that say that seren blood tastes like grape candy, but that hasn't been substantiated yet.</description>
+							<description>Those carrying this gene have the same blood type as other seren, giving it a purple color.\n\nThere are rumors floating around in vampire circles that say that seren blood tastes like grape candy, but that hasn't been substantiated yet.</description>
 						</value>
 					</li>
 				</operations>
