@@ -7,6 +7,7 @@
 			<li>Seren Facial Animations</li>
 			<li>Seren Facial Animations for VTE</li>
 			<li>Seren Nice Facial Animations</li>
+			<li>Seren UNAGI Facial Animations</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
@@ -147,6 +148,7 @@
 			<li>Seren Facial Animations</li>
 			<li>Seren Facial Animations for VTE</li>
 			<li>Seren Nice Facial Animations</li>
+			<li>Seren UNAGI Facial Animations</li>
 		</mods>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/comps</xpath>

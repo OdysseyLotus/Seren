@@ -22,10 +22,9 @@
 				</chemicalSettings>
 				<maxDamageForSocialfight>8</maxDamageForSocialfight>
 				<immuneToXenophobia>false</immuneToXenophobia>
-				<notXenophobistTowards>
-					<li MayRequire="Seioch.Naki.HAR">Naki_Race</li>
-					<!--<li>HalfSeren</li>-->
-				</notXenophobistTowards>
+				<!--<notXenophobistTowards>
+					<li>HalfSeren</li>
+				</notXenophobistTowards>-->
 				<canLayDown>true</canLayDown>
 				<minAgeForAdulthood>20</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
@@ -82,6 +81,9 @@
 					</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech, OskarPotocki.VanillaFactionsExpanded.Core">
 						<defName>OL_SerenBlood</defName>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech, Ludeon.RimWorld.Odyssey">
+						<defName>OL_SpaceBorn</defName>
 					</li>
 					
 					
@@ -835,12 +837,12 @@
 				</li>
 			</styleSettings>
 			<thoughtSettings>
-				<cannotReceiveThoughts>
+				<!--<cannotReceiveThoughts>
 					<li>ButcheredHumanlikeCorpse</li>
 					<li>KnowButcheredHumanlikeCorpse</li>
 					<li>AteHumanlikeMeatDirect</li>
 					<li>AteHumanlikeMeatAsIngredient</li>
-				</cannotReceiveThoughts>
+				</cannotReceiveThoughts>-->
 				<butcherThoughtSpecific>
 					<li>
 						<raceList>
@@ -882,17 +884,18 @@
 			<compatibility>
 				<isFlesh>true</isFlesh>
 				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
 			</compatibility>
 		</alienRace>
 		<statBases>
 			<MarketValue>2000</MarketValue>
-			<MoveSpeed>5.5</MoveSpeed>
+			<MoveSpeed>5.2</MoveSpeed>
 			<PsychicSensitivity>1.5</PsychicSensitivity>
 			<Mass>55</Mass>
 			<LeatherAmount>50</LeatherAmount>
 			<MeatAmount>100</MeatAmount>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
-			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<ComfyTemperatureMin>5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<AimingDelayFactor>0.8</AimingDelayFactor>
 			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 			<InjuryHealingFactor>1.1</InjuryHealingFactor>
@@ -907,7 +910,7 @@
 			<MiningYield>1.05</MiningYield>
 			<ConstructionSpeed>0.8</ConstructionSpeed>
 			<ConstructSuccessChance>1.05</ConstructSuccessChance>
-			<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+			<GeneralLaborSpeed>1.1</GeneralLaborSpeed>
 			<CookSpeed>1.1</CookSpeed>
 			<FoodPoisonChance>0.9</FoodPoisonChance>
 			<DrugSynthesisSpeed>1.1</DrugSynthesisSpeed>
@@ -924,6 +927,7 @@
 			<PainShockThreshold>0.7</PainShockThreshold>
 			<MentalBreakThreshold>0.4</MentalBreakThreshold>
 			<RoyalFavorValue>3</RoyalFavorValue>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 		</statBases>
 		<tools>
 			<li>

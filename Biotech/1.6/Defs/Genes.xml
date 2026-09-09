@@ -631,4 +631,49 @@
 		</symbolPack>
 	</GeneDef>
 	
+	<GeneDef>
+		<defName>OL_SpaceBorn</defName>
+		<label>space-born</label>
+		<description>Carriers are adapted to survive exposure to the vacuum of space. Unrestricted exposure to the vacuum increases the work speed and greatly increases psychic sensitivity of carriers, but they also become more likely to experience a mental break.\n\nSeren religions often worship the central star of their home solar system as the origin of their species. While the authenticity of this claim cannot be verified, they seem to have a strange reaction when placed in the vacuum of space outside of their solar system. After a few hours of exposure, they report hearing whispers, urging them to find "her." A few days and they lose their coherence. Some simply wander into the void after this, others have violent reactions to fellow crew, claiming they have been taken away from "her."\nThe Panastrian sun is currently being studied, as new theories circulate as to its true nature.</description>
+		<iconPath>UI/Icons/Genes/Gene_SpaceBorn</iconPath>
+		<displayCategory MayRequire="Ludeon.RimWorld.Biotech">ResistanceAndWeakness</displayCategory>
+		<displayOrderInCategory>25</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<immuneToVacuumBurns>true</immuneToVacuumBurns>
+		<statOffsets>
+			<VacuumResistance>1</VacuumResistance>
+		</statOffsets>
+		<conditionalStatAffecters MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Genes.ConditionalStatAffecter_InSpace" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<statOffsets>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+					<PsychicSensitivity>0.25</PsychicSensitivity>
+					<MentalBreakThreshold>0.05</MentalBreakThreshold>
+					<PainShockThreshold>-0.05</PainShockThreshold>
+				</statOffsets>
+			</li>
+			<li Class="VEF.Genes.ConditionalStatAffecter_InVacuum" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"> <!--This is cumulative! So you add in space and in vacuum together for the total in vacuum stats. Unless you can somehow get "in vacuum" without "in space" -->
+				<statOffsets>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+					<PsychicSensitivity>0.25</PsychicSensitivity>
+					<MentalBreakThreshold>0.05</MentalBreakThreshold> <!-- Mental break threshold can't go above 50%. Probably for the best -->
+					<PainShockThreshold>-0.05</PainShockThreshold> <!-- More sensitive to psychic stuff, but also more sensitive to mental and physical stuff, too -->
+				</statOffsets>
+			</li>
+		</conditionalStatAffecters>
+		<!--<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffToWholeBody>
+					<li>
+						<hediff>OL_StarExposure</hediff>
+					</li>
+				</hediffToWholeBody>
+			</li>
+		</modExtensions>-->
+		<exclusionTags>
+			<li>VacuumResistance</li>
+		</exclusionTags>
+	</GeneDef>
+	
 </Defs>

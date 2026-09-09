@@ -20,6 +20,7 @@
 			<li>Body_Standard</li>
 			<li>Libido_Low</li>
 			<li MayRequire="sarg.alphagenes">AG_SlowGestation</li>
+			<li>OL_SpaceBorn</li>
 			
 			<li>SerenSensors_Back</li>
 			<li>SerenSensors_Branched</li>

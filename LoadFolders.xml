@@ -33,5 +33,6 @@
 		<li IfModActive="imranfish.xmlextensions">Settings</li>
 		<li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VPE</li>
 		<li IfModActive="Nals.FacialAnimation">Compatibility/Facial Animations</li>
+		<li IfModActive="tug.Minotaur">Compatibility/Minotaur</li>
     </v1.6>
 </loadFolders>
