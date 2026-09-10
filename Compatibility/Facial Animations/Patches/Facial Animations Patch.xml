@@ -6,17 +6,19 @@
 		<mods>
 			<li>Seren Facial Animations</li>
 			<li>Seren Facial Animations for VTE</li>
+			<li>Seren Nice Facial Animations</li>
+			<li>Seren UNAGI Facial Animations</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationReplace">
+				<!--<li Class="PatchOperationReplace">
 					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/path</xpath>
 					<value><path>Things/Seren/Ears/FacialAnimations/LeftEar</path></value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/path</xpath>
 					<value><path>Things/Seren/Ears/FacialAnimations/RightEar</path></value>
-				</li>
+				</li>-->
 				<li Class="PatchOperationTest">
 					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
 				</li>
@@ -145,6 +147,8 @@
 		<mods>
 			<li>Seren Facial Animations</li>
 			<li>Seren Facial Animations for VTE</li>
+			<li>Seren Nice Facial Animations</li>
+			<li>Seren UNAGI Facial Animations</li>
 		</mods>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/comps</xpath>

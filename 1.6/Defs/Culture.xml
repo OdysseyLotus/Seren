@@ -28,6 +28,10 @@
 				<category>VME_Esotericism</category>
 				<priority>2</priority>
 			</li>
+			<li MayRequire="ASP.HalituisAmaricanous">
+				<category>ASP_Astronomy_StylePack</category>
+				<priority>3</priority>
+			</li>
 		</thingStyleCategories>
 		<iconPath>World/Panastrian</iconPath>
 		<styleItemTags>
