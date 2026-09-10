@@ -32,11 +32,11 @@
 		<techHediffsChance>0.1</techHediffsChance>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
-		<!--<xenotypeSet>
+		<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>-->
+		</xenotypeSet>
 		<humanPregnancyChance>0.03</humanPregnancyChance>
 	</PawnKindDef>
 	
@@ -155,11 +155,11 @@
 			<li>Simple</li>
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
-		<!--<xenotypeSet>
+		<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>-->
+		</xenotypeSet>
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<initialWillRange>0~1</initialWillRange>
@@ -188,45 +188,16 @@
 			<li>Simple</li>
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
-		<!--<xenotypeSet>
+		<xenotypeSet>
 			<xenotypeChances>
 				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
 			</xenotypeChances>
-		</xenotypeSet>-->
+		</xenotypeSet>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>8~20</initialResistanceRange>
 	</PawnKindDef>
-	<!--
-	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>HalfSerenChild</defName>
-		<label>seren</label>
-		<defaultFactionType>OutlanderCivil</defaultFactionType>
-		<race>HalfSeren</race>
-		<apparelTags>
-			<li>IndustrialBasic</li>
-		</apparelTags>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>350~600</apparelMoney>
-		<weaponMoney>0</weaponMoney>
-		<techHediffsChance>0.05</techHediffsChance>
-		<techHediffsMoney>50~800</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
-		<xenotypeSet>
-			<xenotypeChances>
-				<HalfSeren MayRequire="Ludeon.RimWorld.Biotech">999</HalfSeren>
-			</xenotypeChances>
-		</xenotypeSet>
-		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>8~20</initialResistanceRange>
-	</PawnKindDef>-->
 	
 	<PawnKindDef ParentName="SerenPsycasterModel">
 		<defName>SerenAstropath</defName>

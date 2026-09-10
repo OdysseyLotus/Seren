@@ -18,7 +18,7 @@
 					<pawnChoiceCount>8</pawnChoiceCount>
 					<overrideKinds>
 						<li>
-							<xenotype>Seren_Base</xenotype>
+							<xenotype>OL_SerenBase</xenotype>
 							<pawnKind>SerenColonist</pawnKind>
 						</li>
 						<li>
@@ -28,7 +28,7 @@
 					</overrideKinds>
 					<xenotypeCounts>
 						<li>
-							<xenotype>Seren_Base</xenotype>
+							<xenotype>OL_SerenBase</xenotype>
 							<count>2</count>
 							<description>lost seren</description>
 							<requiredAtStart>true</requiredAtStart>
@@ -135,7 +135,7 @@
 					<pawnChoiceCount>8</pawnChoiceCount>
 					<overrideKinds>
 						<li>
-							<xenotype>Seren_Base</xenotype>
+							<xenotype>OL_SerenBase</xenotype>
 							<pawnKind>SerenColonistBaby</pawnKind>
 						</li>
 						<li>
@@ -145,7 +145,7 @@
 					</overrideKinds>
 					<xenotypeCounts>
 						<li>
-							<xenotype>Seren_Base</xenotype>
+							<xenotype>OL_SerenBase</xenotype>
 							<count>1</count>
 							<description>seren infant</description>
 							<requiredAtStart>true</requiredAtStart>

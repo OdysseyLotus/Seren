@@ -72,7 +72,7 @@
 						</points>
 					</femaleFertilityAgeFactor>
 				</reproduction>
-				<raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+				<!--<raceGenes MayRequire="Ludeon.RimWorld.Biotech">
 					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_SerenEars</defName>
 					</li>
@@ -260,7 +260,7 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<defName>OL_HairAlbino</defName>
 					</li>
-				</raceGenes>
+				</raceGenes>-->
 				<alienPartGenerator>
 					<bodyTypes>
 						<li>Female</li>
@@ -864,7 +864,10 @@
 			</thoughtSettings>
 			<raceRestriction>
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
-				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">false</onlyUseRaceRestrictedXenotypes>
+				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">true</onlyUseRaceRestrictedXenotypes>
+				<whiteXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<li>OL_SerenBase</li>
+				</whiteXenotypeList>
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw_Heavy</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_BushyOnly</li>
@@ -872,7 +875,6 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Deaf</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Dull</li>
 				</blackGeneList>
 				<blackGeneTags>
 					<li>HairColor</li>

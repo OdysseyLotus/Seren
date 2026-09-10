@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<!-- Made by IncorriKat -->
+	<ThoughtDef>
+		<defName>hi4311_DrankSerenBlood</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>1</stackLimit>
+		<requiredGenes>
+			<li>Bloodfeeder</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>drank seren blood from {0}</label>
+				<description>Feeding on Seren blood really hits the spot. It tastes just like grape candy! Talk about Sanguinary satisfaction!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>
