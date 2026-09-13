@@ -70,7 +70,7 @@
     </GeneDef>
 	
 	<!-- Addons -->
-	<GeneDef Name="GeneEarsBase">
+	<GeneDef ParentName="GeneEarsBase">
 		<defName>OL_SerenEars</defName>
 		<label>seren ears</label>
 		<description>Carriers of this gene have seren-like ears.</description>
