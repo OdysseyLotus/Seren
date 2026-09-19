@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Intimacy - Gender Works</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BodyDef[defName="OL_SerenBody"]/corePart/parts/li[def="Waist"]</xpath>
+			<value>
+				<parts>
+					<li>
+						<def>SEX_Reproduction</def>
+						<coverage>0.01</coverage>
+						<depth>Outside</depth>
+						<groups>
+							<li>SEX_Reproduction</li>
+						</groups>
+					</li>
+				</parts>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

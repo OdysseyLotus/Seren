@@ -5,16 +5,19 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Hats Display Selection</li>
-			<li>[KV] Show Hair With Hats or Hide All Hats</li>
-			<li>Appearance clothes</li>
+			<!--<li>[KV] Show Hair With Hats or Hide All Hats</li>-->
+			<!--<li>Appearance clothes</li>-->
+			<li>[CAT] Show Hair With Hats or Hide All Hats</li>
+			<li>Show Hair Under Stuff</li>
+			<li>Hat Hair Control</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/hiddenUnderApparelFor</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/conditions/Apparel/hiddenUnderApparelFor</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/hiddenUnderApparelFor</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/conditions/Apparel/hiddenUnderApparelFor</xpath>
 				</li>
 			</operations>
 		</match>

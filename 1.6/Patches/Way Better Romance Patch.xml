@@ -11,15 +11,19 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
 					<value>
 						<li Class="BetterRomance.SexualityChances">
-							<asexualChance>10</asexualChance>
-							<bisexualChance>40</bisexualChance>
-							<gayChance>20</gayChance>
-							<straightChance>30</straightChance>
+							<sexual>
+								<hetero>30</hetero>
+								<homo>15</homo>
+								<bi>50</bi>
+								<none>5</none>
+							</sexual>
 							
-							<aceAroChance>10</aceAroChance>
-							<aceBiChance>40</aceBiChance>
-							<aceHomoChance>20</aceHomoChance>
-							<aceHeteroChance>30</aceHeteroChance>
+							<asexual>
+								<hetero>20</hetero>
+								<homo>20</homo>
+								<bi>50</bi>
+								<none>10</none>
+							</asexual>
 						</li>
 					</value>
 				</li>
@@ -29,10 +33,15 @@
 						<li Class="BetterRomance.CasualSexSettings">
 							<caresAboutCheating>True</caresAboutCheating>
 							<willDoHookup>True</willDoHookup>
+							<canDoOrderedHookup>True</canDoOrderedHookup>
+							<hookupRate>100</hookupRate> <!-- Apparently affected by the low/high libido genes and the loving intervals, so not really something I need to adjust here -->
 							<hookupTriggers>
-								<minOpinion>15</minOpinion>
-								<mustBeFertile>False</mustBeFertile>
+								<minOpinion>30</minOpinion>
 							</hookupTriggers>
+							<orderedHookupTriggers>
+								<minOpinion>15</minOpinion>
+								<forBreedingOnly>False</forBreedingOnly>
+							</orderedHookupTriggers>
 						</li>
 					</value>
 				</li>
@@ -40,7 +49,7 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
 					<value>
 						<li Class="BetterRomance.RegularSexSettings">
-							<minAgeForSex>16</minAgeForSex>
+							<minAgeForSex>20</minAgeForSex>
 							<maxAgeForSex>250</maxAgeForSex>
 							<maxAgeGap>100</maxAgeGap>
 							<declineAtAge>175</declineAtAge>
@@ -51,14 +60,17 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Seren"]</xpath>
 					<value>
 						<li Class="BetterRomance.RelationSettings">
+							<spousesAllowed>True</spousesAllowed>
+							<childrenAllowed>True</childrenAllowed>
 							<maxFemaleAgeToHaveChildren>200</maxFemaleAgeToHaveChildren>
 							<maxMaleAgeToHaveChildren>250</maxMaleAgeToHaveChildren>
 							<spousesAllowed>True</spousesAllowed>
-							<minFemaleAgeToHaveChildren>16</minFemaleAgeToHaveChildren>
+							<minFemaleAgeToHaveChildren>20</minFemaleAgeToHaveChildren>
 							<usualFemaleAgeToHaveChildren>75</usualFemaleAgeToHaveChildren>
-							<minMaleAgeToHaveChildren>16</minMaleAgeToHaveChildren>
+							<minMaleAgeToHaveChildren>20</minMaleAgeToHaveChildren>
 							<usualMaleAgeToHaveChildren>75</usualMaleAgeToHaveChildren>
-							<maxChildrenDesired>6</maxChildrenDesired>
+							<maxChildrenDesired>5</maxChildrenDesired>
+							<minOpinionRomance>30</minOpinionRomance>
 						</li>
 					</value>
 				</li>
