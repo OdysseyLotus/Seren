@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>Drug_Serenity</defName>
 		<label>serenity</label>
-		<description>A powdery drug made from crushing and refining seren bones, although their horns are the most common ingredient. Seren bones contain a chemical compound that, when crushed and refined, heightens the user's senses significantly; however, it is extremely addictive and hallucinogenic.</description>
+		<description>A powdery drug made from crushing and refining seren sensors. Seren sensors contain a chemical compound that, when crushed and refined, heightens the user's senses significantly; however, it is extremely addictive and hallucinogenic.</description>
 		<descriptionHyperlinks>
 			<HediffDef>SerenityHigh</HediffDef>
 			<HediffDef>SerenityTolerance</HediffDef>
@@ -20,7 +20,7 @@
 		<rotatable>false</rotatable>
 		<statBases>
 			<WorkToMake>400</WorkToMake>
-			<MarketValue>20</MarketValue>
+			<MarketValue>30</MarketValue>
 			<Mass>0.05</Mass>
 		</statBases>
 		<techLevel>Industrial</techLevel>
@@ -45,7 +45,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>SerenityHigh</hediffDef>
-					<severity>0.75</severity>
+					<severity>0.8</severity>
 					<toleranceChemical>Serenity</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -57,6 +57,7 @@
 					<hediffDef>SerenityTolerance</hediffDef>
 					<severity>0.04</severity>
 					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -73,7 +74,7 @@
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Serenity</chemical>
-				<addictiveness>0.05</addictiveness>
+				<addictiveness>0.03</addictiveness>
 				<existingAddictionSeverityOffset>0.30</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
 				<listOrder>110</listOrder>
@@ -81,6 +82,7 @@
 				<largeOverdoseChance>0.015</largeOverdoseChance>
 			</li>
 		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
 	</ThingDef>
   
 	<HediffDef>
@@ -95,7 +97,7 @@
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-3.0</severityPerDay>
+				<severityPerDay>-2.25</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 		</comps>
@@ -259,7 +261,7 @@
 			<li>
 				<label>serenity withdrawal</label>
 				<description>I can't feel the movements of the universe anymore. It feels like I've lost one of my senses.</description>
-				<baseMoodEffect>-20</baseMoodEffect>
+				<baseMoodEffect>-25</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

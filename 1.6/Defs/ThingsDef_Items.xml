@@ -24,7 +24,7 @@
 		<label>seren sensor</label>
 		<description>A seren's sensor. It acts as a psychic tuning fork for seren. It can be crushed and refined to create a drug called serenity.</description>
 		<statBases>
-			<MarketValue>250</MarketValue>
+			<MarketValue>10</MarketValue>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
