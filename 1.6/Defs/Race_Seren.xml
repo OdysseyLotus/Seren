@@ -865,9 +865,9 @@
 			<raceRestriction>
 				<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
 				<onlyUseRaceRestrictedXenotypes MayRequire="Ludeon.RimWorld.Biotech">true</onlyUseRaceRestrictedXenotypes>
-				<whiteXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+				<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
 					<li>OL_SerenBase</li>
-				</whiteXenotypeList>
+				</xenotypeList>
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw_Heavy</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_BushyOnly</li>
@@ -1190,7 +1190,7 @@
 						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
-				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
+				<li MayRequire="OskarPotocki.VFE.Medieval2">
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
@@ -1200,7 +1200,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>VFEM_PlayerKingdom</li>
+						<li>VFEM2_PlayerKingdom</li>
 					</factionDefs>
 				</li>
 				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
@@ -1214,19 +1214,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>VFES_PlayerSettlement</li>
-					</factionDefs>
-				</li>
-				<li MayRequire="OskarPotocki.VFE.Vikings">
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>SerenVikingPlayer</li>
-							</kindDefs>
-							<chance>5</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>VFEV_PlayerClan</li>
 					</factionDefs>
 				</li>
 				<li MayRequire="OskarPotocki.VFE.Pirates">
@@ -1255,6 +1242,19 @@
 						<li>VFEC_NewEmpire</li>
 					</factionDefs>
 				</li>
+				<li MayRequire="OskarPotocki.VFE.Deserters">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>SerenDeserter</li>
+							</kindDefs>
+							<chance>15</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>VFED_NewSafehaven</li>
+					</factionDefs>
+				</li>
 				<li MayRequire="Trickity.Samurai.Faction">
 					<pawnKindEntries>
 						<li>
@@ -1278,7 +1278,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>TSF_PlayerRonin</li>
+						<li>HS_PlayerEdoClan</li>
 					</factionDefs>
 				</li>
 			</startingColonists>

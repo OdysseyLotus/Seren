@@ -57,7 +57,7 @@
 			</operations>
 		</match>
 	</Operation>
-	<!--
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -101,6 +101,6 @@
 				</li>
 			</operations>
 		</match>
-	</Operation>-->
+	</Operation>
 	
 </Patch>

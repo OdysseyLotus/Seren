@@ -785,26 +785,44 @@
 	
 	
 	<!-- =========================================================== Compatibility =========================================================== -->
-	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
+	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Medieval2">
 		<defName>SerenMedievalPlayer</defName>
 		<race>Seren</race>
-		<label>subject</label>
+		<label>peasant</label>
 		<defaultFactionType>VFEM_PlayerKingdom</defaultFactionType>
-		<backstoryCategories>
-			<li>Tribal</li>
-		</backstoryCategories>
-		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<combatPower>40</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>80~150</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeBasic</li>
+			<li>Spear</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>VFEM2_Apparel_Mantle</li>
+			<li>Apparel_CollarShirt</li>
+			<li>Apparel_Pants</li>
+		</apparelRequired>
 		<apparelTags>
-			<li>MedievalBasic</li>
+			<li>VFEM2_Medieval</li>
 		</apparelTags>
-		<apparelMoney>200~200</apparelMoney>
-		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<techHediffsMoney>50~50</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<techHediffsChance>0.02</techHediffsChance>
-		<initialResistanceRange>12~17</initialResistanceRange>
+		<techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
@@ -830,30 +848,11 @@
 		</techHediffsTags>
 		<techHediffsChance>0.06</techHediffsChance>
 		<initialResistanceRange>13~21</initialResistanceRange>
-	</PawnKindDef>
-	
-	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Vikings">
-		<defName>SerenVikingPlayer</defName>
-		<race>Seren</race>
-		<label>member</label>
-		<defaultFactionType>VFEV_PlayerClan</defaultFactionType>
-        <backstoryCategories>
-            <li>Tribal</li>
-        </backstoryCategories>
-        <chemicalAddictionChance>0.05</chemicalAddictionChance>
-        <apparelTags>
-            <li>Apparel_Viking</li>
-            <li>Neolithic</li>
-        </apparelTags>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>250~750</apparelMoney>
-        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-        <techHediffsMoney>50~50</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
-        <techHediffsChance>0.02</techHediffsChance>
-        <initialResistanceRange>9~15</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Pirates">
@@ -880,6 +879,11 @@
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 		<initialResistanceRange>13~21</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="OskarPotocki.VFE.Classical">
@@ -899,6 +903,65 @@
 		</techHediffsTags>
 		<techHediffsChance>0.02</techHediffsChance>
 		<initialResistanceRange>9~15</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="VFEE_DeserterBase" MayRequire="OskarPotocki.VFE.Deserters">
+		<defName>SerenDeserter</defName>
+		<race>Seren</race>
+		<label>deserter</label>
+		<combatPower>150</combatPower>
+		<weaponTags>
+			<li>AssaultRifle</li>
+			<li>SpacerGun</li>
+			<li>VFEE_SpacerGunBreach</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>VFEE_Apparel_DeserterHelmet</li>
+			<li>VFEE_Apparel_ArmorDeserter</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Synthread</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Synthread</stuff>
+			</li>
+		</specificApparelRequirements>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+			<li>ImplantEmpireRoyal</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Nudist</li>
+			<li>BodyPurist</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~12</range>
+			</li>
+		</skills>
+		<initialWillRange>4~6</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="Trickity.Samurai.Faction">
@@ -922,6 +985,11 @@
         </techHediffsTags>
         <techHediffsChance>0.02</techHediffsChance>
         <initialResistanceRange>9~15</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="Heis.Edo.Themed.Expansion">
@@ -945,6 +1013,11 @@
         </techHediffsTags>
         <techHediffsChance>0.02</techHediffsChance>
         <initialResistanceRange>9~15</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="SerenRoughModel" Name="SerenPsycasterModel" Abstract="True">
@@ -976,6 +1049,11 @@
 			<li>ImplantEmpireCommon</li>
 			<li>Advanced</li>
 		</techHediffsTags>
+		<xenotypeSet>
+			<xenotypeChances>
+				<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">999</OL_SerenBase>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 
 	<!-- Archotechist -->
