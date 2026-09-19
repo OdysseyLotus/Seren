@@ -14,10 +14,22 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 					<value>
 						<li>SerenPlayerBase</li>
 						<li>SerenCivilBase</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+					<value>
+						<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">0.1</OL_SerenBase>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+					<value>
+						<OL_SerenBase MayRequire="Ludeon.RimWorld.Biotech">0.1</OL_SerenBase>
 					</value>
 				</li>
 			</operations>
